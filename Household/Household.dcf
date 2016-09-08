@@ -5,7 +5,7 @@ Name=HOUSEHOLD_DICT
 RecordTypeStart=1
 RecordTypeLen=1
 Positions=Relative
-ZeroFill=No
+ZeroFill=Yes
 DecimalChar=Yes
 
 [Level]
@@ -19,6 +19,7 @@ Label=Household identification
 Name=HOUSEHOLD_ID
 Start=2
 Len=1
+ZeroFill=Yes
 
 [Record]
 Label=Individual
@@ -26,7 +27,7 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=31
+RecordLen=76
 
 [Item]
 Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
@@ -204,6 +205,305 @@ Name=P406_VS1
 Value=1;Yes
 Value=2;No
 
+[Item]
+Label=501 Productive activities during the last 7 days
+Name=P501
+Start=32
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=501 Productive activities during the last 7 days
+Name=P501_VS1
+Value=1;work for pay/ profit
+Value=2;work for own/family agricultural holding
+Value=3;Work for own/family business
+Value=4;Has job but not worked
+Value=5;No
+
+[Item]
+Label=502 Available to work during the coming month
+Name=P502
+Start=33
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=502 Available to work during the coming month
+Name=P502_VS1
+Value=1;Yes  available and actively looking for work
+Value=2;Yes available but not looking for work
+Value=3;Home maker
+Value=4;Pregnancy/delivery
+Value=5;Student (full time)
+Value=6;Disabled/injury
+Value=7;Illness
+Value=8;Too young
+Value=9;Old age/ retired
+Value=10;Pensioned
+Value=11;Remittance
+Value=12;Others
+Value=88;Don't know
+
+[Item]
+Label=503 Main occupation
+Name=P503
+Start=35
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=503 Main occupation
+Name=P503_VS1
+Value=1;Managers
+Value=2;Professionals
+Value=3;Technicians and associate professiona
+Value=4;Clerical support workers
+Value=5;Service and sales workers-05
+Value=6;Skilled agricultural forestry and fishery workers
+Value=7;Craft and related trades workers
+Value=8;Plant and machine operators and assemblers
+Value=9;Elementary occupations
+Value=10;Defense
+
+[Item]
+Label=504 Main product/service of the organization
+Name=P504
+Start=37
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=504 Main product/service of the organization
+Name=P504_VS1
+Value=1;Agriculture/forestry/fishing
+Value=2;Mining and quarrying
+Value=3;Manufacturing
+Value=4;Electric gas, air conditioning-05
+Value=5;Water supply
+Value=6;Construction
+Value=7;Whole and retail sale
+Value=8;Transport
+Value=9;Accommodations and service10
+Value=10;Information and communication
+Value=11;Finance and Insurance
+Value=12;Real state
+Value=13;Professional science
+Value=14;Administrative and support
+Value=15;Public Administration/Defense
+Value=16;Education
+Value=17;Human Health social work
+Value=18;Art and entertainment
+Value=19;Other services
+Value=20;Activities of Household and services
+Value=21;Activities of extraterritorial  organization
+
+[Item]
+Label=505 Employment status 
+Name=P505
+Start=39
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=505 Employment status 
+Name=P505_VS1
+Value=1;Employee- Government
+Value=2;Employee –Government Deve. Org
+Value=3;Employee -Private organization
+Value=4;Employee - NGO/International Org.
+Value=5;Employee – Domestic
+Value=6;Employee – others
+Value=7;Self employed
+Value=8;Unpaid family worker
+Value=9;Apprentice
+Value=10;Member of co-operative
+Value=11;Employer
+Value=12;Other
+
+[Item]
+Label=506 Productive activity engaged
+Name=P506
+Start=41
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=506 Productive activity engaged
+Name=P506_VS1
+Value=1;Work for pay/profit
+Value=2;Work for own/family agriculture
+Value=3;Work for own/Family business(non-agriculture
+Value=4;Has job but not worked
+Value=5;Unemployed with work experience
+Value=6;Unemployed without work experience
+Value=7;Home making
+Value=8;Pregnancy/Delivery
+Value=9;Student(full time)
+Value=10;Disabled/injury
+Value=11;Illness
+Value=12;Too young
+Value=13;Old age/retire
+Value=14;Pensioner
+Value=15;Remittance
+Value=16;Other(specify)
+Value=88;Don't know
+
+[Item]
+Label=507 Place of Work
+Name=P507
+Start=43
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=507 Place of Work
+Name=P507_VS1
+Value=1;Home
+Value=2;No fixed place
+Value=3;Fixed place outside home
+
+[Item]
+Label=601 Alive male children ever born
+Name=P601_MALE
+Start=44
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=601 Alive female children ever born
+Name=P601_FEMALE
+Start=46
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=601 Alive total number children ever born
+Name=P601_TOTAL
+Start=48
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=602 Male childrens living with you
+Name=P602_MALE
+Start=50
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=602 Female childrens living with you
+Name=P602_FEMALE
+Start=52
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=603 Male childrens living elsewhere
+Name=P603_MALE
+Start=54
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=603 Female childrens living elsewhere
+Name=P603_FEMALE
+Start=56
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=604 Male children died
+Name=P604_MALE
+Start=58
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=604 Female children died
+Name=P604_FEMALE
+Start=60
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=605 Date of birth of last child born alive
+Name=P605_DATE
+Start=62
+Len=8
+ZeroFill=Yes
+
+[Item]
+Label=605 Date
+Name=P605_DD
+Start=62
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=605 Month
+Name=P605_MM
+Start=64
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=605 Year
+Name=P605_YYYY
+Start=66
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=606 Sex of last child born alive
+Name=P606
+Start=70
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=606 Sex of last child born alive
+Name=P606_VS1
+Value=1;Male
+Value=2;Female
+Value=3;Male wins
+Value=4;Female twins
+Value=5;Male/Female twins
+Value=6;Multiple birth
+Value=88;Don't know
+Value=99;Not applicable
+
+[Item]
+Label=607 Survival status of last child born
+Name=P607
+Start=72
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=607 Survival status of last child born
+Name=P607_VS1
+Value=1;Alive
+Value=2;Dead
+Value=3;Dead   male twin
+Value=4;Dead   Female  twin
+Value=5;Dead   both twins
+Value=6;Dead   one of the multiples
+Value=7;Dead  two of the multiples
+Value=8;Dead   all of the multiples
+Value=88;Don’t know
+Value=99;Not applicable
+
+[Item]
+Label=608 Age at birth of first child born
+Name=P608
+Start=74
+Len=2
+ZeroFill=Yes
+
 [Record]
 Label=Remittance
 Name=REMITTANCE
@@ -316,4 +616,378 @@ Value=2;No
 Label=Housing
 Name=HOUSING
 RecordTypeValue='H'
-RecordLen=2
+RecordLen=58
+
+[Item]
+Label=1 Housing information will be
+Name=H1
+Start=3
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=1 Housing information will be
+Name=H1_VS1
+Value=1;Collected for unit 
+Value=2;Skipped
+
+[Item]
+Label=2 Type of housing unit
+Name=H2
+Start=4
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=2 Type of housing unit
+Name=H2_VS1
+Value=1;Conventional
+Value=2;Improvised
+Value=3;Mobile
+Value=4;Other
+
+[Item]
+Label=3  Rooms in the housing unit
+Name=H3
+Start=5
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=4 Type of tenure
+Name=H4
+Start=7
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=4 Type of tenure
+Name=H4_VS1
+Value=1;Owner occupied
+Value=2;Rent free
+Value=3;Rentedfromkebele
+Value=4;Rented from agency of rented houses
+Value=5;Rented from other organization
+Value=6;Rented from private household
+Value=7;Occupied by paying rent difference
+
+[Item]
+Label=5 Major material used for roof
+Name=H5
+Start=8
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=5 Major material used for roof
+Name=H5_VS1
+Value=1;Corrugated iron sheet
+Value=2;Concrete or cement
+Value=3;Thatch
+Value=4;Wood and mud
+Value=5;Bamboo or reed
+Value=6;Plastic/Shera
+Value=7;Asbestos
+Value=8;Other
+
+[Item]
+Label=6 Major material used for wall
+Name=H6
+Start=9
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=6 Major material used for wall
+Name=H6_VS1
+Value=1;Wood and mud
+Value=2;Wood and thach/Wood only
+Value=3;Stone and mud
+Value=4;Stone and mud
+Value=5;Plastered Hallow Blocks
+Value=6;UnPlastered Hallow Blocks
+Value=7;Bricks
+Value=8;Currecated Iron
+Value=9;Reed/Bamboo
+Value=10;Mud Brick
+Value=11;sheet metal
+Value=12;Others
+
+[Item]
+Label=7 Major material used for floor
+Name=H7
+Start=11
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=7 Major material used for floor
+Name=H7_VS1
+Value=1;Mud
+Value=2;Bamboo/Reed
+Value=3;Wood planks
+Value=4;Parquet or polished wood
+Value=5;Cement screed/Cement screed not applied
+Value=6;Plastic tiles
+Value=7;Cement tile/Brick tile
+Value=8;Ceramic/Marble tiles
+Value=9;Other
+
+[Item]
+Label=8 Main source of drinking water
+Name=H8
+Start=12
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=8 Main source of drinking water
+Name=H8_VS1
+Value=1;Tap inside the house
+Value=2;Tap in compound, private
+Value=3;Tap in compound, shared
+Value=4;Protected well or spring
+Value=5;Unprotected well or spring
+Value=6;River/Lake/Pond
+Value=7;Tap outside compound/From private tap, public tap, other organisation/(bought or free of charge)
+
+[Item]
+Label=9 Type of toilet facility 
+Name=H9
+Start=13
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=9 Type of toilet facility 
+Name=H9_VS1
+Value=1;No toilet facility
+Value=2;Flush toilet
+Value=3;VIP Latrine
+Value=4;Pit Latrine
+
+[Item]
+Label=10 Share the toilet with other Household
+Name=H10
+Start=14
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=10 Share the toilet with other Household
+Name=H10_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=11 Bathing facility
+Name=H11
+Start=15
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=11 Bathing facility
+Name=H11_VS1
+Value=1;No bathing facility
+Value=2;Bathtub private
+Value=3;Bathtub shared
+Value=4;Shower private
+Value=5;Shower shared
+Value=6;A room prepared for bathing
+
+[Item]
+Label=12 Type of Kitchen
+Name=H12
+Start=16
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=12 Type of Kitchen
+Name=H12_VS1
+Value=1;No kitchen
+Value=2;A room used for traditional kitchen inside the housing unit
+Value=3;A room used for traditional kitchen outside the housing unit
+Value=4;A room used for modern kitchen inside the housing unit
+Value=5;A room used for modern kitchen outside the housing unit
+
+[Item]
+Label=13 Share kitchen with other Households
+Name=H13
+Start=17
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=13 Share kitchen with other Households
+Name=H13_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=14 Housing unit use
+Name=H14
+Start=18
+Len=11
+DataType=Alpha
+
+[ValueSet]
+Label=14 Housing unit use
+Name=H14_VS1
+Value='A          ';Electricity /meter private
+Value=' B         ';Electricity /meter shared
+Value='C          ';Electricity from generator private
+Value='D          ';Electricity from generator shared
+Value='E          ';Gas/cylinder for cooking
+Value='F          ';Kerosene for cooking
+Value='G          ';Charcoal for cooking
+Value='H          ';Firewood/Leaves/Sawdust for cooking
+Value='I          ';Dung/manure for cooking
+Value='J          ';Bio-gas for cooking
+Value='K          ';Other items than listed above
+
+[Item]
+Label=15 Source of cooking energy
+Name=H15
+Start=29
+Len=2
+
+[ValueSet]
+Label=15 Source of cooking energy
+Name=H15_VS1
+Value=1;Electricity /meter private
+Value=2;Electricity /meter shared
+Value=3;Electricity from generator private
+Value=4;Electricity from generator shared
+Value=5;Gas/cylinder for cooking
+Value=6;Kerosene for cooking
+Value=7;Charcoal for cooking
+Value=8;Firewood/Leaves/Sawdust for cooking
+Value=9;Dung/manure for cooking
+Value=10;Bio-gas for cooking
+Value=11;Other items than listed above
+
+[Item]
+Label=16 Type of lighting household unit has
+Name=H16
+Start=31
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=16 Type of lighting household unit has
+Name=H16_VS1
+Value='A         ';Electricity/Meter private
+Value=' B        ';Electricity/Meter shared
+Value='C         ';Electricity from generator private
+Value='D         ';Electricity from generator Shared
+Value='E         ';Solar energy
+Value='F         ';Lantern
+Value='G         ';Bio-gas
+Value='H         ';Kerosene
+Value='I         ';Candle/Wax candle
+Value='J         ';Firewood
+
+[Item]
+Label=17 Main type of lighting for the household
+Name=H17
+Start=41
+Len=2
+
+[ValueSet]
+Label=17 Main type of lighting for the household
+Name=H17_VS1
+Value=1;Electricity/Meter private
+Value=2;Electricity/Meter shared
+Value=3;Electricity from generator private
+Value=4;Electricity from generator Shared
+Value=5;Solar energy
+Value=6;Lantern
+Value=7;Bio-gas
+Value=8;Kerosene
+Value=9;Candle/Wax candle
+Value=10;Firewood
+
+[Item]
+Label=18 Any member of the household have
+Name=H18
+Start=43
+Len=12
+DataType=Alpha
+
+[ValueSet]
+Label=18 Any member of the household have
+Name=H18_VS1
+Value='A           ';Rradio
+Value=' B          ';Fixed Telephone/Wireless Telephone
+Value='C           '; mobile phone
+Value='D           ';Television
+Value='E           ';car
+Value='F           ';Motor cycle
+Value='G           ';Bicycle
+Value='H           ';Refergrator
+Value='I           ';Tractor
+Value='J           ';Animal driven cart
+Value='K           ';Personal computer/lap Top
+Value='L           ';Internet connection
+
+[Item]
+Label=19 Household have internet
+Name=H19
+Start=55
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=19 Household have internet
+Name=H19_VS1
+Value=1;Yes fixed /cable/WIFI
+Value=2;Yes modem/CDMA/Celular
+Value=3;No
+
+[Item]
+Label=20 Main means of Disposal
+Name=H20
+Start=56
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=20 Main means of Disposal
+Name=H20_VS1
+Value=1;No disposal System
+Value=2;Piped system connected to public sewarage disposal plant
+Value=3;Piped system connected to individual sewarage disposal septic tand Cesspool
+Value=4;Other toilet empties in to and open ditch, river, lake, pond
+
+[Item]
+Label=20 Housing unit dispose solid waste
+Name=H20_B
+Start=57
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=20 Housing unit dispose solid waste
+Name=H20_B_VS1
+Value=1;Collected by Municipality (Public Dump)
+Value=2;Collected by private establishments/individuals
+Value=3;Dumped in street/Open space
+Value=4;Dumped in river
+Value=5;Burned/Buried solid waste
+Value=6;Other
+
+[Item]
+Label=21 Livestock spend the night in the room(s) where members spend
+Name=H21
+Start=58
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=21 Livestock spend the night in the room(s) where members spend
+Name=H21_VS1
+Value=1;Yes
+Value=2;No
+Value=3;No livestock
