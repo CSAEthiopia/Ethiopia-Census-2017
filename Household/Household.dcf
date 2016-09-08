@@ -21,12 +21,188 @@ Start=2
 Len=1
 
 [Record]
-Label=Individual 
+Label=Individual
 Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=2
+RecordLen=31
+
+[Item]
+Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Name=P317
+Start=3
+Len=2
+
+[ValueSet]
+Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Name=P317_VS1
+Value=0;Less than one year
+Value=1;One year
+Value=2;Two years
+Value=3;Three years
+Value=4;Four years
+Value=5;Five years
+Value=6;Six years
+Value=7;Seven  years
+Value=8;Eight year
+Value=9;Nine years
+Value=10;Ten years and over
+Value=88;Since birth
+
+[Item]
+Label=P318. Where is NAME’s country of birth? (country)
+Name=P318
+Start=5
+Len=3
+
+[Item]
+Label=P319. If in Ethiopia  in Q318 record place of birth_Region
+Name=P319R
+Start=8
+Len=2
+
+[Item]
+Label=P319.If in Ethiopia  in Q318 record place of birth_zone
+Name=P319Z
+Start=10
+Len=2
+
+[Item]
+Label=P320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015) 
+Name=P320
+Start=12
+Len=3
+
+[Item]
+Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Name=P321R
+Start=15
+Len=2
+
+[Item]
+Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Name=P321Z
+Start=17
+Len=2
+
+[Item]
+Label=P322. Was this place Rural or Urban?
+Name=P322
+Start=19
+Len=1
+
+[ValueSet]
+Label=P322. Was this place Rural or Urban?
+Name=P322_VS1
+Value=1;Urban
+Value=2;Rural
+
+[Item]
+Label=P323. What was NAME’s reason for migration?
+Name=P323
+Start=20
+Len=1
+
+[ValueSet]
+Label=P323. What was NAME’s reason for migration?
+Name=P323_VS1
+Value=1;For work/In search of work
+Value=2;for agriculture or settlement
+Value=3;to join family member
+Value=4;Education
+Value=5;Marriage or start of new family
+Value=6;Drought environmental hazard
+Value=7;Conflict
+Value=8;Others
+
+[Item]
+Label=P324. What is (NAME’s) Current marital status?
+Name=P324
+Start=21
+Len=1
+
+[ValueSet]
+Label=P324. What is (NAME’s) Current marital status?
+Name=P324_VS1
+Value=1;Never married
+Value=2;Married
+Value=3;Cohabiting/Living Together
+Value=4;Divorced
+Value=5;Separated
+Value=6;Widowed
+Value=7;Do not know
+
+[Item]
+Label=P325 What was Age at first marriage
+Name=P325
+Start=22
+Len=2
+
+[ValueSet]
+Label=P325 What was Age at first marriage
+Name=P325_VS1
+Value=0:99;Valid
+
+[Item]
+Label=P401. Is (NAME)  able to read and write in any language?
+Name=P401
+Start=24
+Len=1
+
+[ValueSet]
+Label=P401. Is (NAME)  able to read and write in any language?
+Name=P401_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=P402. Is (NAME) currently attending school?
+Name=P402
+Start=25
+Len=2
+
+[Item]
+Label=P403. What is the highest Grade (NAME) completed?
+Name=P403
+Start=27
+Len=2
+
+[Item]
+Label=P404. Does NAME use a computer?
+Name=P404
+Start=29
+Len=1
+
+[ValueSet]
+Label=P404. Does NAME use a computer?
+Name=P404_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=P405. Does NAME use internet?
+Name=P405
+Start=30
+Len=1
+
+[ValueSet]
+Label=P405. Does NAME use internet?
+Name=P405_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=P406. Does name use Cell phone?
+Name=P406
+Start=31
+Len=1
+
+[ValueSet]
+Label=P406. Does name use Cell phone?
+Name=P406_VS1
+Value=1;Yes
+Value=2;No
 
 [Record]
 Label=Remittance
@@ -40,7 +216,29 @@ Label=Mortality number of death in the household
 Name=NO_OF_DEATH
 RecordTypeValue='m'
 Required=No
-RecordLen=2
+RecordLen=6
+
+[Item]
+Label=P701. Did a death occur in the household since  November 2016?_Male
+Name=P701M
+Start=3
+Len=2
+
+[ValueSet]
+Label=P701. Did a death occur in the household since  November 2016?_Male
+Name=P701M_VS1
+Value=0:10;Valid
+
+[Item]
+Label=P701. Did a death occur in the household since  November 2016?_Female
+Name=P701F
+Start=5
+Len=2
+
+[ValueSet]
+Label=P701. Did a death occur in the household since  November 2016?_Female
+Name=P701F_VS1
+Value=0:10;Valid
 
 [Record]
 Label=Mortality
@@ -48,7 +246,71 @@ Name=MORTALITY
 RecordTypeValue='M'
 Required=No
 MaxRecords=10
-RecordLen=2
+RecordLen=38
+
+[Item]
+Label=P702. Name of deceased
+Name=P702
+Start=3
+Len=30
+DataType=Alpha
+
+[Item]
+Label=P703. Sex of Deceased
+Name=P703
+Start=33
+Len=1
+
+[ValueSet]
+Label=P703. Sex of Deceased
+Name=P703_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=P704. Age at death
+Name=P704
+Start=34
+Len=2
+
+[ValueSet]
+Label=P704. Age at death
+Name=P704_VS1
+Value=0:98;Valid
+Value=99;NS
+
+[Item]
+Label=P705.  What was the cause of death of the Deceased
+Name=P705
+Start=36
+Len=2
+
+[ValueSet]
+Label=P705.  What was the cause of death of the Deceased
+Name=P705_VS1
+Value=1;Blood pressure
+Value=2;Diabetes
+Value=3;Accident
+Value=4;Suicide
+Value=5;Murdered
+Value=6;Pregnancy related
+Value=7;Malaria
+Value=8;Tuberculosis
+Value=9;HIV/AIDS
+Value=10;Others illness
+Value=88;Do not know
+
+[Item]
+Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Name=P706
+Start=38
+Len=1
+
+[ValueSet]
+Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Name=P706_VS1
+Value=1;Yes
+Value=2;No
 
 [Record]
 Label=Housing
