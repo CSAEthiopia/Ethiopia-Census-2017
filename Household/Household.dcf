@@ -27,16 +27,16 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=76
+RecordLen=75
 
 [Item]
-Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
 Name=P317
 Start=3
 Len=2
 
 [ValueSet]
-Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
 Name=P317_VS1
 Value=0;Less than one year
 Value=1;One year
@@ -52,61 +52,61 @@ Value=10;Ten years and over
 Value=88;Since birth
 
 [Item]
-Label=P318. Where is NAME’s country of birth? (country)
+Label=318. Where is NAME’s country of birth? (country)
 Name=P318
 Start=5
 Len=3
 
 [Item]
-Label=P319. If in Ethiopia  in Q318 record place of birth_Region
+Label=319. If in Ethiopia  in Q318 record place of birth_Region
 Name=P319R
 Start=8
 Len=2
 
 [Item]
-Label=P319.If in Ethiopia  in Q318 record place of birth_zone
+Label=319.If in Ethiopia  in Q318 record place of birth_zone
 Name=P319Z
 Start=10
 Len=2
 
 [Item]
-Label=P320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015) 
+Label=320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015)
 Name=P320
 Start=12
 Len=3
 
 [Item]
-Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321R
 Start=15
 Len=2
 
 [Item]
-Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321Z
 Start=17
 Len=2
 
 [Item]
-Label=P322. Was this place Rural or Urban?
+Label=322. Was this place Rural or Urban?
 Name=P322
 Start=19
 Len=1
 
 [ValueSet]
-Label=P322. Was this place Rural or Urban?
+Label=322. Was this place Rural or Urban?
 Name=P322_VS1
 Value=1;Urban
 Value=2;Rural
 
 [Item]
-Label=P323. What was NAME’s reason for migration?
+Label=323. What was NAME’s reason for migration?
 Name=P323
 Start=20
 Len=1
 
 [ValueSet]
-Label=P323. What was NAME’s reason for migration?
+Label=323. What was NAME’s reason for migration?
 Name=P323_VS1
 Value=1;For work/In search of work
 Value=2;for agriculture or settlement
@@ -118,13 +118,13 @@ Value=7;Conflict
 Value=8;Others
 
 [Item]
-Label=P324. What is (NAME’s) Current marital status?
+Label=324. What is (NAME’s) Current marital status?
 Name=P324
 Start=21
 Len=1
 
 [ValueSet]
-Label=P324. What is (NAME’s) Current marital status?
+Label=324. What is (NAME’s) Current marital status?
 Name=P324_VS1
 Value=1;Never married
 Value=2;Married
@@ -135,72 +135,72 @@ Value=6;Widowed
 Value=7;Do not know
 
 [Item]
-Label=P325 What was Age at first marriage
+Label=325 What was Age at first marriage
 Name=P325
 Start=22
 Len=2
 
 [ValueSet]
-Label=P325 What was Age at first marriage
+Label=325 What was Age at first marriage
 Name=P325_VS1
 Value=0:99;Valid
 
 [Item]
-Label=P401. Is (NAME)  able to read and write in any language?
+Label=401. Is (NAME)  able to read and write in any language?
 Name=P401
 Start=24
 Len=1
 
 [ValueSet]
-Label=P401. Is (NAME)  able to read and write in any language?
+Label=401. Is (NAME)  able to read and write in any language?
 Name=P401_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P402. Is (NAME) currently attending school?
+Label=402. Is (NAME) currently attending school?
 Name=P402
 Start=25
 Len=2
 
 [Item]
-Label=P403. What is the highest Grade (NAME) completed?
+Label=403. What is the highest Grade (NAME) completed?
 Name=P403
 Start=27
 Len=2
 
 [Item]
-Label=P404. Does NAME use a computer?
+Label=404. Does NAME use a computer?
 Name=P404
 Start=29
 Len=1
 
 [ValueSet]
-Label=P404. Does NAME use a computer?
+Label=404. Does NAME use a computer?
 Name=P404_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P405. Does NAME use internet?
+Label=405. Does NAME use internet?
 Name=P405
 Start=30
 Len=1
 
 [ValueSet]
-Label=P405. Does NAME use internet?
+Label=405. Does NAME use internet?
 Name=P405_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P406. Does name use Cell phone?
+Label=406. Does name use Cell phone?
 Name=P406
 Start=31
 Len=1
 
 [ValueSet]
-Label=P406. Does name use Cell phone?
+Label=406. Does name use Cell phone?
 Name=P406_VS1
 Value=1;Yes
 Value=2;No
@@ -299,14 +299,14 @@ Value=20;Activities of Household and services
 Value=21;Activities of extraterritorial  organization
 
 [Item]
-Label=505 Employment status 
+Label=505 Employment status
 Name=P505
 Start=39
 Len=2
 ZeroFill=Yes
 
 [ValueSet]
-Label=505 Employment status 
+Label=505 Employment status
 Name=P505_VS1
 Value=1;Employee- Government
 Value=2;Employee –Government Deve. Org
@@ -519,24 +519,24 @@ Required=No
 RecordLen=6
 
 [Item]
-Label=P701. Did a death occur in the household since  November 2016?_Male
+Label=701. Did a death occur in the household since  November 2016?_Male
 Name=P701M
 Start=3
 Len=2
 
 [ValueSet]
-Label=P701. Did a death occur in the household since  November 2016?_Male
+Label=701. Did a death occur in the household since  November 2016?_Male
 Name=P701M_VS1
 Value=0:10;Valid
 
 [Item]
-Label=P701. Did a death occur in the household since  November 2016?_Female
+Label=701. Did a death occur in the household since  November 2016?_Female
 Name=P701F
 Start=5
 Len=2
 
 [ValueSet]
-Label=P701. Did a death occur in the household since  November 2016?_Female
+Label=701. Did a death occur in the household since  November 2016?_Female
 Name=P701F_VS1
 Value=0:10;Valid
 
@@ -549,44 +549,44 @@ MaxRecords=10
 RecordLen=38
 
 [Item]
-Label=P702. Name of deceased
+Label=702. Name of deceased
 Name=P702
 Start=3
 Len=30
 DataType=Alpha
 
 [Item]
-Label=P703. Sex of Deceased
+Label=703. Sex of Deceased
 Name=P703
 Start=33
 Len=1
 
 [ValueSet]
-Label=P703. Sex of Deceased
+Label=703. Sex of Deceased
 Name=P703_VS1
 Value=1;Male
 Value=2;Female
 
 [Item]
-Label=P704. Age at death
+Label=704. Age at death
 Name=P704
 Start=34
 Len=2
 
 [ValueSet]
-Label=P704. Age at death
+Label=704. Age at death
 Name=P704_VS1
 Value=0:98;Valid
 Value=99;NS
 
 [Item]
-Label=P705.  What was the cause of death of the Deceased
+Label=705.  What was the cause of death of the Deceased
 Name=P705
 Start=36
 Len=2
 
 [ValueSet]
-Label=P705.  What was the cause of death of the Deceased
+Label=705.  What was the cause of death of the Deceased
 Name=P705_VS1
 Value=1;Blood pressure
 Value=2;Diabetes
@@ -601,13 +601,13 @@ Value=10;Others illness
 Value=88;Do not know
 
 [Item]
-Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
 Name=P706
 Start=38
 Len=1
 
 [ValueSet]
-Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
 Name=P706_VS1
 Value=1;Yes
 Value=2;No
@@ -628,7 +628,7 @@ ZeroFill=Yes
 [ValueSet]
 Label=1 Housing information will be
 Name=H1_VS1
-Value=1;Collected for unit 
+Value=1;Collected for unit
 Value=2;Skipped
 
 [Item]
@@ -752,14 +752,14 @@ Value=6;River/Lake/Pond
 Value=7;Tap outside compound/From private tap, public tap, other organisation/(bought or free of charge)
 
 [Item]
-Label=9 Type of toilet facility 
+Label=9 Type of toilet facility
 Name=H9
 Start=13
 Len=1
 ZeroFill=Yes
 
 [ValueSet]
-Label=9 Type of toilet facility 
+Label=9 Type of toilet facility
 Name=H9_VS1
 Value=1;No toilet facility
 Value=2;Flush toilet
