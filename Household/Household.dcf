@@ -15,32 +15,366 @@ Name=HOUSEHOLD_QUEST
 [IdItems]
 
 [Item]
-Label=Household identification
-Name=HOUSEHOLD_ID
+Label=101 Region
+Name=ID101
 Start=2
+Len=2
+
+[Item]
+Label=102 Zone
+Name=ID102
+Start=4
+Len=2
+
+[Item]
+Label=103 Woreda
+Name=ID103
+Start=6
+Len=2
+
+[Item]
+Label=104 Town/City
+Name=ID104
+Start=8
 Len=1
 
+[Item]
+Label=105 Sub City
+Name=ID105
+Start=9
+Len=2
+
+[Item]
+Label=106 Principal  Supervision .Area
+Name=ID106
+Start=11
+Len=2
+
+[Item]
+Label=107 Supervision Area
+Name=ID107
+Start=13
+Len=2
+
+[Item]
+Label=108 Kebele
+Name=ID108
+Start=15
+Len=3
+
+[Item]
+Label=109 Enumeration Area
+Name=ID109
+Start=18
+Len=2
+
+[Item]
+Label=202 Housing serial Number
+Name=ID202
+Start=20
+Len=3
+
+[Item]
+Label=203 Households, Hotel/Hostel/Other Collective Quarter Serial Number
+Name=ID203
+Start=23
+Len=3
+
 [Record]
-Label=Individual 
+Label=Individual
 Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=2
+RecordLen=100
+
+[Item]
+Label=301 Member Serial  Number
+Name=P301
+Start=26
+Len=2
+
+[Item]
+Label=302 Name of Usual  member and Visitors
+Name=P302
+Start=28
+Len=30
+DataType=Alpha
+
+[Item]
+Label=303 Residence Status
+Name=P303
+Start=58
+Len=1
+
+[ValueSet]
+Label=303 Residence Status
+Name=P303_VS1
+Value=1;Usual  resident present  on the Census day
+Value=2;Usual resident  absent  on the census day(in Ethiopia )
+Value=3;Usual resident absent on the  census day (outside Ethiopia)
+Value=4;Visitor  Ethiopian
+Value=5;Visitor  non Ethiopian
+
+[ValueSet]
+Label=303 Residence Status
+Name=P303_VS2
+Value=1;በቆጠራው ቀን ቤት ያደሩ ነዋሪ
+Value=2;በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ኢትዮጽያ ውስጥ
+Value=3;በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ከኢትዮጽያ ውጭ
+Value=4;በቆጠራው ቀን ቤት ያደሩ እንግዳ  ኢትዮጽያዊ
+Value=5;በቆጠራው ቀን  ቤት ያደሩ እንግዳ የሌላ ሀገር ዞጋ
+
+[Item]
+Label=304A Reagion
+Name=P304A
+Start=59
+Len=2
+
+[Item]
+Label=304B Zone
+Name=P304B
+Start=61
+Len=2
+
+[Item]
+Label=305 Usual country of residence
+Name=P305
+Start=63
+Len=3
+
+[Item]
+Label=306  Relationship
+Name=P306
+Start=66
+Len=1
+
+[Item]
+Label=307 Sex
+Name=P307
+Start=67
+Len=1
+
+[Item]
+Label=308 Age
+Name=P308
+Start=68
+Len=2
+
+[Item]
+Label=309 Mothers line No
+Name=P309
+Start=70
+Len=2
+
+[Item]
+Label=310 Religion
+Name=P310
+Start=72
+Len=2
+
+[Item]
+Label=311 Ethnic Group
+Name=P311
+Start=74
+Len=2
+
+[Item]
+Label=312 Mother Tongue
+Name=P312
+Start=76
+Len=2
+
+[Item]
+Label=313 Biological mother alive
+Name=P313
+Start=78
+Len=1
+
+[Item]
+Label=314 Biological father alive
+Name=P314
+Start=79
+Len=1
+
+[Item]
+Label=315 Disablity
+Name=P315
+Start=80
+Len=1
+DataType=Alpha
+
+[Item]
+Label=316 Cause of disability
+Name=P316
+Start=81
+Len=2
+
+[Item]
+Label=317 Living continuously in current place of residence?
+Name=P317
+Start=83
+Len=2
+
+[Item]
+Label=318 Country of birth
+Name=P318
+Start=85
+Len=3
+
+[Item]
+Label=319A Region 
+Name=P319A
+Start=88
+Len=2
+
+[Item]
+Label=319B Zone
+Name=P319B
+Start=90
+Len=2
+
+[Item]
+Label=320
+Name=P320
+Start=92
+Len=3
+
+[Item]
+Label=321A Region
+Name=P321A
+Start=95
+Len=2
+
+[Item]
+Label=321B zone
+Name=P321B
+Start=97
+Len=2
+
+[Item]
+Label=322 Rural or Urban
+Name=P322
+Start=99
+Len=1
+
+[Item]
+Label=323 Reason for migration
+Name=P323
+Start=100
+Len=1
 
 [Record]
 Label=Remittance
 Name=REMITTANCE
 RecordTypeValue='R'
 Required=No
-RecordLen=2
+RecordLen=66
+
+[Item]
+Label=801A Number of male
+Name=R801A
+Start=26
+Len=2
+
+[Item]
+Label=801B Number of female
+Name=R801B
+Start=28
+Len=2
+
+[Item]
+Label=802A
+Name=R802A
+Start=30
+Len=3
+
+[Item]
+Label=802B
+Name=R802B
+Start=33
+Len=3
+
+[Item]
+Label=802C
+Name=R802C
+Start=36
+Len=3
+
+[Item]
+Label=802D
+Name=R802D
+Start=39
+Len=3
+
+[Item]
+Label=802E
+Name=R802E
+Start=42
+Len=3
+
+[Item]
+Label=802F
+Name=R802F
+Start=45
+Len=3
+
+[Item]
+Label=803  Receive any money or goods
+Name=R803
+Start=48
+Len=1
+
+[ValueSet]
+Label=803  Receive any money or goods
+Name=R803_VS1
+Value=1;Yes, both goods and money
+Value=2;Yes, money only
+Value=3;Yes, goods only
+Value=4;No
+
+[Item]
+Label=804A
+Name=R80A
+Start=49
+Len=3
+
+[Item]
+Label=804B
+Name=R80B
+Start=52
+Len=3
+
+[Item]
+Label=804C
+Name=R80C
+Start=55
+Len=3
+
+[Item]
+Label=804D
+Name=R80D
+Start=58
+Len=3
+
+[Item]
+Label=804E
+Name=R80E
+Start=61
+Len=3
+
+[Item]
+Label=804F
+Name=R80F
+Start=64
+Len=3
 
 [Record]
 Label=Mortality number of death in the household
 Name=NO_OF_DEATH
 RecordTypeValue='m'
 Required=No
-RecordLen=2
+RecordLen=25
 
 [Record]
 Label=Mortality
@@ -48,10 +382,10 @@ Name=MORTALITY
 RecordTypeValue='M'
 Required=No
 MaxRecords=10
-RecordLen=2
+RecordLen=25
 
 [Record]
 Label=Housing
 Name=HOUSING
 RecordTypeValue='H'
-RecordLen=2
+RecordLen=25
