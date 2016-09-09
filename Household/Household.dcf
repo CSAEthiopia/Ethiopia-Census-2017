@@ -20,6 +20,21 @@ Name=ID101
 Start=2
 Len=2
 
+[ValueSet]
+Label=101 Region
+Name=ID101_VS1
+Value=1;Tigray
+Value=2;Afar
+Value=3;Amhara
+Value=4;Oromia
+Value=5;Somalie
+Value=6;Benshangul
+Value=7;SNNP
+Value=12;Gambella
+Value=13;Harari
+Value=14;Diredawa
+Value=15;Addis Ababa
+
 [Item]
 Label=102 Zone
 Name=ID102
