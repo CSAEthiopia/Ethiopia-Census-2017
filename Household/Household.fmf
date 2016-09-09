@@ -1,0 +1,33 @@
+﻿[FormFile]
+Version=CSPro 6.3
+Name=HOUSEHOLD_FF
+Label=Household
+DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=.\Household.dcf
+  
+[Form]
+Name=FORM000
+Label=Household questionnaire
+Level=1
+Size=0,0
+  
+  
+[EndForm]
+  
+[Level]
+Name=HOUSEHOLD_QUEST
+Label=Household questionnaire
+  
+[Group]
+Required=Yes
+Name=HOUSEHOLD_QUEST_FORM
+Label=Household questionnaire
+Form=1
+LogicControl=No
+Max=1
+[EndGroup]
+  

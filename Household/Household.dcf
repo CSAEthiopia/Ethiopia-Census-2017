@@ -1,0 +1,57 @@
+﻿[Dictionary]
+Version=CSPro 6.3
+Label=Household
+Name=HOUSEHOLD_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Household questionnaire
+Name=HOUSEHOLD_QUEST
+
+[IdItems]
+
+[Item]
+Label=Household identification
+Name=HOUSEHOLD_ID
+Start=2
+Len=1
+
+[Record]
+Label=Individual 
+Name=INDIVIDUAL
+RecordTypeValue='I'
+Required=No
+MaxRecords=150
+RecordLen=2
+
+[Record]
+Label=Remittance
+Name=REMITTANCE
+RecordTypeValue='R'
+Required=No
+RecordLen=2
+
+[Record]
+Label=Mortality number of death in the household
+Name=NO_OF_DEATH
+RecordTypeValue='m'
+Required=No
+RecordLen=2
+
+[Record]
+Label=Mortality
+Name=MORTALITY
+RecordTypeValue='M'
+Required=No
+MaxRecords=10
+RecordLen=2
+
+[Record]
+Label=Housing
+Name=HOUSING
+RecordTypeValue='H'
+RecordLen=2
