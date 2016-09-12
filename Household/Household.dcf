@@ -102,7 +102,7 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=156
+RecordLen=155
 
 [Item]
 Label=301 Member Serial  Number
@@ -227,13 +227,13 @@ Start=81
 Len=2
 
 [Item]
-Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
 Name=P317
 Start=83
 Len=2
 
 [ValueSet]
-Label=P317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
 Name=P317_VS1
 Value=0;Less than one year
 Value=1;One year
@@ -249,61 +249,61 @@ Value=10;Ten years and over
 Value=88;Since birth
 
 [Item]
-Label=P318. Where is NAME’s country of birth? (country)
+Label=318. Where is NAME’s country of birth? (country)
 Name=P318
 Start=85
 Len=3
 
 [Item]
-Label=P319. If in Ethiopia  in Q318 record place of birth_Region
+Label=319. If in Ethiopia  in Q318 record place of birth_Region
 Name=P319R
 Start=88
 Len=2
 
 [Item]
-Label=P319.If in Ethiopia  in Q318 record place of birth_zone
+Label=319.If in Ethiopia  in Q318 record place of birth_zone
 Name=P319Z
 Start=90
 Len=2
 
 [Item]
-Label=P320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015) 
+Label=320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015)
 Name=P320
 Start=92
 Len=3
 
 [Item]
-Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321R
 Start=95
 Len=2
 
 [Item]
-Label=P321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ? 
+Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321Z
 Start=97
 Len=2
 
 [Item]
-Label=P322. Was this place Rural or Urban?
+Label=322. Was this place Rural or Urban?
 Name=P322
 Start=99
 Len=1
 
 [ValueSet]
-Label=P322. Was this place Rural or Urban?
+Label=322. Was this place Rural or Urban?
 Name=P322_VS1
 Value=1;Urban
 Value=2;Rural
 
 [Item]
-Label=P323. What was NAME’s reason for migration?
+Label=323. What was NAME’s reason for migration?
 Name=P323
 Start=100
 Len=1
 
 [ValueSet]
-Label=P323. What was NAME’s reason for migration?
+Label=323. What was NAME’s reason for migration?
 Name=P323_VS1
 Value=1;For work/In search of work
 Value=2;for agriculture or settlement
@@ -315,13 +315,13 @@ Value=7;Conflict
 Value=8;Others
 
 [Item]
-Label=P324. What is (NAME’s) Current marital status?
+Label=324. What is (NAME’s) Current marital status?
 Name=P324
 Start=101
 Len=1
 
 [ValueSet]
-Label=P324. What is (NAME’s) Current marital status?
+Label=324. What is (NAME’s) Current marital status?
 Name=P324_VS1
 Value=1;Never married
 Value=2;Married
@@ -332,72 +332,72 @@ Value=6;Widowed
 Value=7;Do not know
 
 [Item]
-Label=P325 What was Age at first marriage
+Label=325 What was Age at first marriage
 Name=P325
 Start=102
 Len=2
 
 [ValueSet]
-Label=P325 What was Age at first marriage
+Label=325 What was Age at first marriage
 Name=P325_VS1
 Value=0:99;Valid
 
 [Item]
-Label=P401. Is (NAME)  able to read and write in any language?
+Label=401. Is (NAME)  able to read and write in any language?
 Name=P401
 Start=104
 Len=1
 
 [ValueSet]
-Label=P401. Is (NAME)  able to read and write in any language?
+Label=401. Is (NAME)  able to read and write in any language?
 Name=P401_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P402. Is (NAME) currently attending school?
+Label=402. Is (NAME) currently attending school?
 Name=P402
 Start=105
 Len=2
 
 [Item]
-Label=P403. What is the highest Grade (NAME) completed?
+Label=403. What is the highest Grade (NAME) completed?
 Name=P403
 Start=107
 Len=2
 
 [Item]
-Label=P404. Does NAME use a computer?
+Label=404. Does NAME use a computer?
 Name=P404
 Start=109
 Len=1
 
 [ValueSet]
-Label=P404. Does NAME use a computer?
+Label=404. Does NAME use a computer?
 Name=P404_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P405. Does NAME use internet?
+Label=405. Does NAME use internet?
 Name=P405
 Start=110
 Len=1
 
 [ValueSet]
-Label=P405. Does NAME use internet?
+Label=405. Does NAME use internet?
 Name=P405_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
-Label=P406. Does name use Cell phone?
+Label=406. Does name use Cell phone?
 Name=P406
 Start=111
 Len=1
 
 [ValueSet]
-Label=P406. Does name use Cell phone?
+Label=406. Does name use Cell phone?
 Name=P406_VS1
 Value=1;Yes
 Value=2;No
@@ -496,14 +496,14 @@ Value=20;Activities of Household and services
 Value=21;Activities of extraterritorial  organization
 
 [Item]
-Label=505 Employment status 
+Label=505 Employment status
 Name=P505
 Start=119
 Len=2
 ZeroFill=Yes
 
 [ValueSet]
-Label=505 Employment status 
+Label=505 Employment status
 Name=P505_VS1
 Value=1;Employee- Government
 Value=2;Employee –Government Deve. Org
@@ -701,13 +701,12 @@ Start=154
 Len=2
 ZeroFill=Yes
 
-
 [Record]
 Label=Remittance
 Name=REMITTANCE
 RecordTypeValue='R'
 Required=No
-RecordLen=66
+RecordLen=78
 
 [Item]
 Label=801A Number of male
@@ -722,45 +721,16 @@ Start=28
 Len=2
 
 [Item]
-Label=802A
-Name=R802A
+Label=802 Country of residence
+Name=R802
 Start=30
 Len=3
-
-[Item]
-Label=802B
-Name=R802B
-Start=33
-Len=3
-
-[Item]
-Label=802C
-Name=R802C
-Start=36
-Len=3
-
-[Item]
-Label=802D
-Name=R802D
-Start=39
-Len=3
-
-[Item]
-Label=802E
-Name=R802E
-Start=42
-Len=3
-
-[Item]
-Label=802F
-Name=R802F
-Start=45
-Len=3
+Occurrences=8
 
 [Item]
 Label=803  Receive any money or goods
 Name=R803
-Start=48
+Start=54
 Len=1
 
 [ValueSet]
@@ -772,67 +742,38 @@ Value=3;Yes, goods only
 Value=4;No
 
 [Item]
-Label=804A
-Name=R80A
-Start=49
-Len=3
-
-[Item]
-Label=804B
-Name=R80B
-Start=52
-Len=3
-
-[Item]
-Label=804C
-Name=R80C
+Label=804 Country of origin
+Name=R804
 Start=55
 Len=3
-
-[Item]
-Label=804D
-Name=R80D
-Start=58
-Len=3
-
-[Item]
-Label=804E
-Name=R80E
-Start=61
-Len=3
-
-[Item]
-Label=804F
-Name=R80F
-Start=64
-Len=3
+Occurrences=8
 
 [Record]
 Label=Mortality number of death in the household
 Name=NO_OF_DEATH
 RecordTypeValue='m'
 Required=No
-RecordLen=6
+RecordLen=29
 
 [Item]
-Label=P701. Did a death occur in the household since  November 2016?_Male
+Label=701. Did a death occur in the household since  November 2016?_Male
 Name=P701M
-Start=3
+Start=26
 Len=2
 
 [ValueSet]
-Label=P701. Did a death occur in the household since  November 2016?_Male
+Label=701. Did a death occur in the household since  November 2016?_Male
 Name=P701M_VS1
 Value=0:10;Valid
 
 [Item]
-Label=P701. Did a death occur in the household since  November 2016?_Female
+Label=701. Did a death occur in the household since  November 2016?_Female
 Name=P701F
-Start=5
+Start=28
 Len=2
 
 [ValueSet]
-Label=P701. Did a death occur in the household since  November 2016?_Female
+Label=701. Did a death occur in the household since  November 2016?_Female
 Name=P701F_VS1
 Value=0:10;Valid
 
@@ -842,47 +783,47 @@ Name=MORTALITY
 RecordTypeValue='M'
 Required=No
 MaxRecords=10
-RecordLen=39
+RecordLen=61
 
 [Item]
-Label=P702. Name of deceased
+Label=702. Name of deceased
 Name=P702
-Start=3
+Start=26
 Len=30
 DataType=Alpha
 
 [Item]
-Label=P703. Sex of Deceased
+Label=703. Sex of Deceased
 Name=P703
-Start=33
+Start=56
 Len=1
 
 [ValueSet]
-Label=P703. Sex of Deceased
+Label=703. Sex of Deceased
 Name=P703_VS1
 Value=1;Male
 Value=2;Female
 
 [Item]
-Label=P704. Age at death
+Label=704. Age at death
 Name=P704
-Start=34
+Start=57
 Len=2
 
 [ValueSet]
-Label=P704. Age at death
+Label=704. Age at death
 Name=P704_VS1
 Value=0:98;Valid
 Value=99;NS
 
 [Item]
-Label=P705.  What was the cause of death of the Deceased
+Label=705.  What was the cause of death of the Deceased
 Name=P705
-Start=36
+Start=59
 Len=2
 
 [ValueSet]
-Label=P705.  What was the cause of death of the Deceased
+Label=705.  What was the cause of death of the Deceased
 Name=P705_VS1
 Value=1;Blood pressure
 Value=2;Diabetes
@@ -897,13 +838,13 @@ Value=10;Others illness
 Value=88;Do not know
 
 [Item]
-Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
 Name=P706
-Start=38
+Start=61
 Len=1
 
 [ValueSet]
-Label=P706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
 Name=P706_VS1
 Value=1;Yes
 Value=2;No
@@ -912,25 +853,25 @@ Value=2;No
 Label=Housing
 Name=HOUSING
 RecordTypeValue='H'
-RecordLen=59
+RecordLen=81
 
 [Item]
 Label=1 Housing information will be
 Name=H1
-Start=3
+Start=26
 Len=1
 ZeroFill=Yes
 
 [ValueSet]
 Label=1 Housing information will be
 Name=H1_VS1
-Value=1;Collected for unit 
+Value=1;Collected for unit
 Value=2;Skipped
 
 [Item]
 Label=2 Type of housing unit
 Name=H2
-Start=4
+Start=27
 Len=1
 ZeroFill=Yes
 
@@ -945,14 +886,14 @@ Value=4;Other
 [Item]
 Label=3  Rooms in the housing unit
 Name=H3
-Start=5
+Start=28
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=4 Type of tenure
 Name=H4
-Start=7
+Start=30
 Len=1
 ZeroFill=Yes
 
@@ -970,7 +911,7 @@ Value=7;Occupied by paying rent difference
 [Item]
 Label=5 Major material used for roof
 Name=H5
-Start=8
+Start=31
 Len=1
 ZeroFill=Yes
 
@@ -989,7 +930,7 @@ Value=8;Other
 [Item]
 Label=6 Major material used for wall
 Name=H6
-Start=9
+Start=32
 Len=2
 ZeroFill=Yes
 
@@ -1012,7 +953,7 @@ Value=12;Others
 [Item]
 Label=7 Major material used for floor
 Name=H7
-Start=11
+Start=34
 Len=1
 ZeroFill=Yes
 
@@ -1032,7 +973,7 @@ Value=9;Other
 [Item]
 Label=8 Main source of drinking water
 Name=H8
-Start=12
+Start=35
 Len=1
 ZeroFill=Yes
 
@@ -1048,14 +989,14 @@ Value=6;River/Lake/Pond
 Value=7;Tap outside compound/From private tap, public tap, other organisation/(bought or free of charge)
 
 [Item]
-Label=9 Type of toilet facility 
+Label=9 Type of toilet facility
 Name=H9
-Start=13
+Start=36
 Len=1
 ZeroFill=Yes
 
 [ValueSet]
-Label=9 Type of toilet facility 
+Label=9 Type of toilet facility
 Name=H9_VS1
 Value=1;No toilet facility
 Value=2;Flush toilet
@@ -1065,7 +1006,7 @@ Value=4;Pit Latrine
 [Item]
 Label=10 Share the toilet with other Household
 Name=H10
-Start=14
+Start=37
 Len=1
 ZeroFill=Yes
 
@@ -1078,7 +1019,7 @@ Value=2;No
 [Item]
 Label=11 Bathing facility
 Name=H11
-Start=15
+Start=38
 Len=1
 ZeroFill=Yes
 
@@ -1095,7 +1036,7 @@ Value=6;A room prepared for bathing
 [Item]
 Label=12 Type of Kitchen
 Name=H12
-Start=16
+Start=39
 Len=1
 ZeroFill=Yes
 
@@ -1111,7 +1052,7 @@ Value=5;A room used for modern kitchen outside the housing unit
 [Item]
 Label=13 Share kitchen with other Households
 Name=H13
-Start=17
+Start=40
 Len=1
 ZeroFill=Yes
 
@@ -1124,7 +1065,7 @@ Value=2;No
 [Item]
 Label=14 Housing unit use
 Name=H14
-Start=18
+Start=41
 Len=11
 DataType=Alpha
 
@@ -1146,7 +1087,7 @@ Value='K          ';Other items than listed above
 [Item]
 Label=15 Source of cooking energy
 Name=H15
-Start=29
+Start=52
 Len=2
 
 [ValueSet]
@@ -1167,7 +1108,7 @@ Value=11;Other items than listed above
 [Item]
 Label=16 Type of lighting household unit has
 Name=H16
-Start=31
+Start=54
 Len=10
 DataType=Alpha
 
@@ -1188,7 +1129,7 @@ Value='J         ';Firewood
 [Item]
 Label=17 Main type of lighting for the household
 Name=H17
-Start=41
+Start=64
 Len=2
 
 [ValueSet]
@@ -1208,7 +1149,7 @@ Value=10;Firewood
 [Item]
 Label=18 Any member of the household have
 Name=H18
-Start=43
+Start=66
 Len=12
 DataType=Alpha
 
@@ -1231,7 +1172,7 @@ Value='L           ';Internet connection
 [Item]
 Label=19 Household have internet
 Name=H19
-Start=55
+Start=78
 Len=1
 ZeroFill=Yes
 
@@ -1245,7 +1186,7 @@ Value=3;No
 [Item]
 Label=20 Main means of Disposal
 Name=H20
-Start=56
+Start=79
 Len=1
 ZeroFill=Yes
 
@@ -1260,7 +1201,7 @@ Value=4;Other toilet empties in to and open ditch, river, lake, pond
 [Item]
 Label=20 Housing unit dispose solid waste
 Name=H20_B
-Start=57
+Start=80
 Len=1
 ZeroFill=Yes
 
@@ -1277,7 +1218,7 @@ Value=6;Other
 [Item]
 Label=21 Livestock spend the night in the room(s) where members spend
 Name=H21
-Start=58
+Start=81
 Len=1
 ZeroFill=Yes
 
