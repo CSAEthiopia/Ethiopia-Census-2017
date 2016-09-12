@@ -234,180 +234,180 @@ Start=81
 Len=2
 
 [Item]
-Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
 Name=P317
 Start=83
 Len=2
 
 [ValueSet]
-Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
 Name=P317_VS1
-Value=0;Less than one year
-Value=1;One year
-Value=2;Two years
-Value=3;Three years
-Value=4;Four years
-Value=5;Five years
-Value=6;Six years
-Value=7;Seven  years
-Value=8;Eight year
-Value=9;Nine years
-Value=10;Ten years and over
-Value=88;Since birth
+Value=0;Less than one year|ክ1 አመት በታች
+Value=1;One year|ለ1አመት
+Value=2;Two years|ለ2አመት
+Value=3;Three years|ለ3አመት
+Value=4;Four years|ለ4አመት
+Value=5;Five years|ለ5አመት
+Value=6;Six years|ለ6አመት
+Value=7;Seven  years|ለ7አመት
+Value=8;Eight year|ለ8አመት
+Value=9;Nine years|ለ9አመት
+Value=10;Ten years and over|ለ10 አመትና በላይ
+Value=99;Since birth|ከተወለዱ ጀምሮ
 
 [Item]
-Label=318. Where is NAME’s country of birth? (country)
+Label=318 Country of birth|318 የትውልድ ሀገር 
 Name=P318
 Start=85
 Len=3
 
 [Item]
-Label=319. If in Ethiopia  in Q318 record place of birth_Region
+Label=319  Birth_region|319  የተወለደበት ክልል
 Name=P319R
 Start=88
 Len=2
 
 [Item]
-Label=319.If in Ethiopia  in Q318 record place of birth_zone
+Label=319 Birth_zone|319 የተወለደበት ዞን
 Name=P319Z
 Start=90
 Len=2
 
 [Item]
-Label=320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015)
+Label=320 Residence in october/november 2015|320 ከህዳር 2008 በፊት ይኖርበት የነበረበት ሀገር
 Name=P320
 Start=92
 Len=3
 
 [Item]
-Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
+Label=321 Residence region in /nov/dec 2016|321 ይኖሩበት የነበረው  ክልል
 Name=P321R
 Start=95
 Len=2
 
 [Item]
-Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
+Label=321  Residence zone in /nov/dec 2016|321  ይኖሩበት የነበረው  ዞን
 Name=P321Z
 Start=97
 Len=2
 
 [Item]
-Label=322. Was this place Rural or Urban?
+Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
 Name=P322
 Start=99
 Len=1
 
 [ValueSet]
-Label=322. Was this place Rural or Urban?
+Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
 Name=P322_VS1
-Value=1;Urban
-Value=2;Rural
+Value=1;Urban|ከተማ
+Value=2;Rural|ገጠር
 
 [Item]
-Label=323. What was NAME’s reason for migration?
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
 Name=P323
 Start=100
 Len=1
 
 [ValueSet]
-Label=323. What was NAME’s reason for migration?
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
 Name=P323_VS1
-Value=1;For work/In search of work
-Value=2;for agriculture or settlement
-Value=3;to join family member
-Value=4;Education
-Value=5;Marriage or start of new family
-Value=6;Drought environmental hazard
-Value=7;Conflict
-Value=8;Others
+Value=1;For work/In search of work|ለስራ/ስራለመፈለግ
+Value=2;for agriculture or settlement|ለእርሻ ወይም ለመኖርያ የሚሆን
+Value=3;to join family member| መሬት ለመፈለግ
+Value=4;Education|በትምህርት ምክንያት
+Value=5;Marriage or start of new family|በጋብቻ ምክንያት
+Value=6;Drought environmental hazard|በድርቅ/በአካባቢ መራቆት ምክንያት
+Value=7;Conflict|በግጭት ምክንያት
+Value=8;Others|ሌላ
 
 [Item]
-Label=324. What is (NAME’s) Current marital status?
+Label=324 Current marital status|324 በአሁኑ ወቅት የጋብቻ ሁኔታ
 Name=P324
 Start=101
 Len=1
 
 [ValueSet]
-Label=324. What is (NAME’s) Current marital status?
+Label=324 Current marital status|324 በአሁኑ ወቅት የጋብቻ ሁኔታ
 Name=P324_VS1
-Value=1;Never married
-Value=2;Married
-Value=3;Cohabiting/Living Together
-Value=4;Divorced
-Value=5;Separated
-Value=6;Widowed
+Value=1;Never married|አግብተው የማያውቁ
+Value=2;Married|ባለትዳር
+Value=3;Cohabiting/Living Together|እንደባልና ሚስት አብረው የሚኖሩ
+Value=4;Divorced|የተፋቱ
+Value=5;Separated|የተለያዩ
+Value=6;Widowed| የሞተባቸው
 Value=7;Do not know
 
 [Item]
-Label=325 What was Age at first marriage
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
 Name=P325
 Start=102
 Len=2
 
 [ValueSet]
-Label=325 What was Age at first marriage
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
 Name=P325_VS1
 Value=0:99;Valid
 
 [Item]
-Label=401. Is (NAME)  able to read and write in any language?
+Label=401 Read and write |401 ማንበብ እና መፃፍ ይችላሉ
 Name=P401
 Start=104
 Len=1
 
 [ValueSet]
-Label=401. Is (NAME)  able to read and write in any language?
+Label=401 Read and write |401 ማንበብ እና መፃፍ ይችላሉ
 Name=P401_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=402. Is (NAME) currently attending school?
+Label=402 Currently attending school|402 በአሁኑ ወቅት ትምህርት ይከታተላሉ
 Name=P402
 Start=105
 Len=2
 
 [Item]
-Label=403. What is the highest Grade (NAME) completed?
+Label=403 Highest Grade  completed|403 ያጠናቀቁት ከፍተኛ ክፍል 
 Name=P403
 Start=107
 Len=2
 
 [Item]
-Label=404. Does NAME use a computer?
+Label=404 Use a computer|404 ኮምውተር መጠቀም ይችላሉ
 Name=P404
 Start=109
 Len=1
 
 [ValueSet]
-Label=404. Does NAME use a computer?
+Label=404 Use a computer|404 ኮምውተር መጠቀም ይችላሉ
 Name=P404_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=405. Does NAME use internet?
+Label=405  Use internet|405  ኢንተርኔት ይጠቀማሉ
 Name=P405
 Start=110
 Len=1
 
 [ValueSet]
-Label=405. Does NAME use internet?
+Label=405  Use internet|405  ኢንተርኔት ይጠቀማሉ
 Name=P405_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=406. Does name use Cell phone?
+Label=406 Use cell phone|406 ሞባይል ይጠቀማሉ
 Name=P406
 Start=111
 Len=1
 
 [ValueSet]
-Label=406. Does name use Cell phone?
+Label=406 Use cell phone|406 ሞባይል ይጠቀማሉ
 Name=P406_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
 Label=501 Productive activities during the last 7 days
@@ -763,24 +763,24 @@ Required=No
 RecordLen=29
 
 [Item]
-Label=701. Did a death occur in the household since  November 2016?_Male
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
 Name=P701M
 Start=26
 Len=2
 
 [ValueSet]
-Label=701. Did a death occur in the household since  November 2016?_Male
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
 Name=P701M_VS1
 Value=0:10;Valid
 
 [Item]
-Label=701. Did a death occur in the household since  November 2016?_Female
+Label=701 Death  since  november 2016_female|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ሴቶች
 Name=P701F
 Start=28
 Len=2
 
 [ValueSet]
-Label=701. Did a death occur in the household since  November 2016?_Female
+Label=701 Death  since  november 2016_female|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ሴቶች
 Name=P701F_VS1
 Value=0:10;Valid
 
@@ -793,68 +793,68 @@ MaxRecords=10
 RecordLen=61
 
 [Item]
-Label=702. Name of deceased
+Label=702 Name of deceased|702 የሟች ስም
 Name=P702
 Start=26
 Len=30
 DataType=Alpha
 
 [Item]
-Label=703. Sex of Deceased
+Label=703 Sex of Deceased|703  የሟች  ፆታ
 Name=P703
 Start=56
 Len=1
 
 [ValueSet]
-Label=703. Sex of Deceased
+Label=703 Sex of Deceased|703  የሟች  ፆታ
 Name=P703_VS1
-Value=1;Male
-Value=2;Female
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
 
 [Item]
-Label=704. Age at death
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
 Name=P704
 Start=57
 Len=2
 
 [ValueSet]
-Label=704. Age at death
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
 Name=P704_VS1
 Value=0:98;Valid
 Value=99;NS
 
 [Item]
-Label=705.  What was the cause of death of the Deceased
+Label=705  Cause of death |705  የሞቱበት ምክንያት
 Name=P705
 Start=59
 Len=2
 
 [ValueSet]
-Label=705.  What was the cause of death of the Deceased
+Label=705  Cause of death |705  የሞቱበት ምክንያት
 Name=P705_VS1
-Value=1;Blood pressure
-Value=2;Diabetes
-Value=3;Accident
-Value=4;Suicide
-Value=5;Murdered
-Value=6;Pregnancy related
-Value=7;Malaria
-Value=8;Tuberculosis
-Value=9;HIV/AIDS
-Value=10;Others illness
-Value=88;Do not know
+Value=1;Blood pressure|በደም ብዛት
+Value=2;Diabetes|በስኳር
+Value=3;Accident|በአደጋ
+Value=4;Suicide|እራስን በመግደል
+Value=5;Murdered|በሰው በመገደል
+Value=6;Pregnancy related|ከእርግዝና ጋር በተያያዘ ምክንያት
+Value=7;Malaria|የወባ በሽታ
+Value=8;Tuberculosis|የሳንባ በሽታ
+Value=9;HIV/AIDS|ኤችአይቪ ኤድስ
+Value=10;Others illness|ሌላ ህመም
+Value=88;Do not know|አላውቅም
 
 [Item]
-Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706  Maternal mortality|706  የእናቶች ሞት
 Name=P706
 Start=61
 Len=1
 
 [ValueSet]
-Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706  Maternal mortality|706  የእናቶች ሞት
 Name=P706_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Record]
 Label=Housing
