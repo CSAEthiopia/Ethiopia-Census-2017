@@ -109,7 +109,7 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=155
+RecordLen=172
 
 [Item]
 Label=301 Member Serial  Number
@@ -133,23 +133,14 @@ Len=1
 [ValueSet]
 Label=303 Residence Status
 Name=P303_VS1
-Value=1;Usual  resident present  on the Census day
-Value=2;Usual resident  absent  on the census day(in Ethiopia )
-Value=3;Usual resident absent on the  census day (outside Ethiopia)
-Value=4;Visitor  Ethiopian
-Value=5;Visitor  non Ethiopian
-
-[ValueSet]
-Label=303 Residence Status
-Name=P303_VS2
-Value=1;በቆጠራው ቀን ቤት ያደሩ ነዋሪ
-Value=2;በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ኢትዮጽያ ውስጥ
-Value=3;በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ከኢትዮጽያ ውጭ
-Value=4;በቆጠራው ቀን ቤት ያደሩ እንግዳ  ኢትዮጽያዊ
-Value=5;በቆጠራው ቀን  ቤት ያደሩ እንግዳ የሌላ ሀገር ዞጋ
+Value=1;Usual  resident present  on the Census day|በቆጠራው ቀን ቤት ያደሩ ነዋሪ
+Value=2;Usual resident  absent  on the census day(in Ethiopia )|በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ኢትዮጽያ ውስጥ
+Value=3;Usual resident absent on the  census day (outside Ethiopia)|በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ከኢትዮጽያ ውጭ
+Value=4;Visitor  Ethiopian|በቆጠራው ቀን ቤት ያደሩ እንግዳ  ኢትዮጽያዊ
+Value=5;Visitor  non Ethiopian|በቆጠራው ቀን  ቤት ያደሩ እንግዳ የሌላ ሀገር ዞጋ
 
 [Item]
-Label=304A Reagion
+Label=304A Reagion|304A Region
 Name=P304A
 Start=59
 Len=2
@@ -172,11 +163,33 @@ Name=P306
 Start=66
 Len=1
 
+[ValueSet]
+Label=306  Relationship
+Name=P306_VS1
+Value=1;ኃላፊ
+Value=2;ባለቤት
+Value=3;Partner(cohabiting or living together with head)|እንደ ባልና ሚስት አብረው የሚኖሩ
+Value=4;Daughter of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ሴት ልጅ
+Value=5;Son of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ወንድ ልጅ
+Value=6;Head/Spouse brother/Sister|የኃላፊ/የባለቤት እህት ወንድም
+Value=7;Parents of head/spouse|የኃላፊ/የባለቤት እናት/አባት
+Value=8;Niece/nephew|የኃላፊ/የባለቤት እህት/ወንድም ልጅ
+Value=9;Grandchild|የኃላፊ/የባለቤት የልጅ ልጅ
+Value=0;Other relative|ሌላ ዘመድ
+Value=1;Non-Relative|ዝምድና የሌላቸው
+Value=2;Domestic employee|የቤት ሰራተኛ
+
 [Item]
 Label=307 Sex
 Name=P307
 Start=67
 Len=1
+
+[ValueSet]
+Label=307 Sex|307 Sex
+Name=P307_VS1
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
 
 [Item]
 Label=308 Age
@@ -195,6 +208,16 @@ Label=310 Religion
 Name=P310
 Start=72
 Len=2
+
+[ValueSet]
+Label=310 Religion
+Name=P310_VS1
+Value=1;Orthodox
+Value=2;Protestant
+Value=3;Catholic
+Value=4;Muslim/Islam
+Value=5;Traditionalist
+Value=6;Others
 
 [Item]
 Label=311 Ethnic Group
@@ -224,19 +247,56 @@ Len=1
 Label=315 Disablity
 Name=P315
 Start=80
-Len=1
+Len=18
 DataType=Alpha
+
+[ValueSet]
+Label=315 Disablity
+Name=P315_VS1
+Value='A                 ';Blind  ?
+Value='B                 ';Has Seeing Difficulty  ?
+Value='C                 ';Deaf?
+Value='D                 ';Has Hearing Difficulty?
+Value='E                 ';Unable to Speak  ?
+Value='F                 ';Has Speaking Difficulty  ?
+Value='G                 ';Deaf and Unable to Speak  ?
+Value='H                 ';Has Difficulty in moving his hands(in grapping  or stretching
+Value='I                 ';has difficulty in moving his legs( in standing or   ወwalking
+Value='J                 ';Body movement problem?
+Value='K                 ';Mentally retarded?
+Value='L                 ';Has Mental Problem?
+Value='M                 ';Autistic-
+Value='N                 ';Loss of at least on hand?
+Value='O                 ';Loss of at least one leg  ?
+Value='P                 ';Paralyzed-  ?
+Value='Q                 ';Other (specify) ?
 
 [Item]
 Label=316 Cause of disability
 Name=P316
-Start=81
+Start=98
 Len=2
+
+[ValueSet]
+Label=Text From Clipboard|316 Cause of disability
+Name=P316_VS1
+Value=1;Car accident  |Car accident
+Value=2;Other accident |Other accident
+Value=3;Polio |Polio
+Value=4;Hanson disease  |Hanson disease
+Value=5;Other disease (After delivery)  |Other disease (After delivery)
+Value=6;During pregnancy (At delivery)|During pregnancy (At delivery)
+Value=7;War/mines |War/mines
+Value=8;Others (Not listed in codes 1-7)|Others (Not listed in codes 1-7)
+Value=9;Not known |Not known
+Value=10;Blood Pressure|Blood Pressure
+Value=11;Diabetes|Diabetes
+Value=12;Fistula|Fistula
 
 [Item]
 Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
 Name=P317
-Start=83
+Start=100
 Len=2
 
 [ValueSet]
@@ -258,43 +318,43 @@ Value=88;Since birth
 [Item]
 Label=318. Where is NAME’s country of birth? (country)
 Name=P318
-Start=85
+Start=102
 Len=3
 
 [Item]
 Label=319. If in Ethiopia  in Q318 record place of birth_Region
 Name=P319R
-Start=88
+Start=105
 Len=2
 
 [Item]
 Label=319.If in Ethiopia  in Q318 record place of birth_zone
 Name=P319Z
-Start=90
+Start=107
 Len=2
 
 [Item]
 Label=320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015)
 Name=P320
-Start=92
+Start=109
 Len=3
 
 [Item]
 Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321R
-Start=95
+Start=112
 Len=2
 
 [Item]
 Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
 Name=P321Z
-Start=97
+Start=114
 Len=2
 
 [Item]
 Label=322. Was this place Rural or Urban?
 Name=P322
-Start=99
+Start=116
 Len=1
 
 [ValueSet]
@@ -306,7 +366,7 @@ Value=2;Rural
 [Item]
 Label=323. What was NAME’s reason for migration?
 Name=P323
-Start=100
+Start=117
 Len=1
 
 [ValueSet]
@@ -324,7 +384,7 @@ Value=8;Others
 [Item]
 Label=324. What is (NAME’s) Current marital status?
 Name=P324
-Start=101
+Start=118
 Len=1
 
 [ValueSet]
@@ -341,7 +401,7 @@ Value=7;Do not know
 [Item]
 Label=325 What was Age at first marriage
 Name=P325
-Start=102
+Start=119
 Len=2
 
 [ValueSet]
@@ -352,7 +412,7 @@ Value=0:99;Valid
 [Item]
 Label=401. Is (NAME)  able to read and write in any language?
 Name=P401
-Start=104
+Start=121
 Len=1
 
 [ValueSet]
@@ -364,19 +424,19 @@ Value=2;No
 [Item]
 Label=402. Is (NAME) currently attending school?
 Name=P402
-Start=105
+Start=122
 Len=2
 
 [Item]
 Label=403. What is the highest Grade (NAME) completed?
 Name=P403
-Start=107
+Start=124
 Len=2
 
 [Item]
 Label=404. Does NAME use a computer?
 Name=P404
-Start=109
+Start=126
 Len=1
 
 [ValueSet]
@@ -388,7 +448,7 @@ Value=2;No
 [Item]
 Label=405. Does NAME use internet?
 Name=P405
-Start=110
+Start=127
 Len=1
 
 [ValueSet]
@@ -400,7 +460,7 @@ Value=2;No
 [Item]
 Label=406. Does name use Cell phone?
 Name=P406
-Start=111
+Start=128
 Len=1
 
 [ValueSet]
@@ -412,7 +472,7 @@ Value=2;No
 [Item]
 Label=501 Productive activities during the last 7 days
 Name=P501
-Start=112
+Start=129
 Len=1
 ZeroFill=Yes
 
@@ -428,7 +488,7 @@ Value=5;No
 [Item]
 Label=502 Available to work during the coming month
 Name=P502
-Start=113
+Start=130
 Len=2
 ZeroFill=Yes
 
@@ -452,7 +512,7 @@ Value=88;Don't know
 [Item]
 Label=503 Main occupation
 Name=P503
-Start=115
+Start=132
 Len=2
 ZeroFill=Yes
 
@@ -473,7 +533,7 @@ Value=10;Defense
 [Item]
 Label=504 Main product/service of the organization
 Name=P504
-Start=117
+Start=134
 Len=2
 ZeroFill=Yes
 
@@ -505,7 +565,7 @@ Value=21;Activities of extraterritorial  organization
 [Item]
 Label=505 Employment status
 Name=P505
-Start=119
+Start=136
 Len=2
 ZeroFill=Yes
 
@@ -528,7 +588,7 @@ Value=12;Other
 [Item]
 Label=506 Productive activity engaged
 Name=P506
-Start=121
+Start=138
 Len=2
 ZeroFill=Yes
 
@@ -556,7 +616,7 @@ Value=88;Don't know
 [Item]
 Label=507 Place of Work
 Name=P507
-Start=123
+Start=140
 Len=1
 ZeroFill=Yes
 
@@ -570,77 +630,77 @@ Value=3;Fixed place outside home
 [Item]
 Label=601 Alive male children ever born
 Name=P601_MALE
-Start=124
+Start=141
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=601 Alive female children ever born
 Name=P601_FEMALE
-Start=126
+Start=143
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=601 Alive total number children ever born
 Name=P601_TOTAL
-Start=128
+Start=145
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=602 Male childrens living with you
 Name=P602_MALE
-Start=130
+Start=147
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=602 Female childrens living with you
 Name=P602_FEMALE
-Start=132
+Start=149
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=603 Male childrens living elsewhere
 Name=P603_MALE
-Start=134
+Start=151
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=603 Female childrens living elsewhere
 Name=P603_FEMALE
-Start=136
+Start=153
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=604 Male children died
 Name=P604_MALE
-Start=138
+Start=155
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=604 Female children died
 Name=P604_FEMALE
-Start=140
+Start=157
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=605 Date of birth of last child born alive
 Name=P605_DATE
-Start=142
+Start=159
 Len=8
 ZeroFill=Yes
 
 [Item]
 Label=605 Date
 Name=P605_DD
-Start=142
+Start=159
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -648,7 +708,7 @@ ZeroFill=Yes
 [Item]
 Label=605 Month
 Name=P605_MM
-Start=144
+Start=161
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -656,7 +716,7 @@ ZeroFill=Yes
 [Item]
 Label=605 Year
 Name=P605_YYYY
-Start=146
+Start=163
 Len=4
 ItemType=SubItem
 ZeroFill=Yes
@@ -664,7 +724,7 @@ ZeroFill=Yes
 [Item]
 Label=606 Sex of last child born alive
 Name=P606
-Start=150
+Start=167
 Len=2
 ZeroFill=Yes
 
@@ -683,7 +743,7 @@ Value=99;Not applicable
 [Item]
 Label=607 Survival status of last child born
 Name=P607
-Start=152
+Start=169
 Len=2
 ZeroFill=Yes
 
@@ -704,7 +764,7 @@ Value=99;Not applicable
 [Item]
 Label=608 Age at birth of first child born
 Name=P608
-Start=154
+Start=171
 Len=2
 ZeroFill=Yes
 

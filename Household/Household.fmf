@@ -13,7 +13,7 @@ File=.\Household.dcf
 Name=FORM000
 Label=Household questionnaire
 Level=1
-Size=0,0
+Size=625,831
   
   
 [EndForm]
