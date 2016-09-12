@@ -419,11 +419,11 @@ ZeroFill=Yes
 [ValueSet]
 Label=501 Productive activities during the last 7 days
 Name=P501_VS1
-Value=1;work for pay/ profit
-Value=2;work for own/family agricultural holding
-Value=3;Work for own/family business
-Value=4;Has job but not worked
-Value=5;No
+Value=1;work for pay/ profit|የክፍያ ስራ/ትርፍ የሚያስገኝ ስራ
+Value=2;work for own/family agricultural holding|የራስ ስራ/በቤተሰብ የግብርና ስራ
+Value=3;Work for own/family business|የራስ ስራ/በቤተሰብ ንግድ ስራ
+Value=4;Has job but not worked|ስራ እያለኝ አልሰራሁም
+Value=5;No|የለም
 
 [Item]
 Label=502 Available to work during the coming month
@@ -435,19 +435,19 @@ ZeroFill=Yes
 [ValueSet]
 Label=502 Available to work during the coming month
 Name=P502_VS1
-Value=1;Yes  available and actively looking for work
-Value=2;Yes available but not looking for work
-Value=3;Home maker
-Value=4;Pregnancy/delivery
-Value=5;Student (full time)
-Value=6;Disabled/injury
-Value=7;Illness
-Value=8;Too young
-Value=9;Old age/ retired
-Value=10;Pensioned
-Value=11;Remittance
-Value=12;Others
-Value=88;Don't know
+Value=1;Yes  available and actively looking for work|ዝግጁ ነኝ ስራም እየፈለኩ ነው
+Value=2;Yes available but not looking for work|ዝግጁ ነኝ ነገር ግን ስር እየፈለኩ አይደለም
+Value=3;Home maker|የቤት ውስጥ ስራ
+Value=4;Pregnancy/delivery|እርግዝና/ወሊድ
+Value=5;Student (full time)|ትምህርት/ስልጠና
+Value=6;Disabled/injury|የአካል ጉዳት
+Value=7;Illness|ህመም
+Value=8;Too young|ልጅ ስለሆንኩ
+Value=9;Old age/ retired|እርጅና
+Value=10;Pensioned|ጡረታ
+Value=11;Remittance|ተቆራጭ
+Value=12;Others|ሌላ
+Value=88;Don't know|አላውቅም
 
 [Item]
 Label=503 Main occupation
@@ -459,16 +459,16 @@ ZeroFill=Yes
 [ValueSet]
 Label=503 Main occupation
 Name=P503_VS1
-Value=1;Managers
-Value=2;Professionals
-Value=3;Technicians and associate professiona
+Value=1;Managers|ዋና ስራ አስፈፃሚዎች ፕሮፌሽናሎች
+Value=2;Professionals|ቴክኒሺያኖችና ተባባሪ ፕሮፌሽናሎች
+Value=3;Technicians and associate professiona|የፅህፈትና ተመሳሳይ  ሠራተኞች
 Value=4;Clerical support workers
-Value=5;Service and sales workers-05
-Value=6;Skilled agricultural forestry and fishery workers
-Value=7;Craft and related trades workers
-Value=8;Plant and machine operators and assemblers
-Value=9;Elementary occupations
-Value=10;Defense
+Value=5;Service and sales workers-05|የአገልግሎት፣ የንግድ እና ተመሳሳይ የሽያጭ ሠራተኞች
+Value=6;Skilled agricultural forestry and fishery workers|የግብርና ደንና ዓሣ ሀብት ዕውቀት ያላቸው (Skilled) ሠራተኞች
+Value=7;Craft and related trades workers|የዕደ ጥበብና ተመሳሳይ  የሽያጭ ሠራተኞች
+Value=8;Plant and machine operators and assemblers|የማምረቻ መሳሪያዎች ኦፐሬተሮች እና  ገጣጣሚዎች
+Value=9;Elementary occupations|ዝቅተኛ የሙያ ደረጃ ያላቸው ሰራተኞች
+Value=10;Defense|የመከላከያ ሠራዊት አባላት
 
 [Item]
 Label=504 Main product/service of the organization
@@ -480,27 +480,27 @@ ZeroFill=Yes
 [ValueSet]
 Label=504 Main product/service of the organization
 Name=P504_VS1
-Value=1;Agriculture/forestry/fishing
-Value=2;Mining and quarrying
-Value=3;Manufacturing
-Value=4;Electric gas, air conditioning-05
-Value=5;Water supply
-Value=6;Construction
-Value=7;Whole and retail sale
-Value=8;Transport
-Value=9;Accommodations and service10
-Value=10;Information and communication
-Value=11;Finance and Insurance
-Value=12;Real state
-Value=13;Professional science
-Value=14;Administrative and support
-Value=15;Public Administration/Defense
-Value=16;Education
-Value=17;Human Health social work
-Value=18;Art and entertainment
-Value=19;Other services
-Value=20;Activities of Household and services
-Value=21;Activities of extraterritorial  organization
+Value=1;Agriculture/forestry/fishing|ግብርና/አደን
+Value=2;Mining and quarrying|ማዕድንና ቁፋሮ
+Value=3;Manufacturing|የማምረቻ ኢንዱስትሪ
+Value=4;Electric gas, air conditioning-05|ኤሌትሪክ/ጋዝ/እንፋሎት
+Value=5;Water supply|የውሀ አቅርቦት
+Value=6;Construction|ኮንስትራክሽን
+Value=7;Whole and retail sale|ጅምላና ችርቻሮ ንግድ
+Value=8;Transport|ትራንስፖርት
+Value=9;Accommodations and service10|የመኝታ ማረፊያና  የምግብ አገልግሎት
+Value=10;Information and communication|ኢንፎርሜሽን ኮሚኒኬሽን
+Value=11;Finance and Insurance|ፋይናንስ/ኢንሹራንሽ አገልግሎት
+Value=12;Real state|ሪል ስቴት
+Value=13;Professional science|ፕሮፌሽናል ሣይንስ ስራዎች
+Value=14;Administrative and support|የአስተዳደርና ድጋፍ ስራ
+Value=15;Public Administration/Defense|የመንግስት አስተዳደር/መከላከያ
+Value=16;Education|ትምህርት
+Value=17;Human Health social work|ጤናና ማህበራዊ
+Value=18;Art and entertainment|ስነጥበብና መዝናኛ
+Value=19;Other services|ሌላ አገልግሎት
+Value=20;Activities of Household and services|የቤትውስጥ የሚካሄዱ አገልግሎቶች
+Value=21;Activities of extraterritorial  organization|መያድ/አለም ዓቀፍ ድርጅቶች
 
 [Item]
 Label=505 Employment status
@@ -512,18 +512,18 @@ ZeroFill=Yes
 [ValueSet]
 Label=505 Employment status
 Name=P505_VS1
-Value=1;Employee- Government
-Value=2;Employee –Government Deve. Org
-Value=3;Employee -Private organization
-Value=4;Employee - NGO/International Org.
-Value=5;Employee – Domestic
-Value=6;Employee – others
-Value=7;Self employed
-Value=8;Unpaid family worker
-Value=9;Apprentice
-Value=10;Member of co-operative
-Value=11;Employer
-Value=12;Other
+Value=1;Employee- Government|ተቀጣሪ ለመንግስት
+Value=2;Employee –Government Deve. Org|ተቀጣሪ ለመንግስት ልማት ድርጅት
+Value=3;Employee -Private organization|ተቀጣሪ ለግል ድርጅት
+Value=4;Employee - NGO/International Org.|ተቀጣሪ መያድ(NGO)/አለም አቀፍ ድርጅት
+Value=5;Employee – Domestic|ተቀጣሪ በግለሰብ ቤት
+Value=6;Employee – others|ተቀጣሪ ሌሎች
+Value=7;Self employed|በግል ስራ የሚተዳደሩ
+Value=8;Unpaid family worker| ሳይከፈላቸው ለቤተሰብ ድርጅት የሚሰሩ
+Value=9;Apprentice|ተለማማጅ 
+Value=10;Member of co-operative|የህብረት ስራ ማህበርአባል
+Value=11;Employer|ቀጣሪ-
+Value=12;Other| ሌሎች
 
 [Item]
 Label=506 Productive activity engaged
@@ -535,23 +535,23 @@ ZeroFill=Yes
 [ValueSet]
 Label=506 Productive activity engaged
 Name=P506_VS1
-Value=1;Work for pay/profit
-Value=2;Work for own/family agriculture
-Value=3;Work for own/Family business(non-agriculture
-Value=4;Has job but not worked
-Value=5;Unemployed with work experience
-Value=6;Unemployed without work experience
-Value=7;Home making
-Value=8;Pregnancy/Delivery
-Value=9;Student(full time)
-Value=10;Disabled/injury
-Value=11;Illness
-Value=12;Too young
-Value=13;Old age/retire
-Value=14;Pensioner
-Value=15;Remittance
-Value=16;Other(specify)
-Value=88;Don't know
+Value=1;Work for pay/profit|ተቀጥሮ በክፍያ ገቢ/ትርፍ ለማግኘት መስራት
+Value=2;Work for own/family agriculture|በራስ/በቤተሰብ ግብርና ይዞታ ውስጥ መስራት
+Value=3;Work for own/Family business(non-agriculture|በራሴ/በቤተሰቤ የንግድ ስራ(ከግብር ውጪ)
+Value=4;Has job but not worked|ስራ እይለኝ አልሰራሁም
+Value=5;Unemployed with work experience|ስራ አጥ/ልምድ ያላቸው        
+Value=6;Unemployed without work experience|ስራ አጥ /የስራ ልምድ የሌላቸው
+Value=7;Home making|የቤት ውስጥ ስራ
+Value=8;Pregnancy/Delivery|እርግዝና/በመውለድ
+Value=9;Student(full time)|ትምህርት/ስልጠና ላይ
+Value=10;Disabled/injury|የአካል ጉዳት
+Value=11;Illness|ህመም/አደጋ
+Value=12;Too young|ልጅ ስለሆንኩ
+Value=13;Old age/retire|Old age/retire
+Value=14;Pensioner|ጡረታ
+Value=15;Remittance|ተቆራጭ
+Value=16;Other(specify)|ሌላ
+Value=88;Don't know|አላውቅም
 
 [Item]
 Label=507 Place of Work
@@ -563,9 +563,9 @@ ZeroFill=Yes
 [ValueSet]
 Label=507 Place of Work
 Name=P507_VS1
-Value=1;Home
-Value=2;No fixed place
-Value=3;Fixed place outside home
+Value=1;Home|በቤት ውስጥ
+Value=2;No fixed place|ቋሚ ባልሆነ ቦታ
+Value=3;Fixed place outside home|ቋሚ በሆነ ቦታ ከቤት ውጪ 
 
 [Item]
 Label=601 Alive male children ever born
@@ -671,14 +671,14 @@ ZeroFill=Yes
 [ValueSet]
 Label=606 Sex of last child born alive
 Name=P606_VS1
-Value=1;Male
-Value=2;Female
-Value=3;Male wins
-Value=4;Female twins
-Value=5;Male/Female twins
-Value=6;Multiple birth
-Value=88;Don't know
-Value=99;Not applicable
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
+Value=3;Male wins|መንትያ ወንዶች
+Value=4;Female twins|መንትያ ሴቶች
+Value=5;Male/Female twins|ወንድ እና ሴት መንትዮች-
+Value=6;Multiple birth|ሦስት እና ከዚያ በላይ ሆነው የተወለዱ
+Value=88;Don't know|አላውቅም
+Value=99;Not applicable|አይመለከታትም
 
 [Item]
 Label=607 Survival status of last child born
@@ -690,16 +690,16 @@ ZeroFill=Yes
 [ValueSet]
 Label=607 Survival status of last child born
 Name=P607_VS1
-Value=1;Alive
-Value=2;Dead
-Value=3;Dead   male twin
-Value=4;Dead   Female  twin
-Value=5;Dead   both twins
-Value=6;Dead   one of the multiples
-Value=7;Dead  two of the multiples
-Value=8;Dead   all of the multiples
-Value=88;Don’t know
-Value=99;Not applicable
+Value=1;Alive|አዎ በህይወት አለ 
+Value=2;Dead|ሞቷል 
+Value=3;Dead   male twin|ወንዱ መንትያ ሞቷል 
+Value=4;Dead   Female  twin|ሴቷ መንትያ ሞታለች 
+Value=5;Dead   both twins|ሁለቱም መንትዮች ሞተዋል 
+Value=6;Dead   one of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ አንዱ ሞቷል 
+Value=7;Dead  two of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁለቱ ሞተዋል 
+Value=8;Dead   all of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁሉም ሞተዋል 
+Value=88;Don’t know|አላውቅም 
+Value=99;Not applicable|አይመለከታቸውም 
 
 [Item]
 Label=608 Age at birth of first child born
