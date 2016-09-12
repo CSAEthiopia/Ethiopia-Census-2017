@@ -294,180 +294,180 @@ Value=11;Diabetes|Diabetes
 Value=12;Fistula|Fistula
 
 [Item]
-Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
 Name=P317
 Start=100
 Len=2
 
 [ValueSet]
-Label=317. How long has NAME been living continuously in NAME’s  current place of residence?
+Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
 Name=P317_VS1
-Value=0;Less than one year
-Value=1;One year
-Value=2;Two years
-Value=3;Three years
-Value=4;Four years
-Value=5;Five years
-Value=6;Six years
-Value=7;Seven  years
-Value=8;Eight year
-Value=9;Nine years
-Value=10;Ten years and over
-Value=88;Since birth
+Value=0;Less than one year|ክ1 አመት በታች
+Value=1;One year|ለ1አመት
+Value=2;Two years|ለ2አመት
+Value=3;Three years|ለ3አመት
+Value=4;Four years|ለ4አመት
+Value=5;Five years|ለ5አመት
+Value=6;Six years|ለ6አመት
+Value=7;Seven  years|ለ7አመት
+Value=8;Eight year|ለ8አመት
+Value=9;Nine years|ለ9አመት
+Value=10;Ten years and over|ለ10 አመትና በላይ
+Value=99;Since birth|ከተወለዱ ጀምሮ
 
 [Item]
-Label=318. Where is NAME’s country of birth? (country)
+Label=318 Country of birth|318 የትውልድ ሀገር 
 Name=P318
 Start=102
 Len=3
 
 [Item]
-Label=319. If in Ethiopia  in Q318 record place of birth_Region
+Label=319  Birth_region|319  የተወለደበት ክልል
 Name=P319R
 Start=105
 Len=2
 
 [Item]
-Label=319.If in Ethiopia  in Q318 record place of birth_zone
+Label=319 Birth_zone|319 የተወለደበት ዞን
 Name=P319Z
 Start=107
 Len=2
 
 [Item]
-Label=320.Where was NAME’s Country  of  previous residence 12 months ago (residence in October/November 2015)
+Label=320 Residence in october/november 2015|320 ከህዳር 2008 በፊት ይኖርበት የነበረበት ሀገር
 Name=P320
 Start=109
 Len=3
 
 [Item]
-Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
+Label=321 Residence region in /nov/dec 2016|321 ይኖሩበት የነበረው  ክልል
 Name=P321R
 Start=112
 Len=2
 
 [Item]
-Label=321 If in Ethiopia, where was NAME’s place of previous residence 12 month ago? (Residence in /Nov/Dec 2016) ?
+Label=321  Residence zone in /nov/dec 2016|321  ይኖሩበት የነበረው  ዞን
 Name=P321Z
 Start=114
 Len=2
 
 [Item]
-Label=322. Was this place Rural or Urban?
+Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
 Name=P322
 Start=116
 Len=1
 
 [ValueSet]
-Label=322. Was this place Rural or Urban?
+Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
 Name=P322_VS1
-Value=1;Urban
-Value=2;Rural
+Value=1;Urban|ከተማ
+Value=2;Rural|ገጠር
 
 [Item]
-Label=323. What was NAME’s reason for migration?
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
 Name=P323
 Start=117
 Len=1
 
 [ValueSet]
-Label=323. What was NAME’s reason for migration?
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
 Name=P323_VS1
-Value=1;For work/In search of work
-Value=2;for agriculture or settlement
-Value=3;to join family member
-Value=4;Education
-Value=5;Marriage or start of new family
-Value=6;Drought environmental hazard
-Value=7;Conflict
-Value=8;Others
+Value=1;For work/In search of work|ለስራ/ስራለመፈለግ
+Value=2;for agriculture or settlement|ለእርሻ ወይም ለመኖርያ የሚሆን
+Value=3;to join family member| መሬት ለመፈለግ
+Value=4;Education|በትምህርት ምክንያት
+Value=5;Marriage or start of new family|በጋብቻ ምክንያት
+Value=6;Drought environmental hazard|በድርቅ/በአካባቢ መራቆት ምክንያት
+Value=7;Conflict|በግጭት ምክንያት
+Value=8;Others|ሌላ
 
 [Item]
-Label=324. What is (NAME’s) Current marital status?
+Label=324 Current marital status|324 በአሁኑ ወቅት የጋብቻ ሁኔታ
 Name=P324
 Start=118
 Len=1
 
 [ValueSet]
-Label=324. What is (NAME’s) Current marital status?
+Label=324 Current marital status|324 በአሁኑ ወቅት የጋብቻ ሁኔታ
 Name=P324_VS1
-Value=1;Never married
-Value=2;Married
-Value=3;Cohabiting/Living Together
-Value=4;Divorced
-Value=5;Separated
-Value=6;Widowed
+Value=1;Never married|አግብተው የማያውቁ
+Value=2;Married|ባለትዳር
+Value=3;Cohabiting/Living Together|እንደባልና ሚስት አብረው የሚኖሩ
+Value=4;Divorced|የተፋቱ
+Value=5;Separated|የተለያዩ
+Value=6;Widowed| የሞተባቸው
 Value=7;Do not know
 
 [Item]
-Label=325 What was Age at first marriage
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
 Name=P325
 Start=119
 Len=2
 
 [ValueSet]
-Label=325 What was Age at first marriage
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
 Name=P325_VS1
 Value=0:99;Valid
 
 [Item]
-Label=401. Is (NAME)  able to read and write in any language?
+Label=401 Read and write |401 ማንበብ እና መፃፍ ይችላሉ
 Name=P401
 Start=121
 Len=1
 
 [ValueSet]
-Label=401. Is (NAME)  able to read and write in any language?
+Label=401 Read and write |401 ማንበብ እና መፃፍ ይችላሉ
 Name=P401_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=402. Is (NAME) currently attending school?
+Label=402 Currently attending school|402 በአሁኑ ወቅት ትምህርት ይከታተላሉ
 Name=P402
 Start=122
 Len=2
 
 [Item]
-Label=403. What is the highest Grade (NAME) completed?
+Label=403 Highest Grade  completed|403 ያጠናቀቁት ከፍተኛ ክፍል 
 Name=P403
 Start=124
 Len=2
 
 [Item]
-Label=404. Does NAME use a computer?
+Label=404 Use a computer|404 ኮምውተር መጠቀም ይችላሉ
 Name=P404
 Start=126
 Len=1
 
 [ValueSet]
-Label=404. Does NAME use a computer?
+Label=404 Use a computer|404 ኮምውተር መጠቀም ይችላሉ
 Name=P404_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=405. Does NAME use internet?
+Label=405  Use internet|405  ኢንተርኔት ይጠቀማሉ
 Name=P405
 Start=127
 Len=1
 
 [ValueSet]
-Label=405. Does NAME use internet?
+Label=405  Use internet|405  ኢንተርኔት ይጠቀማሉ
 Name=P405_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
-Label=406. Does name use Cell phone?
+Label=406 Use cell phone|406 ሞባይል ይጠቀማሉ
 Name=P406
 Start=128
 Len=1
 
 [ValueSet]
-Label=406. Does name use Cell phone?
+Label=406 Use cell phone|406 ሞባይል ይጠቀማሉ
 Name=P406_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Item]
 Label=501 Productive activities during the last 7 days
@@ -479,11 +479,11 @@ ZeroFill=Yes
 [ValueSet]
 Label=501 Productive activities during the last 7 days
 Name=P501_VS1
-Value=1;work for pay/ profit
-Value=2;work for own/family agricultural holding
-Value=3;Work for own/family business
-Value=4;Has job but not worked
-Value=5;No
+Value=1;work for pay/ profit|የክፍያ ስራ/ትርፍ የሚያስገኝ ስራ
+Value=2;work for own/family agricultural holding|የራስ ስራ/በቤተሰብ የግብርና ስራ
+Value=3;Work for own/family business|የራስ ስራ/በቤተሰብ ንግድ ስራ
+Value=4;Has job but not worked|ስራ እያለኝ አልሰራሁም
+Value=5;No|የለም
 
 [Item]
 Label=502 Available to work during the coming month
@@ -495,19 +495,19 @@ ZeroFill=Yes
 [ValueSet]
 Label=502 Available to work during the coming month
 Name=P502_VS1
-Value=1;Yes  available and actively looking for work
-Value=2;Yes available but not looking for work
-Value=3;Home maker
-Value=4;Pregnancy/delivery
-Value=5;Student (full time)
-Value=6;Disabled/injury
-Value=7;Illness
-Value=8;Too young
-Value=9;Old age/ retired
-Value=10;Pensioned
-Value=11;Remittance
-Value=12;Others
-Value=88;Don't know
+Value=1;Yes  available and actively looking for work|ዝግጁ ነኝ ስራም እየፈለኩ ነው
+Value=2;Yes available but not looking for work|ዝግጁ ነኝ ነገር ግን ስር እየፈለኩ አይደለም
+Value=3;Home maker|የቤት ውስጥ ስራ
+Value=4;Pregnancy/delivery|እርግዝና/ወሊድ
+Value=5;Student (full time)|ትምህርት/ስልጠና
+Value=6;Disabled/injury|የአካል ጉዳት
+Value=7;Illness|ህመም
+Value=8;Too young|ልጅ ስለሆንኩ
+Value=9;Old age/ retired|እርጅና
+Value=10;Pensioned|ጡረታ
+Value=11;Remittance|ተቆራጭ
+Value=12;Others|ሌላ
+Value=88;Don't know|አላውቅም
 
 [Item]
 Label=503 Main occupation
@@ -519,16 +519,16 @@ ZeroFill=Yes
 [ValueSet]
 Label=503 Main occupation
 Name=P503_VS1
-Value=1;Managers
-Value=2;Professionals
-Value=3;Technicians and associate professiona
+Value=1;Managers|ዋና ስራ አስፈፃሚዎች ፕሮፌሽናሎች
+Value=2;Professionals|ቴክኒሺያኖችና ተባባሪ ፕሮፌሽናሎች
+Value=3;Technicians and associate professiona|የፅህፈትና ተመሳሳይ  ሠራተኞች
 Value=4;Clerical support workers
-Value=5;Service and sales workers-05
-Value=6;Skilled agricultural forestry and fishery workers
-Value=7;Craft and related trades workers
-Value=8;Plant and machine operators and assemblers
-Value=9;Elementary occupations
-Value=10;Defense
+Value=5;Service and sales workers-05|የአገልግሎት፣ የንግድ እና ተመሳሳይ የሽያጭ ሠራተኞች
+Value=6;Skilled agricultural forestry and fishery workers|የግብርና ደንና ዓሣ ሀብት ዕውቀት ያላቸው (Skilled) ሠራተኞች
+Value=7;Craft and related trades workers|የዕደ ጥበብና ተመሳሳይ  የሽያጭ ሠራተኞች
+Value=8;Plant and machine operators and assemblers|የማምረቻ መሳሪያዎች ኦፐሬተሮች እና  ገጣጣሚዎች
+Value=9;Elementary occupations|ዝቅተኛ የሙያ ደረጃ ያላቸው ሰራተኞች
+Value=10;Defense|የመከላከያ ሠራዊት አባላት
 
 [Item]
 Label=504 Main product/service of the organization
@@ -540,27 +540,27 @@ ZeroFill=Yes
 [ValueSet]
 Label=504 Main product/service of the organization
 Name=P504_VS1
-Value=1;Agriculture/forestry/fishing
-Value=2;Mining and quarrying
-Value=3;Manufacturing
-Value=4;Electric gas, air conditioning-05
-Value=5;Water supply
-Value=6;Construction
-Value=7;Whole and retail sale
-Value=8;Transport
-Value=9;Accommodations and service10
-Value=10;Information and communication
-Value=11;Finance and Insurance
-Value=12;Real state
-Value=13;Professional science
-Value=14;Administrative and support
-Value=15;Public Administration/Defense
-Value=16;Education
-Value=17;Human Health social work
-Value=18;Art and entertainment
-Value=19;Other services
-Value=20;Activities of Household and services
-Value=21;Activities of extraterritorial  organization
+Value=1;Agriculture/forestry/fishing|ግብርና/አደን
+Value=2;Mining and quarrying|ማዕድንና ቁፋሮ
+Value=3;Manufacturing|የማምረቻ ኢንዱስትሪ
+Value=4;Electric gas, air conditioning-05|ኤሌትሪክ/ጋዝ/እንፋሎት
+Value=5;Water supply|የውሀ አቅርቦት
+Value=6;Construction|ኮንስትራክሽን
+Value=7;Whole and retail sale|ጅምላና ችርቻሮ ንግድ
+Value=8;Transport|ትራንስፖርት
+Value=9;Accommodations and service10|የመኝታ ማረፊያና  የምግብ አገልግሎት
+Value=10;Information and communication|ኢንፎርሜሽን ኮሚኒኬሽን
+Value=11;Finance and Insurance|ፋይናንስ/ኢንሹራንሽ አገልግሎት
+Value=12;Real state|ሪል ስቴት
+Value=13;Professional science|ፕሮፌሽናል ሣይንስ ስራዎች
+Value=14;Administrative and support|የአስተዳደርና ድጋፍ ስራ
+Value=15;Public Administration/Defense|የመንግስት አስተዳደር/መከላከያ
+Value=16;Education|ትምህርት
+Value=17;Human Health social work|ጤናና ማህበራዊ
+Value=18;Art and entertainment|ስነጥበብና መዝናኛ
+Value=19;Other services|ሌላ አገልግሎት
+Value=20;Activities of Household and services|የቤትውስጥ የሚካሄዱ አገልግሎቶች
+Value=21;Activities of extraterritorial  organization|መያድ/አለም ዓቀፍ ድርጅቶች
 
 [Item]
 Label=505 Employment status
@@ -572,18 +572,18 @@ ZeroFill=Yes
 [ValueSet]
 Label=505 Employment status
 Name=P505_VS1
-Value=1;Employee- Government
-Value=2;Employee –Government Deve. Org
-Value=3;Employee -Private organization
-Value=4;Employee - NGO/International Org.
-Value=5;Employee – Domestic
-Value=6;Employee – others
-Value=7;Self employed
-Value=8;Unpaid family worker
-Value=9;Apprentice
-Value=10;Member of co-operative
-Value=11;Employer
-Value=12;Other
+Value=1;Employee- Government|ተቀጣሪ ለመንግስት
+Value=2;Employee –Government Deve. Org|ተቀጣሪ ለመንግስት ልማት ድርጅት
+Value=3;Employee -Private organization|ተቀጣሪ ለግል ድርጅት
+Value=4;Employee - NGO/International Org.|ተቀጣሪ መያድ(NGO)/አለም አቀፍ ድርጅት
+Value=5;Employee – Domestic|ተቀጣሪ በግለሰብ ቤት
+Value=6;Employee – others|ተቀጣሪ ሌሎች
+Value=7;Self employed|በግል ስራ የሚተዳደሩ
+Value=8;Unpaid family worker| ሳይከፈላቸው ለቤተሰብ ድርጅት የሚሰሩ
+Value=9;Apprentice|ተለማማጅ 
+Value=10;Member of co-operative|የህብረት ስራ ማህበርአባል
+Value=11;Employer|ቀጣሪ-
+Value=12;Other| ሌሎች
 
 [Item]
 Label=506 Productive activity engaged
@@ -595,23 +595,23 @@ ZeroFill=Yes
 [ValueSet]
 Label=506 Productive activity engaged
 Name=P506_VS1
-Value=1;Work for pay/profit
-Value=2;Work for own/family agriculture
-Value=3;Work for own/Family business(non-agriculture
-Value=4;Has job but not worked
-Value=5;Unemployed with work experience
-Value=6;Unemployed without work experience
-Value=7;Home making
-Value=8;Pregnancy/Delivery
-Value=9;Student(full time)
-Value=10;Disabled/injury
-Value=11;Illness
-Value=12;Too young
-Value=13;Old age/retire
-Value=14;Pensioner
-Value=15;Remittance
-Value=16;Other(specify)
-Value=88;Don't know
+Value=1;Work for pay/profit|ተቀጥሮ በክፍያ ገቢ/ትርፍ ለማግኘት መስራት
+Value=2;Work for own/family agriculture|በራስ/በቤተሰብ ግብርና ይዞታ ውስጥ መስራት
+Value=3;Work for own/Family business(non-agriculture|በራሴ/በቤተሰቤ የንግድ ስራ(ከግብር ውጪ)
+Value=4;Has job but not worked|ስራ እይለኝ አልሰራሁም
+Value=5;Unemployed with work experience|ስራ አጥ/ልምድ ያላቸው        
+Value=6;Unemployed without work experience|ስራ አጥ /የስራ ልምድ የሌላቸው
+Value=7;Home making|የቤት ውስጥ ስራ
+Value=8;Pregnancy/Delivery|እርግዝና/በመውለድ
+Value=9;Student(full time)|ትምህርት/ስልጠና ላይ
+Value=10;Disabled/injury|የአካል ጉዳት
+Value=11;Illness|ህመም/አደጋ
+Value=12;Too young|ልጅ ስለሆንኩ
+Value=13;Old age/retire|Old age/retire
+Value=14;Pensioner|ጡረታ
+Value=15;Remittance|ተቆራጭ
+Value=16;Other(specify)|ሌላ
+Value=88;Don't know|አላውቅም
 
 [Item]
 Label=507 Place of Work
@@ -623,9 +623,9 @@ ZeroFill=Yes
 [ValueSet]
 Label=507 Place of Work
 Name=P507_VS1
-Value=1;Home
-Value=2;No fixed place
-Value=3;Fixed place outside home
+Value=1;Home|በቤት ውስጥ
+Value=2;No fixed place|ቋሚ ባልሆነ ቦታ
+Value=3;Fixed place outside home|ቋሚ በሆነ ቦታ ከቤት ውጪ 
 
 [Item]
 Label=601 Alive male children ever born
@@ -731,14 +731,14 @@ ZeroFill=Yes
 [ValueSet]
 Label=606 Sex of last child born alive
 Name=P606_VS1
-Value=1;Male
-Value=2;Female
-Value=3;Male wins
-Value=4;Female twins
-Value=5;Male/Female twins
-Value=6;Multiple birth
-Value=88;Don't know
-Value=99;Not applicable
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
+Value=3;Male wins|መንትያ ወንዶች
+Value=4;Female twins|መንትያ ሴቶች
+Value=5;Male/Female twins|ወንድ እና ሴት መንትዮች-
+Value=6;Multiple birth|ሦስት እና ከዚያ በላይ ሆነው የተወለዱ
+Value=88;Don't know|አላውቅም
+Value=99;Not applicable|አይመለከታትም
 
 [Item]
 Label=607 Survival status of last child born
@@ -750,16 +750,16 @@ ZeroFill=Yes
 [ValueSet]
 Label=607 Survival status of last child born
 Name=P607_VS1
-Value=1;Alive
-Value=2;Dead
-Value=3;Dead   male twin
-Value=4;Dead   Female  twin
-Value=5;Dead   both twins
-Value=6;Dead   one of the multiples
-Value=7;Dead  two of the multiples
-Value=8;Dead   all of the multiples
-Value=88;Don’t know
-Value=99;Not applicable
+Value=1;Alive|አዎ በህይወት አለ 
+Value=2;Dead|ሞቷል 
+Value=3;Dead   male twin|ወንዱ መንትያ ሞቷል 
+Value=4;Dead   Female  twin|ሴቷ መንትያ ሞታለች 
+Value=5;Dead   both twins|ሁለቱም መንትዮች ሞተዋል 
+Value=6;Dead   one of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ አንዱ ሞቷል 
+Value=7;Dead  two of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁለቱ ሞተዋል 
+Value=8;Dead   all of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁሉም ሞተዋል 
+Value=88;Don’t know|አላውቅም 
+Value=99;Not applicable|አይመለከታቸውም 
 
 [Item]
 Label=608 Age at birth of first child born
@@ -823,24 +823,24 @@ Required=No
 RecordLen=29
 
 [Item]
-Label=701. Did a death occur in the household since  November 2016?_Male
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
 Name=P701M
 Start=26
 Len=2
 
 [ValueSet]
-Label=701. Did a death occur in the household since  November 2016?_Male
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
 Name=P701M_VS1
 Value=0:10;Valid
 
 [Item]
-Label=701. Did a death occur in the household since  November 2016?_Female
+Label=701 Death  since  november 2016_female|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ሴቶች
 Name=P701F
 Start=28
 Len=2
 
 [ValueSet]
-Label=701. Did a death occur in the household since  November 2016?_Female
+Label=701 Death  since  november 2016_female|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ሴቶች
 Name=P701F_VS1
 Value=0:10;Valid
 
@@ -853,68 +853,68 @@ MaxRecords=10
 RecordLen=61
 
 [Item]
-Label=702. Name of deceased
+Label=702 Name of deceased|702 የሟች ስም
 Name=P702
 Start=26
 Len=30
 DataType=Alpha
 
 [Item]
-Label=703. Sex of Deceased
+Label=703 Sex of Deceased|703  የሟች  ፆታ
 Name=P703
 Start=56
 Len=1
 
 [ValueSet]
-Label=703. Sex of Deceased
+Label=703 Sex of Deceased|703  የሟች  ፆታ
 Name=P703_VS1
-Value=1;Male
-Value=2;Female
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
 
 [Item]
-Label=704. Age at death
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
 Name=P704
 Start=57
 Len=2
 
 [ValueSet]
-Label=704. Age at death
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
 Name=P704_VS1
 Value=0:98;Valid
 Value=99;NS
 
 [Item]
-Label=705.  What was the cause of death of the Deceased
+Label=705  Cause of death |705  የሞቱበት ምክንያት
 Name=P705
 Start=59
 Len=2
 
 [ValueSet]
-Label=705.  What was the cause of death of the Deceased
+Label=705  Cause of death |705  የሞቱበት ምክንያት
 Name=P705_VS1
-Value=1;Blood pressure
-Value=2;Diabetes
-Value=3;Accident
-Value=4;Suicide
-Value=5;Murdered
-Value=6;Pregnancy related
-Value=7;Malaria
-Value=8;Tuberculosis
-Value=9;HIV/AIDS
-Value=10;Others illness
-Value=88;Do not know
+Value=1;Blood pressure|በደም ብዛት
+Value=2;Diabetes|በስኳር
+Value=3;Accident|በአደጋ
+Value=4;Suicide|እራስን በመግደል
+Value=5;Murdered|በሰው በመገደል
+Value=6;Pregnancy related|ከእርግዝና ጋር በተያያዘ ምክንያት
+Value=7;Malaria|የወባ በሽታ
+Value=8;Tuberculosis|የሳንባ በሽታ
+Value=9;HIV/AIDS|ኤችአይቪ ኤድስ
+Value=10;Others illness|ሌላ ህመም
+Value=88;Do not know|አላውቅም
 
 [Item]
-Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706  Maternal mortality|706  የእናቶች ሞት
 Name=P706
 Start=61
 Len=1
 
 [ValueSet]
-Label=706. Did (NAME) die during pregnancy, childbirth or within 42 days (7 weeks) after childbirth?
+Label=706  Maternal mortality|706  የእናቶች ሞት
 Name=P706_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Yes|አዎ
+Value=2;No|የለም
 
 [Record]
 Label=Housing
