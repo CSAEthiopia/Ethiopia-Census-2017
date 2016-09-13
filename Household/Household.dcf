@@ -22,13 +22,13 @@ Name=HOUSEHOLD_QUEST
 [IdItems]
 
 [Item]
-Label=101 Region
+Label=101 Region|101 ክልል/ከ/አስተዳደር
 Name=ID101
 Start=2
 Len=2
 
 [ValueSet]
-Label=101 Region
+Label=101 Region|101 ክልል/ከ/አስተዳደር
 Name=ID101_VS1
 Value=1;Tigray
 Value=2;Afar
@@ -43,62 +43,62 @@ Value=14;Diredawa
 Value=15;Addis Ababa
 
 [Item]
-Label=102 Zone
+Label=102 Zone|102 ዞን
 Name=ID102
 Start=4
 Len=2
 
 [Item]
-Label=103 Woreda
+Label=103 Woreda|103 ወረዳ
 Name=ID103
 Start=6
 Len=2
 
 [Item]
-Label=104 Town/City
+Label=104 Town/City|104 ከተማ
 Name=ID104
 Start=8
 Len=1
 ZeroFill=Yes
 
 [Item]
-Label=105 Sub City
+Label=105 Sub City|105 ክ/ከተማ
 Name=ID105
 Start=9
 Len=2
 
 [Item]
-Label=106 Principal  Supervision .Area
+Label=106 Principal  Supervision .Area|106 .ከ/መ .ቦታ
 Name=ID106
 Start=11
 Len=2
 
 [Item]
-Label=107 Supervision Area
+Label=107 Supervision Area|107 .የመ/ቆ ቦታ
 Name=ID107
 Start=13
 Len=2
 
 [Item]
-Label=108 Kebele
+Label=108 Kebele|108 ቀበሌ
 Name=ID108
 Start=15
 Len=3
 
 [Item]
-Label=109 Enumeration Area
+Label=109 Enumeration Area|109 .የቆጠራ ቦታ
 Name=ID109
 Start=18
 Len=2
 
 [Item]
-Label=202 Housing serial Number
+Label=202 Housing serial Number|202 የቤት መለያ ተራ ቁጥር
 Name=ID202
 Start=20
 Len=3
 
 [Item]
-Label=203 Households, Hotel/Hostel/Other Collective Quarter Serial Number
+Label=203 Households, Hotel/Hostel/Other Collective Quarter Serial Number|203 የቤተሰብ/የሆቴል/ሆስቴል/ የሌላ ጋርዮሽ መኖርያ ተራ ቁጥር
 Name=ID203
 Start=23
 Len=3
@@ -112,26 +112,26 @@ MaxRecords=150
 RecordLen=172
 
 [Item]
-Label=301 Member Serial  Number
+Label=301 Member Serial  Number|301 የቤተሰብ አባላት
 Name=P301
 Start=26
 Len=2
 
 [Item]
-Label=302 Name of Usual  member and Visitors
+Label=302 Name of Usual  member and Visitors|302 የቤተሰብ መደበኛ አባላትና የእንግዶች ሙሉ ስም
 Name=P302
 Start=28
 Len=30
 DataType=Alpha
 
 [Item]
-Label=303 Residence Status
+Label=303 Residence Status|303 የነዋሪነት ሁኔታ
 Name=P303
 Start=58
 Len=1
 
 [ValueSet]
-Label=303 Residence Status
+Label=303 Residence Status|303 የነዋሪነት ሁኔታ
 Name=P303_VS1
 Value=1;Usual  resident present  on the Census day|በቆጠራው ቀን ቤት ያደሩ ነዋሪ
 Value=2;Usual resident  absent  on the census day(in Ethiopia )|በቆጠራው ቀን  ቤት ያላደሩ ነዋሪ ኢትዮጽያ ውስጥ
@@ -140,34 +140,34 @@ Value=4;Visitor  Ethiopian|በቆጠራው ቀን ቤት ያደሩ እንግዳ 
 Value=5;Visitor  non Ethiopian|በቆጠራው ቀን  ቤት ያደሩ እንግዳ የሌላ ሀገር ዞጋ
 
 [Item]
-Label=304A Reagion|304A Region
+Label=304A Reagion|304A ክልል
 Name=P304A
 Start=59
 Len=2
 
 [Item]
-Label=304B Zone
+Label=304B Zone|304B ዞን
 Name=P304B
 Start=61
 Len=2
 
 [Item]
-Label=305 Usual country of residence
+Label=305 Usual country of residence|305 በመደበኛነት የሚኖርበት ሀገር
 Name=P305
 Start=63
 Len=3
 
 [Item]
-Label=306  Relationship
+Label=306  Relationship|306  306	.ከቤተሰብ ኃላፊው ጋር ያላቸው ዝምድና
 Name=P306
 Start=66
 Len=1
 
 [ValueSet]
-Label=306  Relationship
+Label=306  Relationship|306  306	.ከቤተሰብ ኃላፊው ጋር ያላቸው ዝምድና
 Name=P306_VS1
-Value=1;ኃላፊ
-Value=2;ባለቤት
+Value=1;Head
+Value=2;Spouse
 Value=3;Partner(cohabiting or living together with head)|እንደ ባልና ሚስት አብረው የሚኖሩ
 Value=4;Daughter of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ሴት ልጅ
 Value=5;Son of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ወንድ ልጅ
@@ -180,78 +180,68 @@ Value=1;Non-Relative|ዝምድና የሌላቸው
 Value=2;Domestic employee|የቤት ሰራተኛ
 
 [Item]
-Label=307 Sex
+Label=307 Sex|307 ጾታ
 Name=P307
 Start=67
 Len=1
 
 [ValueSet]
-Label=307 Sex|307 Sex
+Label=307 Sex|307 ጾታ
 Name=P307_VS1
 Value=1;Male|ወንድ
 Value=2;Female|ሴት
 
 [Item]
-Label=308 Age
+Label=308 Age|308 ዕድሜ
 Name=P308
 Start=68
 Len=2
 
 [Item]
-Label=309 Mothers line No
+Label=309 Mothers line No|309 የእናታቸው የመስመር ቁጥር
 Name=P309
 Start=70
 Len=2
 
 [Item]
-Label=310 Religion
+Label=310 Religion|310 ሀይማኖት
 Name=P310
 Start=72
 Len=2
 
-[ValueSet]
-Label=310 Religion
-Name=P310_VS1
-Value=1;Orthodox
-Value=2;Protestant
-Value=3;Catholic
-Value=4;Muslim/Islam
-Value=5;Traditionalist
-Value=6;Others
-
 [Item]
-Label=311 Ethnic Group
+Label=311 Ethnic Group|311 ብሔር ብሔረሰብ
 Name=P311
 Start=74
 Len=2
 
 [Item]
-Label=312 Mother Tongue
+Label=312 Mother Tongue|312 የአፍ መፍቻ ቋንቋ
 Name=P312
 Start=76
 Len=2
 
 [Item]
-Label=313 Biological mother alive
+Label=313 Biological mother alive|313 ወላጅ እናት በህይወት አሉ
 Name=P313
 Start=78
 Len=1
 
 [Item]
-Label=314 Biological father alive
+Label=314 Biological father alive|314 ወላጅ እናት በህይወት አሉ
 Name=P314
 Start=79
 Len=1
 
 [Item]
-Label=315 Disablity
+Label=315 Disablity|315 የአካል ጉዳተኝነት ሁኔታ
 Name=P315
 Start=80
 Len=18
 DataType=Alpha
 
 [ValueSet]
-Label=315 Disablity
+Label=315 Disablity|315 የአካል ጉዳተኝነት ሁኔታ
 Name=P315_VS1
 Value='A                 ';Blind  ?
 Value='B                 ';Has Seeing Difficulty  ?
@@ -272,23 +262,23 @@ Value='P                 ';Paralyzed-  ?
 Value='Q                 ';Other (specify) ?
 
 [Item]
-Label=316 Cause of disability
+Label=316 Cause of disability|316
 Name=P316
 Start=98
 Len=2
 
 [ValueSet]
-Label=Text From Clipboard|316 Cause of disability
+Label=Text From Clipboard|316
 Name=P316_VS1
-Value=1;Car accident  |Car accident
-Value=2;Other accident |Other accident
-Value=3;Polio |Polio
+Value=1;Car accident |Car accident
+Value=2;Other accident  |Other accident
+Value=3;Polio  |Polio
 Value=4;Hanson disease  |Hanson disease
-Value=5;Other disease (After delivery)  |Other disease (After delivery)
-Value=6;During pregnancy (At delivery)|During pregnancy (At delivery)
-Value=7;War/mines |War/mines
+Value=5;Other disease (After delivery)|Other disease (After delivery)
+Value=6;During pregnancy (At delivery) |During pregnancy (At delivery)
+Value=7;War/mines  |War/mines
 Value=8;Others (Not listed in codes 1-7)|Others (Not listed in codes 1-7)
-Value=9;Not known |Not known
+Value=9;Not known|Not known
 Value=10;Blood Pressure|Blood Pressure
 Value=11;Diabetes|Diabetes
 Value=12;Fistula|Fistula
@@ -316,7 +306,7 @@ Value=10;Ten years and over|ለ10 አመትና በላይ
 Value=99;Since birth|ከተወለዱ ጀምሮ
 
 [Item]
-Label=318 Country of birth|318 የትውልድ ሀገር 
+Label=318 Country of birth|318 የትውልድ ሀገር
 Name=P318
 Start=102
 Len=3
@@ -364,13 +354,13 @@ Value=1;Urban|ከተማ
 Value=2;Rural|ገጠር
 
 [Item]
-Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት
 Name=P323
 Start=117
 Len=1
 
 [ValueSet]
-Label=323 Reason for migration|323 የፈለሱበት ምክንያት 
+Label=323 Reason for migration|323 የፈለሱበት ምክንያት
 Name=P323_VS1
 Value=1;For work/In search of work|ለስራ/ስራለመፈለግ
 Value=2;for agriculture or settlement|ለእርሻ ወይም ለመኖርያ የሚሆን
@@ -399,13 +389,13 @@ Value=6;Widowed| የሞተባቸው
 Value=7;Do not know
 
 [Item]
-Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ
 Name=P325
 Start=119
 Len=2
 
 [ValueSet]
-Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ 
+Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ
 Name=P325_VS1
 Value=0:99;Valid
 
@@ -428,7 +418,7 @@ Start=122
 Len=2
 
 [Item]
-Label=403 Highest Grade  completed|403 ያጠናቀቁት ከፍተኛ ክፍል 
+Label=403 Highest Grade  completed|403 ያጠናቀቁት ከፍተኛ ክፍል
 Name=P403
 Start=124
 Len=2
@@ -580,7 +570,7 @@ Value=5;Employee – Domestic|ተቀጣሪ በግለሰብ ቤት
 Value=6;Employee – others|ተቀጣሪ ሌሎች
 Value=7;Self employed|በግል ስራ የሚተዳደሩ
 Value=8;Unpaid family worker| ሳይከፈላቸው ለቤተሰብ ድርጅት የሚሰሩ
-Value=9;Apprentice|ተለማማጅ 
+Value=9;Apprentice|ተለማማጅ
 Value=10;Member of co-operative|የህብረት ስራ ማህበርአባል
 Value=11;Employer|ቀጣሪ-
 Value=12;Other| ሌሎች
@@ -599,7 +589,7 @@ Value=1;Work for pay/profit|ተቀጥሮ በክፍያ ገቢ/ትርፍ ለማግ
 Value=2;Work for own/family agriculture|በራስ/በቤተሰብ ግብርና ይዞታ ውስጥ መስራት
 Value=3;Work for own/Family business(non-agriculture|በራሴ/በቤተሰቤ የንግድ ስራ(ከግብር ውጪ)
 Value=4;Has job but not worked|ስራ እይለኝ አልሰራሁም
-Value=5;Unemployed with work experience|ስራ አጥ/ልምድ ያላቸው        
+Value=5;Unemployed with work experience|ስራ አጥ/ልምድ ያላቸው
 Value=6;Unemployed without work experience|ስራ አጥ /የስራ ልምድ የሌላቸው
 Value=7;Home making|የቤት ውስጥ ስራ
 Value=8;Pregnancy/Delivery|እርግዝና/በመውለድ
@@ -625,7 +615,7 @@ Label=507 Place of Work
 Name=P507_VS1
 Value=1;Home|በቤት ውስጥ
 Value=2;No fixed place|ቋሚ ባልሆነ ቦታ
-Value=3;Fixed place outside home|ቋሚ በሆነ ቦታ ከቤት ውጪ 
+Value=3;Fixed place outside home|ቋሚ በሆነ ቦታ ከቤት ውጪ
 
 [Item]
 Label=601 Alive male children ever born
@@ -750,16 +740,16 @@ ZeroFill=Yes
 [ValueSet]
 Label=607 Survival status of last child born
 Name=P607_VS1
-Value=1;Alive|አዎ በህይወት አለ 
-Value=2;Dead|ሞቷል 
-Value=3;Dead   male twin|ወንዱ መንትያ ሞቷል 
-Value=4;Dead   Female  twin|ሴቷ መንትያ ሞታለች 
-Value=5;Dead   both twins|ሁለቱም መንትዮች ሞተዋል 
-Value=6;Dead   one of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ አንዱ ሞቷል 
-Value=7;Dead  two of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁለቱ ሞተዋል 
-Value=8;Dead   all of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁሉም ሞተዋል 
-Value=88;Don’t know|አላውቅም 
-Value=99;Not applicable|አይመለከታቸውም 
+Value=1;Alive|አዎ በህይወት አለ
+Value=2;Dead|ሞቷል
+Value=3;Dead   male twin|ወንዱ መንትያ ሞቷል
+Value=4;Dead   Female  twin|ሴቷ መንትያ ሞታለች
+Value=5;Dead   both twins|ሁለቱም መንትዮች ሞተዋል
+Value=6;Dead   one of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ አንዱ ሞቷል
+Value=7;Dead  two of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁለቱ ሞተዋል
+Value=8;Dead   all of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁሉም ሞተዋል
+Value=88;Don’t know|አላውቅም
+Value=99;Not applicable|አይመለከታቸውም
 
 [Item]
 Label=608 Age at birth of first child born
@@ -769,26 +759,26 @@ Len=2
 ZeroFill=Yes
 
 [Record]
-Label=Remittance
+Label=Remittance|በውጭ ሀገር ስለሚኖሩ ኢትዮጽያውያን
 Name=REMITTANCE
 RecordTypeValue='R'
 Required=No
 RecordLen=78
 
 [Item]
-Label=801A Number of male
+Label=801A Number of male|801A ስንት ወንድ
 Name=R801A
 Start=26
 Len=2
 
 [Item]
-Label=801B Number of female
+Label=801B Number of female|801B ስንት ሴት
 Name=R801B
 Start=28
 Len=2
 
 [Item]
-Label=802 Country of residence
+Label=802 Country of residence|802 በየትኛው ሀገር ይኖራሉ
 Name=R802
 Start=30
 Len=3
@@ -809,7 +799,7 @@ Value=3;Yes, goods only
 Value=4;No
 
 [Item]
-Label=804 Country of origin
+Label=804 Country of origin|804 ገንዘቡ ወይም እቃው የተላከው ከየትኛው ሀገር ነው
 Name=R804
 Start=55
 Len=3
@@ -823,13 +813,13 @@ Required=No
 RecordLen=29
 
 [Item]
-Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች
 Name=P701M
 Start=26
 Len=2
 
 [ValueSet]
-Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች 
+Label=701 Death since  november 2016_male|701 ከህዳር 2008 እስከ ህዳር 2009 የሞቱ ወንዶች
 Name=P701M_VS1
 Value=0:10;Valid
 
@@ -872,13 +862,13 @@ Value=1;Male|ወንድ
 Value=2;Female|ሴት
 
 [Item]
-Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ
 Name=P704
 Start=57
 Len=2
 
 [ValueSet]
-Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ 
+Label=704 Age at death|704 ሲሞቱ የነበራቸው እድሜ
 Name=P704_VS1
 Value=0:98;Valid
 Value=99;NS
