@@ -8,6 +8,10 @@ Positions=Relative
 ZeroFill=No
 DecimalChar=Yes
 
+[Languages]
+ENG=English
+AMH=Amharic
+
 [Level]
 Label=Listing questionnaire
 Name=LISTING_QUEST
@@ -61,13 +65,13 @@ Start=9
 Len=2
 
 [Item]
-Label=106 Principal  Supervision .Area|106 .ከ/መ .ቦታ
+Label=106 Principal  Supervision .Area|106 ከ/መ ቦታ
 Name=ID106
 Start=11
 Len=2
 
 [Item]
-Label=107 Supervision Area|107 .የመ/ቆ ቦታ
+Label=107 Supervision Area|107 የመ/ቆ ቦታ
 Name=ID107
 Start=13
 Len=2
@@ -79,13 +83,79 @@ Start=15
 Len=3
 
 [Item]
-Label=109 Enumeration Area|109 .የቆጠራ ቦታ
+Label=109 Enumeration Area|109 የቆጠራ ቦታ
 Name=ID109
 Start=18
 Len=2
+
+[Item]
+Label=10 Housing serial number|10 የቤት መለያ ተራ ቁጥር
+Name=L10
+Start=20
+Len=3
+
+[Item]
+Label=11 House number|11 የቤት ቁጥር
+Name=L11
+Start=23
+Len=3
 
 [Record]
 Label=Listing record
 Name=LISTING_REC
 RecordTypeValue='1'
-RecordLen=19
+RecordLen=56
+
+[Item]
+Label=12  type of residence|12  የቤቱ አገልግሎት
+Name=L12
+Start=26
+Len=1
+
+[ValueSet]
+Label=type of residence|12  የቤቱ አገልግሎት
+Name=L12_VS1
+Value=1;Residential|ለመደበኛ መኖሪያ ብቻ
+Value=2;Residential and business|ለመደበኛ መኖሪያና ለድርጅት
+Value=3;Hotel/Hostel|ለሆቴል ወይም ለሆስቴል
+Value=4;Other collective|ለሌላ ጋርዮሽ
+Value=5;only for other organization|ለሌላ ድርጅት ብቻ
+Value=6;Homeless|ያልተያዘ ወይም ባዶ የሆነ
+Value=7;Under construction|በመሰራት ለይ ያለ
+
+[Item]
+Label=13 Household hostel/hotel/other collective quarter serial number|13 የቤተሰብ የመደበኛ መኖሪያና የድርጅት ተራ ቁጥር
+Name=L13
+Start=27
+Len=3
+
+[Item]
+Label=14 Name of head of housing type|14 የቤተሰብ ሀላፊ ሙሉ ስም የሆቴል ሆስቴል የሌላ ጋርዮሽ መኖሪያ ስም
+Name=L14
+Start=30
+Len=25
+DataType=Alpha
+
+[Item]
+Label=15 Household use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Name=L15
+Start=55
+Len=1
+
+[ValueSet]
+Label=15 Household use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Name=L15_VS1
+Value=1;Yes|አዎን
+Value=2;No|የለም
+
+[Item]
+Label=16 Is there more household|16 ቀጣይ ቤተሰብ አለ
+Name=L16
+Start=56
+Len=1
+
+[ValueSet]
+Label=16 Is there more household|16 ቀጣይ ቤተሰብ አለ
+Name=L16_VS1
+Value=1;Yes|አዎን
+Value=2;No|የለም

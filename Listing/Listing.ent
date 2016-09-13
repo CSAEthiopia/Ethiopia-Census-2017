@@ -1,0 +1,20 @@
+﻿[CSPro Application]
+Version=CSPro 6.3
+Label=LISTING
+Name=LISTING
+AppType=DataEntry
+CAPI=Yes
+CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont1Color=0
+CAPIFont2Color=16711680
+[AppCode]
+File=.\Listing.ent.apc
+[Message]
+File=.\Listing.ent.mgf
+[Help]
+File=.\Listing.ent.qsf
+[Forms]
+File=.\Listing.fmf
+[Dictionary Types]
+Dict-Type=.\Listing.dcf,Input,.\Listing.fmf
