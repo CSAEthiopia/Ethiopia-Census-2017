@@ -1,0 +1,91 @@
+﻿[Dictionary]
+Version=CSPro 6.3
+Label=Listing
+Name=LISTING_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Listing questionnaire
+Name=LISTING_QUEST
+
+[IdItems]
+
+[Item]
+Label=101 Region|101 ክልል/ከ/አስተዳደር
+Name=ID101
+Start=2
+Len=2
+
+[ValueSet]
+Label=101 Region|101 ክልል/ከ/አስተዳደር
+Name=ID101_VS1
+Value=1;Tigray
+Value=2;Afar
+Value=3;Amhara
+Value=4;Oromia
+Value=5;Somalie
+Value=6;Benshangul
+Value=7;SNNP
+Value=12;Gambella
+Value=13;Harari
+Value=14;Diredawa
+Value=15;Addis Ababa
+
+[Item]
+Label=102 Zone|102 ዞን
+Name=ID102
+Start=4
+Len=2
+
+[Item]
+Label=103 Woreda|103 ወረዳ
+Name=ID103
+Start=6
+Len=2
+
+[Item]
+Label=104 Town/City|104 ከተማ
+Name=ID104
+Start=8
+Len=1
+ZeroFill=Yes
+
+[Item]
+Label=105 Sub City|105 ክ/ከተማ
+Name=ID105
+Start=9
+Len=2
+
+[Item]
+Label=106 Principal  Supervision .Area|106 .ከ/መ .ቦታ
+Name=ID106
+Start=11
+Len=2
+
+[Item]
+Label=107 Supervision Area|107 .የመ/ቆ ቦታ
+Name=ID107
+Start=13
+Len=2
+
+[Item]
+Label=108 Kebele|108 ቀበሌ
+Name=ID108
+Start=15
+Len=3
+
+[Item]
+Label=109 Enumeration Area|109 .የቆጠራ ቦታ
+Name=ID109
+Start=18
+Len=2
+
+[Record]
+Label=Listing record
+Name=LISTING_REC
+RecordTypeValue='1'
+RecordLen=19
