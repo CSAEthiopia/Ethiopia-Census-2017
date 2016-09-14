@@ -8,3 +8,11 @@ TIG=Tigrigna
 ORO=Oromifa
 SOM=Somalie
 
+[QUESTION]
+Field=HOUSEHOLD_DICT.ID101
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\f0\fs16 101.Region/City\par
+ENG=\pard Administration\cf1\f1\fs24\par
+ENG=}
+

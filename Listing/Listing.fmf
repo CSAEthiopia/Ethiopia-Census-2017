@@ -4,7 +4,7 @@ Name=LISTING_FF
 Label=Listing
 DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
 FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
-Type=OperatorControlled
+Type=SystemControlled
   
 [Dictionaries]
 File=.\Listing.dcf
@@ -12,27 +12,28 @@ File=.\Listing.dcf
 [Form]
 Name=FORM000
 Label=(Id Items)
-QuestionTextHeight=113
+QuestionTextHeight=50
 Level=1
-Size=863,635
+Size=882,658
   
 Item=ID101
-Item=ID102
-Item=ID103
-Item=ID104
-Item=ID105
-Item=ID106
-Item=ID107
-Item=ID108
-Item=ID109
-Item=L10
-Item=L11
 Item=L12
 Item=L13
 Item=L14
 Item=L15
-Item=L16
+Item=L11
+Item=L10
+Item=ID109
+Item=ID108
+Item=ID107
+Item=ID106
+Item=ID105
+Item=ID104
+Item=ID103
+Item=ID102
   
+Box=166,26,716,414,Thick
+Box=110,476,857,633,Thick
 [EndForm]
   
 [Level]
@@ -49,194 +50,209 @@ Max=1
   
 [Field]
 Name=ID101
-Position=285,67,314,87
+Position=601,48,630,68
 Item=ID101,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=60,70,130,86
+Position=282,51,385,73
 Text=101 Region
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID102
-Position=285,97,314,117
+Position=600,77,629,97
 Item=ID102,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,100,116,116
+Position=282,78,366,100
 Text=102 Zone
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID103
-Position=285,127,314,147
+Position=600,107,629,127
 Item=ID103,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,130,135,146
+Position=282,108,391,130
 Text=103 Woreda
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID104
-Position=285,157,300,177
+Position=600,137,615,157
 Item=ID104,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,160,148,176
+Position=282,138,413,160
 Text=104 Town/City
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID105
-Position=285,187,314,207
+Position=600,167,629,187
 Item=ID105,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,190,138,206
+Position=282,168,398,190
 Text=105 Sub City
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID106
-Position=285,217,314,237
+Position=600,197,629,217
 Item=ID106,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,220,263,236
+Position=282,198,577,220
 Text=106 Principal  Supervision .Area
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID107
-Position=285,247,314,267
+Position=600,227,629,247
 Item=ID107,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,250,194,266
+Position=282,228,480,250
 Text=107 Supervision Area
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID108
-Position=285,277,328,297
+Position=600,257,643,277
 Item=ID108,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,280,130,296
+Position=282,258,384,280
 Text=108 Kebele
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=ID109
-Position=285,307,314,327
+Position=600,287,629,307
 Item=ID109,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,310,200,326
+Position=282,288,487,310
 Text=109 Enumeration Area
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L10
-Position=285,337,328,357
+Position=600,317,643,337
 Item=L10,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,340,221,356
-Text=10 Housing serial number
+Position=282,318,525,340
+Text=10 Housing  Unit Serial No.
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L11
-Position=285,367,328,387
+Position=600,347,643,367
 Item=L11,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,370,170,386
+Position=282,348,445,370
 Text=11 House number
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L12
-Position=487,470,502,490
+Position=465,500,480,520
 Item=L12,LISTING_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=58,473,189,489
-Text=12  type of residence
+Position=127,504,382,526
+Text=12  Purpose of housing unit
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L13
-Position=487,500,530,520
+Position=466,533,509,553
 Item=L13,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=58,503,465,519
-Text=13 Household hostel/hotel/other collective quarter serial number
+Position=127,534,372,556
+Text=13 Serial No. of Residential
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L14
-Position=487,530,838,550
+Position=469,565,820,585
 Item=L14,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=58,533,266,549
-Text=14 Name of head of housing type
+Position=127,564,443,586
+Text=14 Name of Head of the Household
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
   
 [Field]
 Name=L15
-Position=487,560,502,580
+Position=474,603,489,623
 Item=L15,LISTING_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=58,563,231,579
-Text=15 Household use irrigation
- 
-  
-[Field]
-Name=L16
-Position=487,590,502,610
-Item=L16,LISTING_DICT
-FieldLabelType=DictionaryLabel
-Form=1
-  
-[Text]
-Position=58,593,230,609
-Text=16 Is there more household
+Position=127,594,393,616
+Text=15 Household uses irrigation
+Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
  
 [EndGroup]
   
