@@ -206,6 +206,11 @@ Name=P308
 Start=68
 Len=2
 
+[ValueSet]
+Label=308 Age|308 ዕድሜ
+Name=P308_VS1
+Value=0:97;Age
+
 [Item]
 Label=309 Mothers line No|309 የእናታቸው የመስመር ቁጥር
 Name=P309
