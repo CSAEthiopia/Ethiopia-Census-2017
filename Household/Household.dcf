@@ -482,7 +482,7 @@ Value=3;Cohabiting/Living Together|እንደባልና ሚስት አብረው የ
 Value=4;Divorced|የተፋቱ
 Value=5;Separated|የተለያዩ
 Value=6;Widowed| የሞተባቸው
-Value=7;Do not know
+Value=8;Do not know
 
 [Item]
 Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ

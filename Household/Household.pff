@@ -7,7 +7,7 @@ Interactive=Ask
 
 [Files]
 Application=.\Household.ent
-InputData=..\..\..\..\..\test1\TEST.DAT
+InputData=..\..\..\..\..\test1\TEST1.DAT
 
 
 [Parameters]
