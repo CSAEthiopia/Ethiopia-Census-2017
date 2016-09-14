@@ -89,7 +89,7 @@ Start=18
 Len=2
 
 [Item]
-Label=10 Housing serial number|10 የቤት መለያ ተራ ቁጥር
+Label=10 Housing  Unit Serial No.|10 የቤት መለያ ተራ ቁጥር
 Name=L10
 Start=20
 Len=3
@@ -104,16 +104,16 @@ Len=3
 Label=Listing record
 Name=LISTING_REC
 RecordTypeValue='1'
-RecordLen=56
+RecordLen=55
 
 [Item]
-Label=12  type of residence|12  የቤቱ አገልግሎት
+Label=12  Purpose of housing unit|12  የቤቱ አገልግሎት
 Name=L12
 Start=26
 Len=1
 
 [ValueSet]
-Label=type of residence|12  የቤቱ አገልግሎት
+Label=12  Purpose of housing unit|12  የቤቱ አገልግሎት
 Name=L12_VS1
 Value=1;Residential|ለመደበኛ መኖሪያ ብቻ
 Value=2;Residential and business|ለመደበኛ መኖሪያና ለድርጅት
@@ -124,13 +124,13 @@ Value=6;Homeless|ያልተያዘ ወይም ባዶ የሆነ
 Value=7;Under construction|በመሰራት ለይ ያለ
 
 [Item]
-Label=13 Household hostel/hotel/other collective quarter serial number|13 የቤተሰብ የመደበኛ መኖሪያና የድርጅት ተራ ቁጥር
+Label=13 Serial No. of Residential/ Residential and Enterprise/Enterprise/Hotel/Hostel/Other Collective Quarter|13 የቤተሰብ የመደበኛ መኖሪያና የድርጅት ተራ ቁጥር
 Name=L13
 Start=27
 Len=3
 
 [Item]
-Label=14 Name of head of housing type|14 የቤተሰብ ሀላፊ ሙሉ ስም የሆቴል ሆስቴል የሌላ ጋርዮሽ መኖሪያ ስም
+Label=14 Name of Head of the Household/Hotel/Hostel/Other Collective Quarter|14 የቤተሰብ ሀላፊ ሙሉ ስም የሆቴል ሆስቴል የሌላ ጋርዮሽ መኖሪያ ስም
 Name=L14
 Start=30
 Len=25
@@ -145,17 +145,5 @@ Len=1
 [ValueSet]
 Label=15 Household use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
 Name=L15_VS1
-Value=1;Yes|አዎን
-Value=2;No|የለም
-
-[Item]
-Label=16 Is there more household|16 ቀጣይ ቤተሰብ አለ
-Name=L16
-Start=56
-Len=1
-
-[ValueSet]
-Label=16 Is there more household|16 ቀጣይ ቤተሰብ አለ
-Name=L16_VS1
 Value=1;Yes|አዎን
 Value=2;No|የለም

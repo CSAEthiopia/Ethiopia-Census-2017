@@ -14,7 +14,7 @@ Name=FORM000
 Label=(Id Items)
 QuestionTextHeight=113
 Level=1
-Size=863,635
+Size=773,634
   
 Item=ID101
 Item=ID102
@@ -31,7 +31,6 @@ Item=L12
 Item=L13
 Item=L14
 Item=L15
-Item=L16
   
 [EndForm]
   
@@ -163,8 +162,8 @@ FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=60,340,221,356
-Text=10 Housing serial number
+Position=60,340,229,356
+Text=10 Housing  Unit Serial No.
  
   
 [Field]
@@ -181,43 +180,43 @@ Text=11 House number
   
 [Field]
 Name=L12
-Position=487,470,502,490
+Position=397,465,412,485
 Item=L12,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=58,473,189,489
-Text=12  type of residence
+Position=58,473,230,489
+Text=12  Purpose of housing unit
  
   
 [Field]
 Name=L13
-Position=487,500,530,520
+Position=397,495,440,515
 Item=L13,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=58,503,465,519
-Text=13 Household hostel/hotel/other collective quarter serial number
+Position=58,503,711,519
+Text=13 Serial No. of Residential/ Residential and Enterprise/Enterprise/Hotel/Hostel/Other Collective Quarter
  
   
 [Field]
 Name=L14
-Position=487,530,838,550
+Position=397,525,748,545
 Item=L14,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=58,533,266,549
-Text=14 Name of head of housing type
+Position=58,533,515,549
+Text=14 Name of Head of the Household/Hotel/Hostel/Other Collective Quarter
  
   
 [Field]
 Name=L15
-Position=487,560,502,580
+Position=397,555,412,575
 Item=L15,LISTING_DICT
 FieldLabelType=DictionaryLabel
 Form=1
@@ -225,18 +224,6 @@ Form=1
 [Text]
 Position=58,563,231,579
 Text=15 Household use irrigation
- 
-  
-[Field]
-Name=L16
-Position=487,590,502,610
-Item=L16,LISTING_DICT
-FieldLabelType=DictionaryLabel
-Form=1
-  
-[Text]
-Position=58,593,230,609
-Text=16 Is there more household
  
 [EndGroup]
   
