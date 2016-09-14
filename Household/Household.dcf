@@ -26,6 +26,7 @@ Label=101 Region|101 ክልል/ከ/አስተዳደር
 Name=ID101
 Start=2
 Len=2
+ZeroFill=Yes
 
 [ValueSet]
 Label=101 Region|101 ክልል/ከ/አስተዳደር
@@ -47,61 +48,69 @@ Label=102 Zone|102 ዞን
 Name=ID102
 Start=4
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=103 Woreda|103 ወረዳ
 Name=ID103
 Start=6
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=104 Town/City|104 ከተማ
 Name=ID104
 Start=8
 Len=1
-ZeroFill=Yes
 
 [Item]
 Label=105 Sub City|105 ክ/ከተማ
 Name=ID105
 Start=9
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=106 Principal  Supervision .Area|106 .ከ/መ .ቦታ
 Name=ID106
 Start=11
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=107 Supervision Area|107 .የመ/ቆ ቦታ
 Name=ID107
 Start=13
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=108 Kebele|108 ቀበሌ
 Name=ID108
 Start=15
 Len=3
+ZeroFill=Yes
 
 [Item]
 Label=109 Enumeration Area|109 .የቆጠራ ቦታ
 Name=ID109
 Start=18
 Len=2
+ZeroFill=Yes
 
 [Item]
 Label=202 Housing serial Number|202 የቤት መለያ ተራ ቁጥር
 Name=ID202
 Start=20
 Len=3
+ZeroFill=Yes
 
 [Item]
 Label=203 Households, Hotel/Hostel/Other Collective Quarter Serial Number|203 የቤተሰብ/የሆቴል/ሆስቴል/ የሌላ ጋርዮሽ መኖርያ ተራ ቁጥር
 Name=ID203
 Start=23
 Len=3
+ZeroFill=Yes
 
 [Record]
 Label=Individual
@@ -109,7 +118,7 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=162
+RecordLen=164
 
 [Item]
 Label=301 Member Serial  Number|301 የቤተሰብ አባላት
@@ -272,7 +281,7 @@ Len=1
 [ValueSet]
 Label=315A   Disablity SEEING|315 የአካል ጉዳተኝነት ሁኔታ
 Name=P315A_VS1
-Link=71818632
+Link=77090328
 Value=1;Yes ,I have some difficultiy |አዎ ትንሽ ችግር አለብኝ
 Value=2;Yes , I have a lot of difficulty |አዎ በጣም ችግር አለብኝ
 Value=3;Yes, I can't do at all|አዎ ምንም አላይም/አልሰማም/አልናገርም/አልንቀሳቀስም/አልንከባከብም/ ወዘተ
@@ -287,7 +296,7 @@ Len=1
 [ValueSet]
 Label=315B Dsablity hearing
 Name=P315B_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=315C  Disablity speaking
@@ -298,7 +307,7 @@ Len=1
 [ValueSet]
 Label=315C  Disablity speaking
 Name=P315C_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=315D  Disablity body movement
@@ -309,7 +318,7 @@ Len=1
 [ValueSet]
 Label=315D  Disablity body movement
 Name=P315D_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=315E  Disablity self care
@@ -320,7 +329,7 @@ Len=1
 [ValueSet]
 Label=315E  Disablity self care
 Name=P315E_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=315F  Disablity mental
@@ -331,7 +340,7 @@ Len=1
 [ValueSet]
 Label=315F  Disablity mental
 Name=P315F_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=315G Disablity others
@@ -342,7 +351,7 @@ Len=1
 [ValueSet]
 Label=315G Disablity others
 Name=P315G_VS1
-Link=71818632
+Link=77090328
 
 [Item]
 Label=316 Cause of disability|316
@@ -356,15 +365,14 @@ Name=P316_VS1
 Value=1;Car accident |Car accident
 Value=2;Other accident  |Other accident
 Value=3;Polio  |Polio
-Value=4;Hanson disease  |Hanson disease
-Value=5;Other disease (After delivery)|Other disease (After delivery)
-Value=6;During pregnancy (At delivery) |During pregnancy (At delivery)
-Value=7;War/mines  |War/mines
-Value=8;Others (Not listed in codes 1-7)|Others (Not listed in codes 1-7)
-Value=9;Not known|Not known
-Value=10;Blood Pressure|Blood Pressure
-Value=11;Diabetes|Diabetes
-Value=12;Fistula|Fistula
+Value=4;Hanson disease  |Other disease
+Value=5;Other disease (After delivery)|During pregnancy (At delivery)
+Value=6;During pregnancy (At delivery) |War/mines
+Value=7;War/mines  |Blood Pressure
+Value=8;Others (Not listed in codes 1-7)|Diabetes
+Value=9;Not known|Fistula
+Value=10;Blood Pressure|Others (not listed in codes 1-9)
+Value=88;Diabetes|Don't know
 
 [Item]
 Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
@@ -553,8 +561,8 @@ ZeroFill=Yes
 Label=501 Productive activities during the last 7 days
 Name=P501_VS1
 Value=1;work for pay/ profit|የክፍያ ስራ/ትርፍ የሚያስገኝ ስራ
-Value=2;work for own/family agricultural holding|የራስ ስራ/በቤተሰብ የግብርና ስራ
-Value=3;Work for own/family business|የራስ ስራ/በቤተሰብ ንግድ ስራ
+Value=2;Work for profit on own/family business|የራስ ስራ/በቤተሰብ የግብርና ስራ
+Value=3;Work on consumption in agrclurure/non agriclture|የራስ ስራ/በቤተሰብ ንግድ ስራ
 Value=4;Has job but not worked|ስራ እያለኝ አልሰራሁም
 Value=5;No|የለም
 
@@ -614,26 +622,22 @@ ZeroFill=Yes
 Label=504 Main product/service of the organization
 Name=P504_VS1
 Value=1;Agriculture/forestry/fishing|ግብርና/አደን
-Value=2;Mining and quarrying|ማዕድንና ቁፋሮ
-Value=3;Manufacturing|የማምረቻ ኢንዱስትሪ
-Value=4;Electric gas, air conditioning-05|ኤሌትሪክ/ጋዝ/እንፋሎት
-Value=5;Water supply|የውሀ አቅርቦት
-Value=6;Construction|ኮንስትራክሽን
-Value=7;Whole and retail sale|ጅምላና ችርቻሮ ንግድ
-Value=8;Transport|ትራንስፖርት
-Value=9;Accommodations and service10|የመኝታ ማረፊያና  የምግብ አገልግሎት
-Value=10;Information and communication|ኢንፎርሜሽን ኮሚኒኬሽን
-Value=11;Finance and Insurance|ፋይናንስ/ኢንሹራንሽ አገልግሎት
-Value=12;Real state|ሪል ስቴት
-Value=13;Professional science|ፕሮፌሽናል ሣይንስ ስራዎች
-Value=14;Administrative and support|የአስተዳደርና ድጋፍ ስራ
-Value=15;Public Administration/Defense|የመንግስት አስተዳደር/መከላከያ
-Value=16;Education|ትምህርት
-Value=17;Human Health social work|ጤናና ማህበራዊ
-Value=18;Art and entertainment|ስነጥበብና መዝናኛ
-Value=19;Other services|ሌላ አገልግሎት
-Value=20;Activities of Household and services|የቤትውስጥ የሚካሄዱ አገልግሎቶች
-Value=21;Activities of extraterritorial  organization|መያድ/አለም ዓቀፍ ድርጅቶች
+Value=2;  Manufacturing Mining and quarrying|ማዕድንና ቁፋሮ
+Value=3;Electric gas, air conditioning|የማምረቻ ኢንዱስትሪ
+Value=4;Water supply-sewerage & waste management|ኤሌትሪክ/ጋዝ/እንፋሎት
+Value=5;Construction|የውሀ አቅርቦት
+Value=6;Trade Whole and retail sale|ኮንስትራክሽን
+Value=7;Transport & storage|ጅምላና ችርቻሮ ንግድ
+Value=8;Accommodations Hotel & R|ትራንስፖርት
+Value=9;Information & Comm|የመኝታ ማረፊያና  የምግብ አገልግሎት
+Value=10;Finance and Insurance|ኢንፎርሜሽን ኮሚኒኬሽን
+Value=11;Public dministration/Def|ፋይናንስ/ኢንሹራንሽ አገልግሎት
+Value=12;Education|ሪል ስቴት
+Value=13;Human Health social work|ፕሮፌሽናል ሣይንስ ስራዎች
+Value=14;Other services|የአስተዳደርና ድጋፍ ስራ
+Value=15;Activities of Household as employer|የመንግስት አስተዳደር/መከላከያ
+Value=16;NGO’s & International org|ትምህርት
+Value=88;Do not know|ጤናና ማህበራዊ
 
 [Item]
 Label=505 Employment status
@@ -654,9 +658,10 @@ Value=6;Employee – others|ተቀጣሪ ሌሎች
 Value=7;Self employed|በግል ስራ የሚተዳደሩ
 Value=8;Unpaid family worker| ሳይከፈላቸው ለቤተሰብ ድርጅት የሚሰሩ
 Value=9;Apprentice|ተለማማጅ
-Value=10;Member of co-operative|የህብረት ስራ ማህበርአባል
-Value=11;Employer|ቀጣሪ-
-Value=12;Other| ሌሎች
+Value=10;Member of micro enterprise|የህብረት ስራ ማህበርአባል
+Value=11;Member of co-operative
+Value=12;Employer|ቀጣሪ-
+Value=13;Other| ሌሎች
 
 [Item]
 Label=506 Productive activity engaged
@@ -668,9 +673,9 @@ ZeroFill=Yes
 [ValueSet]
 Label=506 Productive activity engaged
 Name=P506_VS1
-Value=1;Work for pay/profit|ተቀጥሮ በክፍያ ገቢ/ትርፍ ለማግኘት መስራት
-Value=2;Work for own/family agriculture|በራስ/በቤተሰብ ግብርና ይዞታ ውስጥ መስራት
-Value=3;Work for own/Family business(non-agriculture|በራሴ/በቤተሰቤ የንግድ ስራ(ከግብር ውጪ)
+Value=1;Work for pay|ተቀጥሮ በክፍያ ገቢ/ትርፍ ለማግኘት መስራት
+Value=2;Work for profit  own/family business|በራስ/በቤተሰብ ግብርና ይዞታ ውስጥ መስራት
+Value=3;Work for own consumption in-agriculture/non agriculture|በራሴ/በቤተሰቤ የንግድ ስራ(ከግብር ውጪ)
 Value=4;Has job but not worked|ስራ እይለኝ አልሰራሁም
 Value=5;Unemployed with work experience|ስራ አጥ/ልምድ ያላቸው
 Value=6;Unemployed without work experience|ስራ አጥ /የስራ ልምድ የሌላቸው
@@ -764,65 +769,76 @@ Len=2
 ZeroFill=Yes
 
 [Item]
-Label=605 Date of birth of last child born alive
-Name=P605_DATE
+Label=605 How many alive birth
+Name=P605
 Start=148
+Len=1
+
+[Item]
+Label=606 How many  still alive
+Name=P606
+Start=149
+Len=1
+
+[Item]
+Label=607 Date of birth of last child born alive
+Name=P607_DATE
+Start=150
 Len=8
 ZeroFill=Yes
 
 [Item]
-Label=605 Date
-Name=P605_DD
-Start=148
-Len=2
-ItemType=SubItem
-ZeroFill=Yes
-
-[Item]
-Label=605 Month
-Name=P605_MM
+Label=607 Date
+Name=P607_DD
 Start=150
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
 
 [Item]
-Label=605 Year
-Name=P605_YYYY
+Label=607 Month
+Name=P607_MM
 Start=152
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=607 Year
+Name=P607_YYYY
+Start=154
 Len=4
 ItemType=SubItem
 ZeroFill=Yes
 
 [Item]
-Label=606 Sex of last child born alive
-Name=P606
-Start=156
-Len=2
-ZeroFill=Yes
-
-[ValueSet]
-Label=606 Sex of last child born alive
-Name=P606_VS1
-Value=1;Male|ወንድ
-Value=2;Female|ሴት
-Value=3;Male wins|መንትያ ወንዶች
-Value=4;Female twins|መንትያ ሴቶች
-Value=5;Male/Female twins|ወንድ እና ሴት መንትዮች-
-Value=6;Multiple birth|ሦስት እና ከዚያ በላይ ሆነው የተወለዱ
-Value=88;Don't know|አላውቅም
-Value=99;Not applicable|አይመለከታትም
-
-[Item]
-Label=607 Survival status of last child born
-Name=P607
+Label=608 Sex of last child born alive
+Name=P608
 Start=158
 Len=2
 ZeroFill=Yes
 
 [ValueSet]
-Label=607 Survival status of last child born
-Name=P607_VS1
+Label=608 Sex of last child born alive
+Name=P608_VS1
+Value=1;Male|ወንድ
+Value=2;Female|ሴት
+Value=3;Male twins|መንትያ ወንዶች
+Value=4;Female twins|መንትያ ሴቶች
+Value=5;Male/Female twins|ወንድ እና ሴት መንትዮች-
+Value=6;Multiple birth with differnt sex|ሦስት እና ከዚያ በላይ ሆነው የተወለዱ
+Value=88;Don't know|አላውቅም
+
+[Item]
+Label=609 Survival status of last child born
+Name=P609
+Start=160
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=609 Survival status of last child born
+Name=P609_VS1
 Value=1;Alive|አዎ በህይወት አለ
 Value=2;Dead|ሞቷል
 Value=3;Dead   male twin|ወንዱ መንትያ ሞቷል
@@ -832,25 +848,24 @@ Value=6;Dead   one of the multiples|ሦስትና በላይ ሆነው ከተወ�
 Value=7;Dead  two of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁለቱ ሞተዋል
 Value=8;Dead   all of the multiples|ሦስትና በላይ ሆነው ከተወለዱት  ውስጥ ሁሉም ሞተዋል
 Value=88;Don’t know|አላውቅም
-Value=99;Not applicable|አይመለከታቸውም
 
 [Item]
-Label=608 Age at birth of first child born
-Name=P608
-Start=160
+Label=610 Age at birth of first child born
+Name=P610
+Start=162
 Len=2
 ZeroFill=Yes
 
 [Item]
-Label=609 More people
-Name=P609
-Start=162
+Label=611More people
+Name=P611
+Start=164
 Len=1
 ZeroFill=Yes
 
 [ValueSet]
-Label=609 More people
-Name=P609_VS1
+Label=611More people
+Name=P611_VS1
 Value=1;Yes
 Value=2;No
 
