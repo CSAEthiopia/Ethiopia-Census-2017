@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 6.3
+AppType=Entry
+
+[DataEntryInit]
+Interactive=Ask
+
+[Files]
+Application=.\Menu.ent
+InputData=.\dummy.dat
+
+[ExternalFiles]
+ASSIGNMENT_DICT=.\assignment.dat
+STAFF_DICT=.\staff.dat
+
+[Parameters]
+
