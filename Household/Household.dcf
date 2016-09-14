@@ -109,7 +109,7 @@ Name=INDIVIDUAL
 RecordTypeValue='I'
 Required=No
 MaxRecords=150
-RecordLen=172
+RecordLen=162
 
 [Item]
 Label=301 Member Serial  Number|301 የቤተሰብ አባላት
@@ -209,6 +209,22 @@ Name=P310
 Start=72
 Len=2
 
+[ValueSet]
+Label=310 Religion|310 ሀይማኖት
+Name=P310_VS1
+Value=1;Orthodox
+Value=2;Protestant
+Value=3;Catholic
+Value=4;Muslim
+Value=5;Wakefena
+Value=6;Jova
+Value=7;Buddist
+Value=8;Bahai
+Value=9;Jew
+Value=10;Traditionalist
+Value=11;No religion
+Value=12;Others
+
 [Item]
 Label=311 Ethnic Group|311 ብሔር ብሔረሰብ
 Name=P311
@@ -227,44 +243,111 @@ Name=P313
 Start=78
 Len=1
 
+[ValueSet]
+Label=313 Biological mother alive|313 ወላጅ እናት በህይወት አሉ
+Name=P313_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Don't know
+
 [Item]
 Label=314 Biological father alive|314 ወላጅ እናት በህይወት አሉ
 Name=P314
 Start=79
 Len=1
 
+[ValueSet]
+Label=314 Biological father alive|314 ወላጅ እናት በህይወት አሉ
+Name=P314_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Don't know
+
 [Item]
-Label=315 Disablity|315 የአካል ጉዳተኝነት ሁኔታ
-Name=P315
+Label=315A   Disablity seeing |315 የአካል ጉዳተኝነት ሁኔታ
+Name=P315A
 Start=80
-Len=18
-DataType=Alpha
+Len=1
 
 [ValueSet]
-Label=315 Disablity|315 የአካል ጉዳተኝነት ሁኔታ
-Name=P315_VS1
-Value='A                 ';Blind  ?
-Value='B                 ';Has Seeing Difficulty  ?
-Value='C                 ';Deaf?
-Value='D                 ';Has Hearing Difficulty?
-Value='E                 ';Unable to Speak  ?
-Value='F                 ';Has Speaking Difficulty  ?
-Value='G                 ';Deaf and Unable to Speak  ?
-Value='H                 ';Has Difficulty in moving his hands(in grapping  or stretching
-Value='I                 ';has difficulty in moving his legs( in standing or   ወwalking
-Value='J                 ';Body movement problem?
-Value='K                 ';Mentally retarded?
-Value='L                 ';Has Mental Problem?
-Value='M                 ';Autistic-
-Value='N                 ';Loss of at least on hand?
-Value='O                 ';Loss of at least one leg  ?
-Value='P                 ';Paralyzed-  ?
-Value='Q                 ';Other (specify) ?
+Label=315A   Disablity SEEING|315 የአካል ጉዳተኝነት ሁኔታ
+Name=P315A_VS1
+Link=71818632
+Value=1;Yes ,I have some difficultiy |አዎ ትንሽ ችግር አለብኝ
+Value=2;Yes , I have a lot of difficulty |አዎ በጣም ችግር አለብኝ
+Value=3;Yes, I can't do at all|አዎ ምንም አላይም/አልሰማም/አልናገርም/አልንቀሳቀስም/አልንከባከብም/ ወዘተ
+Value=4;No, I don't have any difficulity|የለም ምንም ችግር የለብኝም
+
+[Item]
+Label=315B Dsablity hearing
+Name=P315B
+Start=81
+Len=1
+
+[ValueSet]
+Label=315B Dsablity hearing
+Name=P315B_VS1
+Link=71818632
+
+[Item]
+Label=315C  Disablity speaking
+Name=P315C
+Start=82
+Len=1
+
+[ValueSet]
+Label=315C  Disablity speaking
+Name=P315C_VS1
+Link=71818632
+
+[Item]
+Label=315D  Disablity body movement
+Name=P315D
+Start=83
+Len=1
+
+[ValueSet]
+Label=315D  Disablity body movement
+Name=P315D_VS1
+Link=71818632
+
+[Item]
+Label=315E  Disablity self care
+Name=P315E
+Start=84
+Len=1
+
+[ValueSet]
+Label=315E  Disablity self care
+Name=P315E_VS1
+Link=71818632
+
+[Item]
+Label=315F  Disablity mental
+Name=P315F
+Start=85
+Len=1
+
+[ValueSet]
+Label=315F  Disablity mental
+Name=P315F_VS1
+Link=71818632
+
+[Item]
+Label=315G Disablity others
+Name=P315G
+Start=86
+Len=1
+
+[ValueSet]
+Label=315G Disablity others
+Name=P315G_VS1
+Link=71818632
 
 [Item]
 Label=316 Cause of disability|316
 Name=P316
-Start=98
+Start=87
 Len=2
 
 [ValueSet]
@@ -286,7 +369,7 @@ Value=12;Fistula|Fistula
 [Item]
 Label=317 Number of years living in current residence|317 እዚህ ያለማቋረጥ ለምን ያህል ጊዜ ኖረዋል
 Name=P317
-Start=100
+Start=89
 Len=2
 
 [ValueSet]
@@ -308,43 +391,43 @@ Value=99;Since birth|ከተወለዱ ጀምሮ
 [Item]
 Label=318 Country of birth|318 የትውልድ ሀገር
 Name=P318
-Start=102
+Start=91
 Len=3
 
 [Item]
 Label=319  Birth_region|319  የተወለደበት ክልል
 Name=P319R
-Start=105
+Start=94
 Len=2
 
 [Item]
 Label=319 Birth_zone|319 የተወለደበት ዞን
 Name=P319Z
-Start=107
+Start=96
 Len=2
 
 [Item]
 Label=320 Residence in october/november 2015|320 ከህዳር 2008 በፊት ይኖርበት የነበረበት ሀገር
 Name=P320
-Start=109
+Start=98
 Len=3
 
 [Item]
 Label=321 Residence region in /nov/dec 2016|321 ይኖሩበት የነበረው  ክልል
 Name=P321R
-Start=112
+Start=101
 Len=2
 
 [Item]
 Label=321  Residence zone in /nov/dec 2016|321  ይኖሩበት የነበረው  ዞን
 Name=P321Z
-Start=114
+Start=103
 Len=2
 
 [Item]
 Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
 Name=P322
-Start=116
+Start=105
 Len=1
 
 [ValueSet]
@@ -356,7 +439,7 @@ Value=2;Rural|ገጠር
 [Item]
 Label=323 Reason for migration|323 የፈለሱበት ምክንያት
 Name=P323
-Start=117
+Start=106
 Len=1
 
 [ValueSet]
@@ -374,7 +457,7 @@ Value=8;Others|ሌላ
 [Item]
 Label=324 Current marital status|324 በአሁኑ ወቅት የጋብቻ ሁኔታ
 Name=P324
-Start=118
+Start=107
 Len=1
 
 [ValueSet]
@@ -391,7 +474,7 @@ Value=7;Do not know
 [Item]
 Label=325 Age at first marriage|325 ሲያገቡ የነበራቸው እድሜ
 Name=P325
-Start=119
+Start=108
 Len=2
 
 [ValueSet]
@@ -402,7 +485,7 @@ Value=0:99;Valid
 [Item]
 Label=401 Read and write |401 ማንበብ እና መፃፍ ይችላሉ
 Name=P401
-Start=121
+Start=110
 Len=1
 
 [ValueSet]
@@ -414,19 +497,19 @@ Value=2;No|የለም
 [Item]
 Label=402 Currently attending school|402 በአሁኑ ወቅት ትምህርት ይከታተላሉ
 Name=P402
-Start=122
+Start=111
 Len=2
 
 [Item]
 Label=403 Highest Grade  completed|403 ያጠናቀቁት ከፍተኛ ክፍል
 Name=P403
-Start=124
+Start=113
 Len=2
 
 [Item]
 Label=404 Use a computer|404 ኮምውተር መጠቀም ይችላሉ
 Name=P404
-Start=126
+Start=115
 Len=1
 
 [ValueSet]
@@ -438,7 +521,7 @@ Value=2;No|የለም
 [Item]
 Label=405  Use internet|405  ኢንተርኔት ይጠቀማሉ
 Name=P405
-Start=127
+Start=116
 Len=1
 
 [ValueSet]
@@ -450,7 +533,7 @@ Value=2;No|የለም
 [Item]
 Label=406 Use cell phone|406 ሞባይል ይጠቀማሉ
 Name=P406
-Start=128
+Start=117
 Len=1
 
 [ValueSet]
@@ -462,7 +545,7 @@ Value=2;No|የለም
 [Item]
 Label=501 Productive activities during the last 7 days
 Name=P501
-Start=129
+Start=118
 Len=1
 ZeroFill=Yes
 
@@ -478,7 +561,7 @@ Value=5;No|የለም
 [Item]
 Label=502 Available to work during the coming month
 Name=P502
-Start=130
+Start=119
 Len=2
 ZeroFill=Yes
 
@@ -502,7 +585,7 @@ Value=88;Don't know|አላውቅም
 [Item]
 Label=503 Main occupation
 Name=P503
-Start=132
+Start=121
 Len=2
 ZeroFill=Yes
 
@@ -523,7 +606,7 @@ Value=10;Defense|የመከላከያ ሠራዊት አባላት
 [Item]
 Label=504 Main product/service of the organization
 Name=P504
-Start=134
+Start=123
 Len=2
 ZeroFill=Yes
 
@@ -555,7 +638,7 @@ Value=21;Activities of extraterritorial  organization|መያድ/አለም ዓቀ
 [Item]
 Label=505 Employment status
 Name=P505
-Start=136
+Start=125
 Len=2
 ZeroFill=Yes
 
@@ -578,7 +661,7 @@ Value=12;Other| ሌሎች
 [Item]
 Label=506 Productive activity engaged
 Name=P506
-Start=138
+Start=127
 Len=2
 ZeroFill=Yes
 
@@ -606,7 +689,7 @@ Value=88;Don't know|አላውቅም
 [Item]
 Label=507 Place of Work
 Name=P507
-Start=140
+Start=129
 Len=1
 ZeroFill=Yes
 
@@ -620,77 +703,77 @@ Value=3;Fixed place outside home|ቋሚ በሆነ ቦታ ከቤት ውጪ
 [Item]
 Label=601 Alive male children ever born
 Name=P601_MALE
-Start=141
+Start=130
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=601 Alive female children ever born
 Name=P601_FEMALE
-Start=143
+Start=132
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=601 Alive total number children ever born
 Name=P601_TOTAL
-Start=145
+Start=134
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=602 Male childrens living with you
 Name=P602_MALE
-Start=147
+Start=136
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=602 Female childrens living with you
 Name=P602_FEMALE
-Start=149
+Start=138
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=603 Male childrens living elsewhere
 Name=P603_MALE
-Start=151
+Start=140
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=603 Female childrens living elsewhere
 Name=P603_FEMALE
-Start=153
+Start=142
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=604 Male children died
 Name=P604_MALE
-Start=155
+Start=144
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=604 Female children died
 Name=P604_FEMALE
-Start=157
+Start=146
 Len=2
 ZeroFill=Yes
 
 [Item]
 Label=605 Date of birth of last child born alive
 Name=P605_DATE
-Start=159
+Start=148
 Len=8
 ZeroFill=Yes
 
 [Item]
 Label=605 Date
 Name=P605_DD
-Start=159
+Start=148
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -698,7 +781,7 @@ ZeroFill=Yes
 [Item]
 Label=605 Month
 Name=P605_MM
-Start=161
+Start=150
 Len=2
 ItemType=SubItem
 ZeroFill=Yes
@@ -706,7 +789,7 @@ ZeroFill=Yes
 [Item]
 Label=605 Year
 Name=P605_YYYY
-Start=163
+Start=152
 Len=4
 ItemType=SubItem
 ZeroFill=Yes
@@ -714,7 +797,7 @@ ZeroFill=Yes
 [Item]
 Label=606 Sex of last child born alive
 Name=P606
-Start=167
+Start=156
 Len=2
 ZeroFill=Yes
 
@@ -733,7 +816,7 @@ Value=99;Not applicable|አይመለከታትም
 [Item]
 Label=607 Survival status of last child born
 Name=P607
-Start=169
+Start=158
 Len=2
 ZeroFill=Yes
 
@@ -754,9 +837,22 @@ Value=99;Not applicable|አይመለከታቸውም
 [Item]
 Label=608 Age at birth of first child born
 Name=P608
-Start=171
+Start=160
 Len=2
 ZeroFill=Yes
+
+[Item]
+Label=609 More people
+Name=P609
+Start=162
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=609 More people
+Name=P609_VS1
+Value=1;Yes
+Value=2;No
 
 [Record]
 Label=Remittance|በውጭ ሀገር ስለሚኖሩ ኢትዮጽያውያን
