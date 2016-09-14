@@ -137,13 +137,13 @@ Len=25
 DataType=Alpha
 
 [Item]
-Label=15 Household use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Label=15 Household uses irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
 Name=L15
 Start=55
 Len=1
 
 [ValueSet]
-Label=15 Household use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Label=15 Household uses irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
 Name=L15_VS1
 Value=1;Yes|አዎን
 Value=2;No|የለም
