@@ -24,30 +24,36 @@ Len=1
 Label=Menu record
 Name=MENU_REC
 RecordTypeValue='1'
-RecordLen=25
+RecordLen=62
+
+[Item]
+Label=Setup check
+Name=SETUP_CHECK
+Start=3
+Len=1
 
 [Item]
 Label=Login
 Name=LOGIN
-Start=3
+Start=4
 Len=10
 
 [Item]
 Label=Enumeration area code
 Name=ENUMERATION_AREA_CODE
-Start=13
+Start=14
 Len=2
 
 [Item]
 Label=Supervison area code
 Name=SUPERVISON_AREA_CODE
-Start=15
+Start=16
 Len=2
 
 [Item]
 Label=Enumerator main menu
 Name=ENUMERATOR_MAIN_MENU
-Start=17
+Start=18
 Len=1
 
 [ValueSet]
@@ -62,19 +68,32 @@ Value=9;Exit
 [Item]
 Label=Supervisor main menu
 Name=SUPERVISOR_MAIN_MENU
-Start=18
+Start=19
 Len=1
+
+[ValueSet]
+Label=Supervisor main menu
+Name=SUPERVISOR_MAIN_MENU_VS1
+Value=1;Synchronize with enumerator
+Value=2;Synchronize with headquarters
+Value=3;Summery reports
+Value=4;Launch listing
+Value=5;Launch household questionnaire
+Value=6;View Manuals
+Value=7;Enumerators
+Value=8;Assignments
+Value=9;Exit
 
 [Item]
 Label=Launch household questionnaire
 Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
-Start=19
+Start=20
 Len=3
 
 [Item]
 Label=View manuals
 Name=VIEW_MANUALS
-Start=22
+Start=23
 Len=1
 
 [ValueSet]
@@ -82,22 +101,119 @@ Label=View manuals
 Name=VIEW_MANUALS_VS1
 Value=1;Enumerator manual
 Value=2;User guide
+Value=3;Supervisor Manual
 Value=9;Back to main menu
 
 [Item]
 Label=Summary reports
 Name=SUMMARY_REPORTS
-Start=23
+Start=24
 Len=1
 
 [Item]
 Label=Supervisor launch listing
 Name=SUPERVISOR_LAUNCH_LISTING
-Start=24
+Start=25
 Len=1
 
 [Item]
 Label=Supervisor launch household questionnaire
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Start=25
+Start=26
 Len=1
+
+[Item]
+Label=Manage enumerators
+Name=MANAGE_ENUMERATORS
+Start=27
+Len=10
+
+[Item]
+Label=Manage assignments
+Name=MANAGE_ASSIGNMENTS
+Start=37
+Len=1
+
+[Item]
+Label=Enumerator name
+Name=ENUMERATOR_NAME
+Start=38
+Len=25
+DataType=Alpha
+
+[Record]
+Label=Initial Setup record
+Name=INITIAL_SETUP_REC
+RecordTypeValue='2'
+RecordLen=40
+
+[Item]
+Label=Supervisor Name
+Name=M_SUPERVISOR_NAME
+Start=3
+Len=25
+DataType=Alpha
+
+[Item]
+Label=101 Region
+Name=M_SA_ID101
+Start=28
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=101 Region
+Name=M_SA_ID101_VS1
+Value=1;Tigray
+Value=2;Afar
+Value=3;Amhara
+Value=4;Oromia
+Value=5;Somalie
+Value=6;Benshangul
+Value=7;SNNP
+Value=12;Gambella
+Value=13;Harari
+Value=14;Diredawa
+Value=15;Addis Ababa
+
+[Item]
+Label=102 Zone
+Name=M_SA_ID102
+Start=30
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=103 Woreda
+Name=M_SA_ID103
+Start=32
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=104 Town/City
+Name=M_SA_ID104
+Start=34
+Len=1
+ZeroFill=Yes
+
+[Item]
+Label=105 Sub City
+Name=M_SA_ID105
+Start=35
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=106 Principal  Supervision .Area
+Name=M_SA_ID106
+Start=37
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=107 Supervision Area
+Name=M_SA_ID107
+Start=39
+Len=2
+ZeroFill=Yes

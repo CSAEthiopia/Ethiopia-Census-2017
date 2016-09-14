@@ -13,7 +13,7 @@ File=.\Menu.dcf
 Name=FORM000
 Label=Menu questionnaire
 Level=1
-Size=493,398
+Size=563,562
   
 Item=LOGIN
 Item=ENUMERATION_AREA_CODE
@@ -25,6 +25,27 @@ Item=VIEW_MANUALS
 Item=SUMMARY_REPORTS
 Item=SUPERVISOR_LAUNCH_LISTING
 Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
+Item=SETUP_CHECK
+Item=MANAGE_ENUMERATORS
+Item=MANAGE_ASSIGNMENTS
+Item=ENUMERATOR_NAME
+  
+[EndForm]
+  
+[Form]
+Name=FORM001
+Label=Initial setup
+Level=1
+Size=493,296
+  
+Item=M_SUPERVISOR_NAME
+Item=M_SA_ID101
+Item=M_SA_ID102
+Item=M_SA_ID103
+Item=M_SA_ID104
+Item=M_SA_ID105
+Item=M_SA_ID106
+Item=M_SA_ID107
   
 [EndForm]
   
@@ -39,6 +60,19 @@ Label=Menu questionnaire
 Form=1
 LogicControl=No
 Max=1
+  
+[Field]
+Name=SETUP_CHECK
+Position=327,40,342,60
+Item=SETUP_CHECK,MENU_DICT
+Protected=Yes
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=27,47,105,63
+Text=Setup check
+ 
   
 [Field]
 Name=LOGIN
@@ -95,6 +129,7 @@ Name=SUPERVISOR_MAIN_MENU
 Position=327,203,342,223
 Item=SUPERVISOR_MAIN_MENU,MENU_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
@@ -161,6 +196,152 @@ Form=1
 [Text]
 Position=29,356,305,372
 Text=Supervisor launch household questionnaire
+ 
+  
+[Field]
+Name=MANAGE_ENUMERATORS
+Position=327,385,356,405
+Item=MANAGE_ENUMERATORS,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,388,164,404
+Text=Manage enumerators
+ 
+  
+[Field]
+Name=MANAGE_ASSIGNMENTS
+Position=327,424,342,444
+Item=MANAGE_ASSIGNMENTS,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,426,162,442
+Text=Manage assignments
+ 
+  
+[Field]
+Name=ENUMERATOR_NAME
+Position=327,467,537,487
+Item=ENUMERATOR_NAME,MENU_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,470,143,486
+Text=Enumerator name
+ 
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=INITIAL_SETUP_FORM
+Label=Initial setup
+Form=2
+LogicControl=No
+Max=1
+  
+[Field]
+Name=M_SUPERVISOR_NAME
+Position=258,41,468,61
+Item=M_SUPERVISOR_NAME,MENU_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,44,142,60
+Text=Supervisor Name
+ 
+  
+[Field]
+Name=M_SA_ID101
+Position=258,71,287,91
+Item=M_SA_ID101,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=2
+  
+[Text]
+Position=33,74,103,90
+Text=101 Region
+ 
+  
+[Field]
+Name=M_SA_ID102
+Position=258,101,287,121
+Item=M_SA_ID102,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,104,89,120
+Text=102 Zone
+ 
+  
+[Field]
+Name=M_SA_ID103
+Position=258,131,287,151
+Item=M_SA_ID103,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,134,108,150
+Text=103 Woreda
+ 
+  
+[Field]
+Name=M_SA_ID104
+Position=258,161,273,181
+Item=M_SA_ID104,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,164,121,180
+Text=104 Town/City
+ 
+  
+[Field]
+Name=M_SA_ID105
+Position=258,191,287,211
+Item=M_SA_ID105,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,194,111,210
+Text=105 Sub City
+ 
+  
+[Field]
+Name=M_SA_ID106
+Position=258,221,287,241
+Item=M_SA_ID106,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,224,236,240
+Text=106 Principal  Supervision .Area
+ 
+  
+[Field]
+Name=M_SA_ID107
+Position=258,251,287,271
+Item=M_SA_ID107,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=2
+  
+[Text]
+Position=33,254,167,270
+Text=107 Supervision Area
  
 [EndGroup]
   

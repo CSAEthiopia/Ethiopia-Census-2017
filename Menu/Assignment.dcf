@@ -5,7 +5,7 @@ Name=ASSIGNMENT_DICT
 RecordTypeStart=0
 RecordTypeLen=0
 Positions=Relative
-ZeroFill=No
+ZeroFill=Yes
 DecimalChar=Yes
 
 [Level]
@@ -21,80 +21,25 @@ Note=This is region, zone, woreda, supervision area, and two digitis for Enumera
 Note=combined in the global data file.
 Start=1
 Len=10
+ZeroFill=Yes
 
 [Record]
 Label=Assignment record
 Name=ASSIGNMENT_REC
 RecordTypeValue=''
 MaxRecords=10
-RecordLen=28
-
-[Item]
-Label=101 Region
-Name=A_ID101
-Start=11
-Len=2
-
-[ValueSet]
-Label=101 Region
-Name=A_ID101_VS1
-Value=1;Tigray
-Value=2;Afar
-Value=3;Amhara
-Value=4;Oromia
-Value=5;Somalie
-Value=6;Benshangul
-Value=7;SNNP
-Value=12;Gambella
-Value=13;Harari
-Value=14;Diredawa
-Value=15;Addis Ababa
-
-[Item]
-Label=102 Zone
-Name=A_ID102
-Start=13
-Len=2
-
-[Item]
-Label=103 Woreda
-Name=A_ID103
-Start=15
-Len=2
-
-[Item]
-Label=104 Town/City
-Name=A_ID104
-Start=17
-Len=1
-ZeroFill=Yes
-
-[Item]
-Label=105 Sub City
-Name=A_ID105
-Start=18
-Len=2
-
-[Item]
-Label=106 Principal  Supervision .Area
-Name=A_ID106
-Start=20
-Len=2
-
-[Item]
-Label=107 Supervision Area
-Name=A_ID107
-Start=22
-Len=2
+RecordLen=15
 
 [Item]
 Label=108 Kebele
 Name=A_ID108
-Start=24
+Start=11
 Len=3
+ZeroFill=Yes
 
 [Item]
 Label=109 Enumeration Area
 Name=A_ID109
-Start=27
+Start=14
 Len=2
+ZeroFill=Yes

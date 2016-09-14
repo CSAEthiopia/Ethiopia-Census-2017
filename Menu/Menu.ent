@@ -12,6 +12,7 @@ CAPIFont2Color=16711680
 [External Dictionaries]
 File=.\Assignment.dcf
 File=.\Staff.dcf
+File=.\Supervision area.dcf
 [AppCode]
 File=.\Menu.ent.apc
 [Message]
@@ -24,3 +25,4 @@ File=.\Menu.fmf
 Dict-Type=.\Menu.dcf,Input,.\Menu.fmf
 Dict-Type=.\Assignment.dcf,External
 Dict-Type=.\Staff.dcf,External
+Dict-Type=.\Supervision area.dcf,External

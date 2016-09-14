@@ -5,7 +5,7 @@ Name=STAFF_DICT
 RecordTypeStart=0
 RecordTypeLen=0
 Positions=Relative
-ZeroFill=No
+ZeroFill=Yes
 DecimalChar=Yes
 
 [Level]
@@ -21,6 +21,7 @@ Note=This is region, zone, woreda, supervision area, and two digitis for Enumera
 Note=combined in the global data file.
 Start=1
 Len=10
+ZeroFill=Yes
 
 [Record]
 Label=Staff record
@@ -40,6 +41,7 @@ Label=Role
 Name=S_ROLE
 Start=36
 Len=1
+ZeroFill=Yes
 
 [ValueSet]
 Label=Role

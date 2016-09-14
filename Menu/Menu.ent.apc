@@ -2,7 +2,7 @@
 PROC GLOBAL
 array codes(100);
 array string labels(100); 
-
+numeric totalStaff;
 
 function launchListing()
 end;
@@ -16,11 +16,41 @@ end;
 function viewUserGuide()
 end;
 
+function viewSupervisorManual()
+end;
+
+function SyncWithEnumerator()
+end;
+
+function SyncWithHeadquarters()
+end;
+
+function summeryReport()
+end;
+
+
 PROC MENU_FF
 
+PROC SETUP_CHECK
+preproc
+$ = 1; // must give a value since the field is protected
+
+postproc
+//This is for the first time setup.
+//To write Staff ID(region,zone,wored, supervisio area) by the supervisor
+
+//if no staff case exisits or supervision area is not set then go to initial setup form
+if find(STAFF_DICT,>=,"") = 0 then
+	move to INITIAL_SETUP_FORM;
+endif;	
+ 
+SUPERVISION_AREA_ID=1;
+if loadcase(SUPERVISION_AREA_DICT, SUPERVISION_AREA_ID)=0 then
+	move to INITIAL_SETUP_FORM;
+endif;	
 PROC LOGIN
 
-//Dyanmically creates valueset from the assignments file.
+//Dyanmically creates valueset from the staff file.
 onfocus
 numeric i=1;
 locate(STAFF_DICT,>=,"");
@@ -60,21 +90,14 @@ else
 	endif;
 endif;		
 PROC SUPERVISON_AREA_CODE
-//Verify whether the supervisor is assigned the supervision 
-//area chosen in the assignemt file.
-A_STAFF_ID=S_STAFF_ID;
-if loadcase(ASSIGNMENT_DICT,A_STAFF_ID)=0 then
-	errmsg("No Assignment made.");
-	reenter LOGIN;
+//check whether the ID of the supervision area is the same as
+//the one in the menu.
+if SA_ID107=$ then
+	move to SUPERVISOR_MAIN_MENU;
 else
-	if seek(A_ID107=SUPERVISON_AREA_CODE)=0 then
-		errmsg("Invalid supervision area.");
-		reenter LOGIN;
-			
-	else
-		move to SUPERVISOR_MAIN_MENU;
-	endif;
-endif;		
+	errmsg("Invalid supervision area.");
+	reenter LOGIN;
+endif;	
 PROC ENUMERATOR_MAIN_MENU
 
 if $ = 1 then
@@ -90,15 +113,119 @@ elseif $ = 9 then
 endif;
 
 reenter;
+PROC SUPERVISOR_MAIN_MENU
+if $ = 1 then
+	SyncWithEnumerator();
+elseif $ = 2 then
+	SyncWithHeadquarters();
+elseif $ = 3 then
+	summeryReport();
+elseif $ = 4 then
+	//Launch listing
+elseif $ = 5 then
+	//Launch HH questionaires
+elseif $ = 6 then
+	move to VIEW_MANUALS;
+elseif $ = 7 then
+	move to MANAGE_ENUMERATORS;
+elseif $ = 8 then
+	move to MANAGE_ASSIGNMENTS;
+elseif $ = 9 then
+	stop(1);
+endif;
+
+reenter;
 PROC VIEW_MANUALS
 
 if $ = 1 then
 	viewEnumeratorManual();
 elseif $ = 2 then
 	viewUserGuide();
+elseif $ = 3 then
+	viewSupervisorManual();
 elseif $ = 9 then
 	// if user is enumerator then
 	reenter ENUMERATOR_MAIN_MENU;
 endif;
 
 reenter;
+PROC MANAGE_ENUMERATORS
+
+//Dyanmically creates valueset from the staff file.
+onfocus
+numeric i=1;
+codes(i)=-1;
+labels(i)="Add new enumerator";
+i=i+1;
+locate(STAFF_DICT,>=,"");
+while loadcase(STAFF_DICT) do
+	if S_ROLE=1 then 
+		codes(i)=S_STAFF_ID;
+		labels(i)=S_NAME;
+		i=i+1;
+	endif;	
+enddo;	
+codes(i)=notappl;
+setvalueset($,codes,labels);
+
+totalStaff=i-2; //don't count "add new enumertor" or "notappl"
+
+postproc
+if $=-1 then 
+	//to add new enumerator
+	ENUMERATOR_NAME="";
+else
+	//modify exisiting enumerator name
+	ENUMERATOR_NAME=getlabel($,$);
+endif;	
+			
+move to ENUMERATOR_NAME;
+PROC ENUMERATOR_NAME
+if ENUMERATOR_NAME="" then
+	errmsg("Please enter enumerator name.");
+	reenter ENUMERATOR_NAME;
+	
+endif;	
+if MANAGE_ENUMERATORS=-1 then 
+	//to add new enumerator
+	S_NAME=ENUMERATOR_NAME;
+	S_ROLE=1;
+	S_STAFF_ID=tonumber(maketext("%02d%02d%02d%02d%02d",
+		   SA_ID101,SA_ID102,SA_ID103,SA_ID107,totalStaff+1));
+	writecase(STAFF_DICT);
+	
+else
+	//modify exisiting enumerator name
+	S_STAFF_ID=MANAGE_ENUMERATORS;
+	loadcase(STAFF_DICT,S_STAFF_ID);
+	S_NAME=ENUMERATOR_NAME;
+	writecase(STAFF_DICT);
+endif;	
+			
+reenter MANAGE_ENUMERATORS;
+PROC M_SA_ID107
+//Writting supervisor on the staff file
+S_ROLE=2;
+S_STAFF_ID=tonumber(maketext("%02d%02d%02d%02d00",
+		   M_SA_ID101,M_SA_ID102,M_SA_ID103,M_SA_ID107));
+S_NAME = M_SUPERVISOR_NAME;
+if writecase(STAFF_DICT)=0 then
+		errmsg("Please contact Headquarters");
+		stop(1);
+endif;
+
+//save supervision area to the supervision area file.		
+SUPERVISION_AREA_ID=1;
+SA_ID101=M_SA_ID101;
+SA_ID102=M_SA_ID102;
+SA_ID103=M_SA_ID103;
+SA_ID104=M_SA_ID104;
+SA_ID105=M_SA_ID105;
+SA_ID106=M_SA_ID106;
+SA_ID107=M_SA_ID107;
+if writecase(SUPERVISION_AREA_DICT)=0 then
+	errmsg("Please contact Headquarters");
+	stop(1);
+endif;	
+
+reenter MENU_QUEST_FORM;
