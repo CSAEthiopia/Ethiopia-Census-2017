@@ -5,3 +5,217 @@ Version=CSPro 6.3
 ENG=English
 AMH=Amharic
 
+[QUESTION]
+Field=LISTING_DICT.ID101
+ENG={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter region?\lang1033\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fcharset1 Arial;}{\f3\fnil\fprq2\fcharset1 Nyala;}{\f4\fnil\fprq2\fcharset0 Nyala;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\cf1\f0\fs24\lang1031\u4781?\u4621?\u4621?\f1 /\f0\u4776?\f1 /\f0\u4768?\u4661?\u4720?\u4851?\u4848?\u4653?\f2  \cf0\f3\fs22\u4843?\u4661?\u4872?\u4705?\f4\par
+AMH=
+AMH=\pard\cf1\f1\fs24\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID102
+ENG={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter Zone\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fswiss Ebrima;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4830?\u4757?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\cf1\f4\fs24\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID103
+ENG={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter woreda\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset1 Arial;}{\f1\fswiss\fcharset1 Ebrima;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031  \f1\u4808?\u4648?\u4851?\f0  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID104
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter town/city\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset1 Arial;}{\f1\fswiss\fcharset1 Ebrima;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031  \f1\u4776?\u4720?\u4635?\f0  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID105
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter sub city\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fcharset1 Arial;}{\f3\fnil\fprq2\fcharset1 Nyala;}{\f4\fnil\fprq2\fcharset0 Nyala;}{\f5\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4781?\f1 /\f0\u4776?\u4720?\u4635?\f2  \f3\u4843?\u4661?\u4872?\u4705?\f4\par
+AMH=
+AMH=\pard\f5\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID106
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter princepal supervision area\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fcharset1 Arial;}{\f3\fnil\fprq2\fcharset1 Nyala;}{\f4\fnil\fprq2\fcharset0 Nyala;}{\f5\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4776?\f1 /\f0\u4632?\f2  \f0\u4710?\u4723?\f2  \f3\u4843?\u4661?\u4872?\u4705?\f4\par
+AMH=
+AMH=\pard\f5\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID107
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter supervision area\par
+ENG=
+ENG=\pard\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fcharset1 Arial;}{\f3\fnil\fprq2\fcharset1 Nyala;}{\f4\fnil\fprq2\fcharset0 Nyala;}{\f5\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4632?\f1 /\f0\u4678?\f2  \f0\u4710?\u4723?\f2  \f3\u4843?\u4661?\u4872?\u4705?\f4\par
+AMH=
+AMH=\pard\f5\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID108
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter kebele\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4672?\u4704?\u4620?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.ID109
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter enumeration area\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4678?\u4896?\u4651?\f1  \f0\u4710?\u4723?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L10
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter housing unit serial number\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4708?\u4725?\f1  \f0\u4632?\u4616?\u4843?\f1  \f0\u4720?\u4651?\f1  \f0\u4673?\u4901?\u4653?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L11
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter house number\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4708?\u4725?\f1  \f0\u4673?\u4901?\u4653?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L12
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter p\'fcrpose of housing unit\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4708?\u4721?\f1  \f0\u4768?\u4872?\u4621?\u4877?\u4622?\u4725?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L13
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter Serial No. of Residential/ Residential and Enterprise/Enterprise/Hotel/Hostel/Other Collective Quarter\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4708?\u4720?\u4656?\u4709?\f1  \f0\u4840?\u4632?\u4848?\u4704?\u4763?\f1  \f0\u4632?\u4758?\u4650?\u4843?\u4755?\f1  \f0\u4840?\u4853?\u4653?\u4869?\u4725?\f1  \f0\u4720?\u4651?\f1  \f0\u4673?\u4901?\u4653?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L14
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter Name of Head of the Household/Hotel/Hostel/Other Collective Quarter\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Ebrima;}{\f1\fnil\fcharset1 Arial;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031\u4840?\u4708?\u4720?\u4656?\u4709?\f1  \f0\u4608?\u4619?\u4938?\f1  \f0\u4633?\u4617?\f1  \f0\u4661?\u4637?\f1  \f0\u4840?\u4614?\u4724?\u4621?\f1  \f0\u4614?\u4661?\u4724?\u4621?\f1  \f0\u4840?\u4620?\u4619?\f1  \f0\u4875?\u4653?\u4846?\u4669?\f1  \f0\u4632?\u4758?\u4650?\u4843?\f1  \f0\u4661?\u4637?\f1  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+
+[QUESTION]
+Field=LISTING_DICT.L15
+ENG={\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+ENG=\pard\cf1\fs24\lang1031 Enter Household uses irrigation\par
+ENG=}
+AMH={\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset1 Arial;}{\f1\fswiss\fcharset1 Ebrima;}{\f2\fnil\fprq2\fcharset1 Nyala;}{\f3\fnil\fprq2\fcharset0 Nyala;}{\f4\fnil\fprq2 Nyala;}}
+AMH={\*\generator Riched20 6.2.9200}\viewkind4\uc1 
+AMH=\pard\widctlpar\sa200\sl276\slmult1\f0\fs22\lang1031  \f1\u4708?\u4720?\u4656?\u4705?\f0  \f1\u4632?\u4661?\u4758?\f0  \f1\u4845?\u4896?\u4672?\u4635?\u4621?\f0  \f2\u4843?\u4661?\u4872?\u4705?\f3\par
+AMH=
+AMH=\pard\f4\par
+AMH=}
+

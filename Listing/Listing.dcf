@@ -27,17 +27,17 @@ Len=2
 [ValueSet]
 Label=101 Region|101 ክልል/ከ/አስተዳደር
 Name=ID101_VS1
-Value=1;Tigray
-Value=2;Afar
-Value=3;Amhara
-Value=4;Oromia
-Value=5;Somalie
-Value=6;Benshangul
-Value=7;SNNP
-Value=12;Gambella
-Value=13;Harari
-Value=14;Diredawa
-Value=15;Addis Ababa
+Value=1;Tigray|ትግራይ
+Value=2;Afar|አፋር
+Value=3;Amhara|አማራ
+Value=4;Oromia|ኦሮሚያ
+Value=5;Somalie|ሶማሌ
+Value=6;Benshangul|ቤኒሻንጉል
+Value=7;SNNP|ደቡብ ብሄር ብሄረሰቦችና ህዝቦች
+Value=12;Gambella|ጋምቤላ
+Value=13;Harari|ሀረሪ
+Value=14;Diredawa|ድሬዳዋ
+Value=15;Addis Ababa|አዲስ አበባ
 
 [Item]
 Label=102 Zone|102 ዞን
@@ -113,24 +113,24 @@ Start=26
 Len=1
 
 [ValueSet]
-Label=12  Purpose of housing unit|12  የቤቱ አገልግሎት
+Label=12  Purpose of housing unit
 Name=L12_VS1
-Value=1;Residential|ለመደበኛ መኖሪያ ብቻ
-Value=2;Residential and business|ለመደበኛ መኖሪያና ለድርጅት
-Value=3;Hotel/Hostel|ለሆቴል ወይም ለሆስቴል
-Value=4;Other collective|ለሌላ ጋርዮሽ
-Value=5;only for other organization|ለሌላ ድርጅት ብቻ
-Value=6;Homeless|ያልተያዘ ወይም ባዶ የሆነ
-Value=7;Under construction|በመሰራት ለይ ያለ
+Value=1;Residence only
+Value=2;Residence and Enterprise
+Value=3;Hotel/Hostel
+Value=4;Other Collective Quarter
+Value=5;Other Enterprise
+Value=6;Unoccupied/Vacant
+Value=7;Under Construction
 
 [Item]
-Label=13 Serial No. of Residential/ Residential and Enterprise/Enterprise/Hotel/Hostel/Other Collective Quarter|13 የቤተሰብ የመደበኛ መኖሪያና የድርጅት ተራ ቁጥር
+Label=13 Serial No. of Residential|13 የቤተሰብ መኖሪያ ተራ ቁጥር
 Name=L13
 Start=27
 Len=3
 
 [Item]
-Label=14 Name of Head of the Household/Hotel/Hostel/Other Collective Quarter|14 የቤተሰብ ሀላፊ ሙሉ ስም የሆቴል ሆስቴል የሌላ ጋርዮሽ መኖሪያ ስም
+Label=14 Name of Head of the Household|14 የቤተሰብ ሀላፊ ሙሉ ስም 
 Name=L14
 Start=30
 Len=25
