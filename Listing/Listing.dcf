@@ -115,13 +115,13 @@ Len=1
 [ValueSet]
 Label=12  Purpose of housing unit
 Name=L12_VS1
-Value=1;Residence only
-Value=2;Residence and Enterprise
-Value=3;Hotel/Hostel
-Value=4;Other Collective Quarter
-Value=5;Other Enterprise
-Value=6;Unoccupied/Vacant
-Value=7;Under Construction
+Value=1;Residence only|ለመኖሪያ ብቻ
+Value=2;Residence and Enterprise|ለመኖሪያና ለድርጅት
+Value=3;Hotel/Hostel|ሆቴል ወይም ሆስቴል
+Value=4;Other Collective Quarter|ለሌላ ጋርዮሽ
+Value=5;Other Enterprise|ለሌላ ድርጅት
+Value=6;Unoccupied/Vacant|ያልተያዘ ወይንም ባዶ
+Value=7;Under Construction|በመሰራት ላይ ያለ
 
 [Item]
 Label=13 Serial No. of Residential|13 የቤተሰብ መኖሪያ ተራ ቁጥር
@@ -130,7 +130,7 @@ Start=27
 Len=3
 
 [Item]
-Label=14 Name of Head of the Household|14 የቤተሰብ ሀላፊ ሙሉ ስም 
+Label=14 Name of Head of the Household|14 የቤተሰብ ሀላፊ ሙሉ ስም
 Name=L14
 Start=30
 Len=25
