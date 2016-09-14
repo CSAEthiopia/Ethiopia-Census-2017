@@ -1,0 +1,166 @@
+﻿[FormFile]
+Version=CSPro 6.3
+Name=MENU_FF
+Label=Menu
+DefaultTextFont=-013 0000 0000 0000 0700 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=.\Menu.dcf
+  
+[Form]
+Name=FORM000
+Label=Menu questionnaire
+Level=1
+Size=493,398
+  
+Item=LOGIN
+Item=ENUMERATION_AREA_CODE
+Item=SUPERVISON_AREA_CODE
+Item=ENUMERATOR_MAIN_MENU
+Item=SUPERVISOR_MAIN_MENU
+Item=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
+Item=VIEW_MANUALS
+Item=SUMMARY_REPORTS
+Item=SUPERVISOR_LAUNCH_LISTING
+Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
+  
+[EndForm]
+  
+[Level]
+Name=MENU_QUEST
+Label=Menu questionnaire
+  
+[Group]
+Required=Yes
+Name=MENU_QUEST_FORM
+Label=Menu questionnaire
+Form=1
+LogicControl=No
+Max=1
+  
+[Field]
+Name=LOGIN
+Position=327,82,468,102
+Item=LOGIN,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,86,65,102
+Text=Login
+ 
+  
+[Field]
+Name=ENUMERATION_AREA_CODE
+Position=327,113,356,133
+Item=ENUMERATION_AREA_CODE,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,116,178,132
+Text=Enumeration area code
+ 
+  
+[Field]
+Name=SUPERVISON_AREA_CODE
+Position=327,143,356,163
+Item=SUPERVISON_AREA_CODE,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,146,168,162
+Text=Supervison area code
+ 
+  
+[Field]
+Name=ENUMERATOR_MAIN_MENU
+Position=327,173,342,193
+Item=ENUMERATOR_MAIN_MENU,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,176,179,192
+Text=Enumerator main menu
+ 
+  
+[Field]
+Name=SUPERVISOR_MAIN_MENU
+Position=327,203,342,223
+Item=SUPERVISOR_MAIN_MENU,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,206,173,222
+Text=Supervisor main menu
+ 
+  
+[Field]
+Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
+Position=327,233,370,253
+Item=LAUNCH_HOUSEHOLD_QUESTIONNAIRE,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,236,237,252
+Text=Launch household questionnaire
+ 
+  
+[Field]
+Name=VIEW_MANUALS
+Position=327,263,342,283
+Item=VIEW_MANUALS,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,266,119,282
+Text=View manuals
+ 
+  
+[Field]
+Name=SUMMARY_REPORTS
+Position=327,293,342,313
+Item=SUMMARY_REPORTS,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,296,138,312
+Text=Summary reports
+ 
+  
+[Field]
+Name=SUPERVISOR_LAUNCH_LISTING
+Position=327,323,342,343
+Item=SUPERVISOR_LAUNCH_LISTING,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,326,186,342
+Text=Supervisor launch listing
+ 
+  
+[Field]
+Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
+Position=327,353,342,373
+Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=29,356,305,372
+Text=Supervisor launch household questionnaire
+ 
+[EndGroup]
+  

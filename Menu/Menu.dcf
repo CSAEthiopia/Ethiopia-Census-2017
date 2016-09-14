@@ -1,0 +1,103 @@
+﻿[Dictionary]
+Version=CSPro 6.3
+Label=Menu
+Name=MENU_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Menu questionnaire
+Name=MENU_QUEST
+
+[IdItems]
+
+[Item]
+Label=Menu identification
+Name=MENU_ID
+Start=2
+Len=1
+
+[Record]
+Label=Menu record
+Name=MENU_REC
+RecordTypeValue='1'
+RecordLen=25
+
+[Item]
+Label=Login
+Name=LOGIN
+Start=3
+Len=10
+
+[Item]
+Label=Enumeration area code
+Name=ENUMERATION_AREA_CODE
+Start=13
+Len=2
+
+[Item]
+Label=Supervison area code
+Name=SUPERVISON_AREA_CODE
+Start=15
+Len=2
+
+[Item]
+Label=Enumerator main menu
+Name=ENUMERATOR_MAIN_MENU
+Start=17
+Len=1
+
+[ValueSet]
+Label=Enumerator main menu
+Name=ENUMERATOR_MAIN_MENU_VS1
+Value=1;Launch listing
+Value=2;Launch household questionnaire
+Value=3;Synchronize with supervisor
+Value=4;View manuals
+Value=9;Exit
+
+[Item]
+Label=Supervisor main menu
+Name=SUPERVISOR_MAIN_MENU
+Start=18
+Len=1
+
+[Item]
+Label=Launch household questionnaire
+Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
+Start=19
+Len=3
+
+[Item]
+Label=View manuals
+Name=VIEW_MANUALS
+Start=22
+Len=1
+
+[ValueSet]
+Label=View manuals
+Name=VIEW_MANUALS_VS1
+Value=1;Enumerator manual
+Value=2;User guide
+Value=9;Back to main menu
+
+[Item]
+Label=Summary reports
+Name=SUMMARY_REPORTS
+Start=23
+Len=1
+
+[Item]
+Label=Supervisor launch listing
+Name=SUPERVISOR_LAUNCH_LISTING
+Start=24
+Len=1
+
+[Item]
+Label=Supervisor launch household questionnaire
+Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
+Start=25
+Len=1
