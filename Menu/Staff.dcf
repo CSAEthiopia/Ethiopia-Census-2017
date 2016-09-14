@@ -1,0 +1,48 @@
+﻿[Dictionary]
+Version=CSPro 6.3
+Label=Staff
+Name=STAFF_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Staff questionnaire
+Name=STAFF_QUEST
+
+[IdItems]
+
+[Item]
+Label=Staff ID
+Name=S_STAFF_ID
+Note=This is region, zone, woreda, supervision area, and two digitis for Enumerator. This ensures that IDs are unique when
+Note=combined in the global data file.
+Start=1
+Len=10
+
+[Record]
+Label=Staff record
+Name=STAFF_REC
+RecordTypeValue=''
+RecordLen=36
+
+[Item]
+Label=Name
+Name=S_NAME
+Start=11
+Len=25
+DataType=Alpha
+
+[Item]
+Label=Role
+Name=S_ROLE
+Start=36
+Len=1
+
+[ValueSet]
+Label=Role
+Name=S_ROLE_VS1
+Value=1;Enumerator
+Value=2;Supervisor
