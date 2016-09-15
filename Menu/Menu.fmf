@@ -153,7 +153,7 @@ Text=Supervisor main menu
   
 [Field]
 Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
-Position=327,264,370,284
+Position=327,264,412,284
 Item=LAUNCH_HOUSEHOLD_QUESTIONNAIRE,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
@@ -191,9 +191,10 @@ Text=Summary reports
   
 [Field]
 Name=SUPERVISOR_LAUNCH_LISTING
-Position=327,354,342,374
+Position=327,354,398,374
 Item=SUPERVISOR_LAUNCH_LISTING,MENU_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
@@ -203,9 +204,10 @@ Text=Supervisor launch listing
   
 [Field]
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Position=327,384,342,404
+Position=327,384,398,404
 Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES,MENU_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
