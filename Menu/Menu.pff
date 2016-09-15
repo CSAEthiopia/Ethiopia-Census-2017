@@ -16,5 +16,8 @@ SUPERVISION_AREA_DICT=.\supervisionArea.dat
 ASSIGNMENT_DICT=.\assignment.dat
 STAFF_DICT=.\staff.dat
 
+[UserFiles]
+PFFFILE=
+
 [Parameters]
 

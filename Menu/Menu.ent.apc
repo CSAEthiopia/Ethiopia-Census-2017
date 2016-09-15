@@ -3,8 +3,39 @@ PROC GLOBAL
 array codes(100);
 array string labels(100); 
 numeric totalStaff;
+file pffFile;
+
+//Generate the EA code
+function string getEnumEACode()
+    getEnumEACode = maketext("%02d%02d%02d%d%02d%02d%02d%03d%02d",
+         SA_ID101,SA_ID102,SA_ID103,SA_ID104,SA_ID105,SA_ID106,
+         SA_ID107,KEBELE_CODE,ENUMERATION_AREA_CODE);
+end;
+
+// Generate Listing file name from EA code and Staff code.
+function string enumListingFileName()
+	enumListingFileName = maketext("L%s_%010d.dat",getEnumEACode(),LOGIN);
+end;
 
 function launchListing()
+
+	setfile(pffFile,"./listing.pff",create);
+
+	filewrite(pffFile,"[Run Information]");
+	filewrite(pffFile,"Version=CSPro 6.3");
+	filewrite(pffFile,"AppType=Entry");
+	filewrite(pffFile,"Description="); // empty description so doesn't show on tab
+	filewrite(pffFile,"[DataEntryInit]");
+
+	filewrite(pffFile,"[Files]");
+	filewrite(pffFile,"Application=%s","../Listing/Listing.ent");
+	filewrite(pffFile,"InputData=../Data/%s",enumListingFileName());
+
+	close(pffFile);
+
+	if execpff(filename(pffFile)) = 0 then
+		errmsg("Fail to launch listing");
+    endif;		
 end;
 
 function syncSupervisor()
@@ -115,6 +146,9 @@ endif;
 
 reenter;
 PROC SUPERVISOR_MAIN_MENU
+onfocus
+$ = notappl;
+postproc
 if $ = 1 then
 	SyncWithEnumerator();
 elseif $ = 2 then
