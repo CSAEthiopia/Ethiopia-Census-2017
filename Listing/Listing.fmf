@@ -50,6 +50,7 @@ Max=1
 Name=L_ID100
 Position=511,23,652,43
 Item=L_ID100,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
@@ -62,109 +63,118 @@ Text=100 Id no. of enumerator
 Name=L_ID101
 Position=511,53,540,73
 Item=L_ID101,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=298,56,368,72
-Text=101 Region
+Position=298,56,393,72
+Text=101 ክልል/ከ/አስተዳደር
  
   
 [Field]
 Name=L_ID102
 Position=511,83,540,103
 Item=L_ID102,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,86,354,102
-Text=102 Zone
+Position=298,86,335,102
+Text=102 ዞን
  
   
 [Field]
 Name=L_ID103
 Position=511,113,540,133
 Item=L_ID103,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,116,373,132
-Text=103 Woreda
+Position=298,116,344,132
+Text=103 ወረዳ
  
   
 [Field]
 Name=L_ID104
 Position=511,143,526,163
 Item=L_ID104,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,146,386,162
-Text=104 Town/City
+Position=298,146,346,162
+Text=104 ከተማ
  
   
 [Field]
 Name=L_ID105
 Position=511,173,540,193
 Item=L_ID105,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,176,374,192
-Text=105 Sub city
+Position=298,176,356,192
+Text=105 ክ/ከተማ
  
   
 [Field]
 Name=L_ID106
 Position=511,203,540,223
 Item=L_ID106,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,206,489,222
-Text=106 Principal supervision area
+Position=298,206,361,222
+Text=106 ከ/መ ቦታ
  
   
 [Field]
 Name=L_ID107
 Position=511,233,540,253
 Item=L_ID107,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,236,431,252
-Text=107 Supervision area
+Position=298,236,367,252
+Text=107 የመ/ቆ ቦታ
  
   
 [Field]
 Name=L_ID108
 Position=511,263,554,283
 Item=L_ID108,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,266,368,282
-Text=108 Kebele
+Position=298,266,344,282
+Text=108 ቀበሌ
  
   
 [Field]
 Name=L_ID109
 Position=511,293,540,313
 Item=L_ID109,LISTING_DICT
+Persistent=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,296,437,312
-Text=109 Enumeration area
+Position=298,296,369,312
+Text=109 የቆጠራ ቦታ
  
   
 [Field]
@@ -175,8 +185,8 @@ FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,326,458,342
-Text=10 Housing unit serial no.
+Position=298,326,405,342
+Text=10 የቤት መለያ ተራ ቁጥር
  
   
 [Field]
@@ -187,8 +197,8 @@ FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=298,356,408,372
-Text=11 House number
+Position=298,356,361,372
+Text=11 የቤት ቁጥር
  
   
 [Field]
@@ -200,8 +210,8 @@ DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=141,414,309,430
-Text=12 Purpose of housing unit
+Position=141,414,225,430
+Text=12  የቤቱ አገልግሎት
  
   
 [Field]
@@ -212,8 +222,8 @@ FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=141,444,303,460
-Text=13 Serial no. of residence
+Position=141,444,268,460
+Text=13 የቤተሰብ መኖሪያ ተራ ቁጥር
  
   
 [Field]
@@ -224,8 +234,8 @@ FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=141,474,358,490
-Text=14 Name of head of the household
+Position=141,474,258,490
+Text=14 የቤተሰብ ሀላፊ ሙሉ ስም
  
   
 [Field]
@@ -237,8 +247,8 @@ DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=141,504,244,520
-Text=15 Use irrigation
+Position=141,504,257,520
+Text=15 ቤተሰቡ መስኖ ይጠቀማል
  
 [EndGroup]
   
