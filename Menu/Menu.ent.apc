@@ -17,6 +17,10 @@ function string enumListingFileName()
 	enumListingFileName = maketext("L%s_%010d.dat",getEnumEACode(),LOGIN);
 end;
 
+function string enumHouseholdFileName()
+	enumHouseholdFileName = maketext("H%s_%010d.dat",getEnumEACode(),LOGIN);
+end;
+ 
 function launchListing()
 
 	setfile(pffFile,"./listing.pff",create);
@@ -30,12 +34,55 @@ function launchListing()
 	filewrite(pffFile,"[Files]");
 	filewrite(pffFile,"Application=%s","../Listing/Listing.ent");
 	filewrite(pffFile,"InputData=../Data/%s",enumListingFileName());
-
+	filewrite(pffFile,"[Parameters]");
+	filewrite(pffFile,"region=%d",SA_ID101);
+	filewrite(pffFile,"zone=%d",SA_ID102);
+	filewrite(pffFile,"woreda=%d",SA_ID103);
+	filewrite(pffFile,"town=%d",SA_ID104);
+	filewrite(pffFile,"subcity=%d",SA_ID105);
+	filewrite(pffFile,"PSA=%d",SA_ID106);
+	filewrite(pffFile,"SA=%d",SA_ID107);
+	filewrite(pffFile,"kebele=%d",KEBELE_CODE);
+	filewrite(pffFile,"EA=%d",ENUMERATION_AREA_CODE);		
+	filewrite(pffFile,"Staff ID=%d",S_STAFF_ID);	
 	close(pffFile);
 
 	if execpff(filename(pffFile)) = 0 then
 		errmsg("Fail to launch listing");
     endif;		
+end;
+
+function launchHHquest(husn,hhsn)
+setfile(pffFile,"./Household.pff",create);
+
+	filewrite(pffFile,"[Run Information]");
+	filewrite(pffFile,"Version=CSPro 6.3");
+	filewrite(pffFile,"AppType=Entry");
+	filewrite(pffFile,"Description="); // empty description so doesn't show on tab
+	filewrite(pffFile,"[DataEntryInit]");
+
+	filewrite(pffFile,"[Files]");
+	filewrite(pffFile,"Application=%s","../Household/Household.ent");
+	filewrite(pffFile,"InputData=../Data/%s",enumHouseholdFileName());
+	filewrite(pffFile,"[Parameters]");
+	filewrite(pffFile,"region=%d",SA_ID101);
+	filewrite(pffFile,"zone=%d",SA_ID102);
+	filewrite(pffFile,"woreda=%d",SA_ID103);
+	filewrite(pffFile,"town=%d",SA_ID104);
+	filewrite(pffFile,"subcity=%d",SA_ID105);
+	filewrite(pffFile,"PSA=%d",SA_ID106);
+	filewrite(pffFile,"SA=%d",SA_ID107);
+	filewrite(pffFile,"kebele=%d",KEBELE_CODE);
+	filewrite(pffFile,"EA=%d",ENUMERATION_AREA_CODE);		
+	filewrite(pffFile,"Staff ID=%d",S_STAFF_ID);	
+	filewrite(pffFile,"Housing SN=%d",husn);		
+	filewrite(pffFile,"Household SN=%d",hhsn);	
+	close(pffFile);
+
+	if execpff(filename(pffFile)) = 0 then
+		errmsg("Fail to launch Household form");
+    endif;		
+   
 end;
 
 function syncSupervisor()
@@ -170,6 +217,37 @@ elseif $ = 9 then
 endif;
 
 reenter;
+PROC LAUNCH_HOUSEHOLD_QUESTIONNAIRE
+onfocus
+//Making dynamic value set from listing form.
+string listingFileName = pathname(application) +
+	maketext("..\Data\%s",enumListingFileName());
+if setfile(LISTING_DICT, listingFileName) = 0 or locate(LISTING_DICT,>=,"") = 0 then
+	errmsg("This EA has not yet been listed, please list it first.");
+	close(LISTING_DICT);
+	reenter ENUMERATOR_MAIN_MENU;
+endif;
+numeric i=1;
+while loadcase(LISTING_DICT) do
+	codes(i)=L10*1000+L13;
+	labels(i)=maketext("HU %03d HH %03d: %s",L10,L13,strip(L14));
+	i=i+1;
+enddo;	
+close(LISTING_DICT);
+codes(i) = -1;
+labels(i) = "Back to Main menu";
+i = i+1;
+codes(i)=notappl;
+setvalueset($,codes,labels);
+
+postproc
+if $ = -1 then 
+	reenter ENUMERATOR_MAIN_MENU;
+endif;
+//decompose housing and household serial number from dynamic value set
+numeric husn =int($/1000);
+numeric hhsn = $%1000;
+launchHHquest(husn,hhsn);
 PROC VIEW_MANUALS
 
 if $ = 1 then
@@ -304,6 +382,12 @@ endif;
 			
 reenter MANAGE_ENUMERATORS;
 PROC M_SA_ID107
+//Check whether the EA code match with the EA file.
+if loadcase(EA_CODE_DICT,M_SA_ID101,M_SA_ID102,M_SA_ID103,M_SA_ID104,M_SA_ID105,M_SA_ID106,M_SA_ID107)=0 then
+	errmsg("Invalid Enumeration area code");
+    reenter M_SA_ID101;
+endif;
+
 //Writting supervisor on the staff file
 S_ROLE=2;
 S_STAFF_ID=tonumber(maketext("%02d%02d%02d%02d00",

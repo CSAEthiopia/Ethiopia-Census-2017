@@ -15,6 +15,7 @@ File=.\Assignment.dcf
 File=.\Staff.dcf
 File=.\Supervision area.dcf
 File=.\EA code.dcf
+File=..\Listing\Listing.dcf
 [AppCode]
 File=.\Menu.ent.apc
 [Message]
@@ -23,9 +24,12 @@ File=.\Menu.ent.mgf
 File=.\Menu.ent.qsf
 [Forms]
 File=.\Menu.fmf
+[Resources]
+Folder=..\Resource
 [Dictionary Types]
 Dict-Type=.\Menu.dcf,Input,.\Menu.fmf
 Dict-Type=.\Assignment.dcf,External
 Dict-Type=.\Staff.dcf,External
 Dict-Type=.\Supervision area.dcf,External
 Dict-Type=.\EA code.dcf,External
+Dict-Type=..\Listing\Listing.dcf,External
