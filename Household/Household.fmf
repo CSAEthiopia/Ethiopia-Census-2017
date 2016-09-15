@@ -14,7 +14,7 @@ Name=FORM000
 Label=Household questionnaire
 QuestionTextHeight=61
 Level=1
-Size=708,1842
+Size=658,453
   
 Item=ID101
 Item=ID102
@@ -27,6 +27,7 @@ Item=ID108
 Item=ID109
 Item=ID202
 Item=ID203
+Item=H201
   
 [EndForm]
   
@@ -41,7 +42,7 @@ Item=HOUSEHOLD_ROSTER
   
 [Text]
 Name=TEXT1
-Position=450,40,869,62
+Position=450,130,869,152
 Text=Section -3  Detail of persons in the household
 Form=2
 Font=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
@@ -132,11 +133,12 @@ Item=P601_MALE000
 Name=FORM010
 Label=Death
 Level=1
-Size=935,561
+Size=935,471
   
 Item=P701M
 Item=P701F
 Item=DEATH_ROSTER
+Item=P701T
   
 [EndForm]
   
@@ -327,6 +329,18 @@ Form=1
 Position=132,362,568,378
 Text=203 Households, Hotel/Hostel/Other Collective Quarter Serial Number
  
+  
+[Field]
+Name=H201
+Position=606,396,621,416
+Item=H201,HOUSEHOLD_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=132,412,270,428
+Text=201 Type of residence
+ 
 [EndGroup]
   
 [Group]
@@ -345,7 +359,7 @@ Required=No
 Type=Record
 TypeName=INDIVIDUAL
 Max=150
-DisplaySize=21,100,1386,420
+DisplaySize=21,182,1386,502
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -2976,7 +2990,7 @@ Width=108
   
 [HeaderText]
 Position=0,0,108,40
-Text=315A   Disablity seeing 
+Text=315A   Disablity seeing
  
 [Field]
 Name=P315A
@@ -5670,7 +5684,7 @@ Width=134
   
 [HeaderText]
 Position=0,16,134,40
-Text=401 Read and write 
+Text=401 Read and write
  
 [Field]
 Name=P401
@@ -8435,7 +8449,7 @@ Width=134
   
 [HeaderText]
 Position=0,16,134,56
-Text=606 How many  still alive 
+Text=606 How many  still alive
  
 [Field]
 Name=P606
@@ -8444,7 +8458,7 @@ Item=P606,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
   
 [Text]
-Text=606 How many  still alive 
+Text=606 How many  still alive
  
 [EndColumn]
   
@@ -8592,6 +8606,18 @@ Form=11
 [Text]
 Position=55,77,313,93
 Text=701 Death  since  november 2016_female
+ 
+  
+[Field]
+Name=P701T
+Position=760,78,789,98
+Item=P701T,HOUSEHOLD_DICT
+FieldLabelType=DictionaryLabel
+Form=11
+  
+[Text]
+Position=418,81,725,97
+Text=701 Total number of death since november 2015 
  
   
 [Grid]
