@@ -2,6 +2,8 @@
 PROC GLOBAL
 
 numeric i;
+array string labels(30);
+array numeric codes(30);
 // the function used to display error message using code 1000-1999 in english langage,Amrharic language 2000-2999 
 //for other langages,English language
 function getErrorCode(errCode) 
@@ -15,6 +17,23 @@ function getErrorCode(errCode)
 end;
 PROC HOUSEHOLD_FF
 
+PROC HOUSEHOLD_QUEST
+preproc 
+set behavior(END_HOUR,END_MINUTE )canenter(notappl) on (noconfirm);
+//add the start time when the questionnaire is in add mode
+numeric time=systime();
+if demode()= add then
+	START_HOUR = int(time /10000);
+	START_MINUTE =int(time /100) % 100;
+endif;
+
+postproc
+// add endtime if demode= add 
+time =systime();
+if demode()= add then
+	END_HOUR = int(time /10000);
+	END_MINUTE =int(time /100) % 100;
+endif;
 PROC P301
 preproc
 //initialize the line number
@@ -43,10 +62,39 @@ PROC PERSON_DETAILS_ROSTER
 
 PROC P309
 preproc
+
 //if we have enter information for  the individuals in the household end the group
 if curocc()>totocc(HOUSEHOLD_ROSTER) then
-endgroup;
+	endgroup;
+elseif P308(curocc())>=18 then // if age of the person is 18 and older put mother line=88
+	$=88;
+	noinput;
 endif;
+
+onfocus
+// create mother line number value set
+numeric nextEntryValueSet=1;
+{Eligible mothers are females who are 10 and above old}
+numeric motherIndex =seek(P307=2 and P308>=10);
+//create value set for individual under 18
+if  P308(curocc()) < 18 then
+	while motherIndex do
+	if curocc() <> P301(motherIndex) then
+		codes(nextEntryValueSet)= P301(motherIndex);
+		labels(nextEntryValueSet) = P302(motherIndex);		
+		nextEntryValueSet= nextEntryValueSet+1;
+	endif;
+		 motherIndex =seek(P307=2 and P308>=10,motherIndex+1);
+	enddo;
+endif;
+codes(nextEntryValueSet) = 88;
+labels(nextEntryValueSet) = "Not applicable" ;
+nextEntryValueSet= nextEntryValueSet+1;
+codes(nextEntryValueSet) = notappl;
+setvalueset(P309,codes,labels);
+
+
+
 PROC P315A
 preproc
 //if we have entered all the diability information for  the individuals in the household end the group

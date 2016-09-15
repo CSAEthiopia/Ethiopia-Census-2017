@@ -14,7 +14,7 @@ Name=FORM000
 Label=Household questionnaire
 QuestionTextHeight=61
 Level=1
-Size=658,453
+Size=658,555
   
 Item=ID101
 Item=ID102
@@ -28,7 +28,25 @@ Item=ID109
 Item=ID202
 Item=ID203
 Item=H201
+Item=START_HOUR
+Item=START_MINUTE
+Item=END_HOUR
+Item=END_MINUTE
   
+  
+[Text]
+Name=TEXT2
+Position=303,482,307,498
+Text=:
+Form=1
+ 
+  
+[Text]
+Name=TEXT3
+Position=303,514,307,530
+Text=:
+Form=1
+ 
 [EndForm]
   
 [Form]
@@ -341,6 +359,46 @@ Form=1
 Position=132,412,270,428
 Text=201 Type of residence
  
+  
+[Field]
+Name=START_HOUR
+Position=269,480,298,500
+Item=START_HOUR,HOUSEHOLD_DICT
+Protected=Yes
+Form=1
+  
+[Text]
+Position=174,479,236,495
+Text=Start time
+ 
+  
+[Field]
+Name=START_MINUTE
+Position=313,479,342,499
+Item=START_MINUTE,HOUSEHOLD_DICT
+Protected=Yes
+Form=1
+  
+  
+[Field]
+Name=END_HOUR
+Position=268,510,297,530
+Item=END_HOUR,HOUSEHOLD_DICT
+Protected=Yes
+Form=1
+  
+[Text]
+Position=179,514,235,530
+Text=End time
+ 
+  
+[Field]
+Name=END_MINUTE
+Position=315,510,344,530
+Item=END_MINUTE,HOUSEHOLD_DICT
+Protected=Yes
+Form=1
+  
 [EndGroup]
   
 [Group]
@@ -2103,8 +2161,10 @@ Name=P309
 Position=95,0,124,20
 Item=P309,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,131,16
 Text=309 Mothers line No
  
 [EndColumn]
@@ -8616,8 +8676,8 @@ FieldLabelType=DictionaryLabel
 Form=11
   
 [Text]
-Position=418,81,725,97
-Text=701 Total number of death since november 2015 
+Position=418,81,721,97
+Text=701 Total number of death since november 2015
  
   
 [Grid]
@@ -8751,7 +8811,7 @@ Width=136
   
 [HeaderText]
 Position=0,16,136,40
-Text=705  Cause of death 
+Text=705  Cause of death
  
 [Field]
 Name=P705
