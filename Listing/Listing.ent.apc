@@ -4,9 +4,12 @@ PROC GLOBAL
 PROC LISTING_FF
 
 PROC L13
-preproc
 
+
+preproc
+// if the purpose of the housing unit is different 
+// from 1 upto 4 it skips to irrigation question!!! 
 if L12 in 5:7 then
-skip to L15
+   skip to L15
 
 endif;

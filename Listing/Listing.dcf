@@ -19,14 +19,25 @@ Name=LISTING_QUEST
 [IdItems]
 
 [Item]
-Label=101 Region|101 ክልል/ከ/አስተዳደር
-Name=ID101
+Label=100 Id no. of enumerator
+Name=L_ID100
 Start=2
+Len=10
+
+[ValueSet]
+Label=100 Id no. of enumerator
+Name=L_ID100_VS1
+Value=1:9999999999;Valid
+
+[Item]
+Label=101 Region|101 ክልል/ከ/አስተዳደር
+Name=L_ID101
+Start=12
 Len=2
 
 [ValueSet]
 Label=101 Region|101 ክልል/ከ/አስተዳደር
-Name=ID101_VS1
+Name=L_ID101_VS1
 Value=1;Tigray|ትግራይ
 Value=2;Afar|አፋር
 Value=3;Amhara|አማራ
@@ -41,79 +52,89 @@ Value=15;Addis Ababa|አዲስ አበባ
 
 [Item]
 Label=102 Zone|102 ዞን
-Name=ID102
-Start=4
+Name=L_ID102
+Start=14
 Len=2
 
 [Item]
 Label=103 Woreda|103 ወረዳ
-Name=ID103
-Start=6
+Name=L_ID103
+Start=16
 Len=2
 
 [Item]
 Label=104 Town/City|104 ከተማ
-Name=ID104
-Start=8
+Name=L_ID104
+Start=18
 Len=1
 ZeroFill=Yes
 
 [Item]
-Label=105 Sub City|105 ክ/ከተማ
-Name=ID105
-Start=9
+Label=105 Sub city|105 ክ/ከተማ
+Name=L_ID105
+Start=19
 Len=2
 
 [Item]
-Label=106 Principal  Supervision .Area|106 ከ/መ ቦታ
-Name=ID106
-Start=11
+Label=106 Principal supervision area|106 ከ/መ ቦታ
+Name=L_ID106
+Start=21
 Len=2
 
 [Item]
-Label=107 Supervision Area|107 የመ/ቆ ቦታ
-Name=ID107
-Start=13
+Label=107 Supervision area|107 የመ/ቆ ቦታ
+Name=L_ID107
+Start=23
 Len=2
 
 [Item]
 Label=108 Kebele|108 ቀበሌ
-Name=ID108
-Start=15
+Name=L_ID108
+Start=25
 Len=3
 
 [Item]
-Label=109 Enumeration Area|109 የቆጠራ ቦታ
-Name=ID109
-Start=18
+Label=109 Enumeration area|109 የቆጠራ ቦታ
+Name=L_ID109
+Start=28
 Len=2
 
 [Item]
-Label=10 Housing  Unit Serial No.|10 የቤት መለያ ተራ ቁጥር
+Label=10 Housing unit serial no.|10 የቤት መለያ ተራ ቁጥር
 Name=L10
-Start=20
+Start=30
 Len=3
+
+[ValueSet]
+Label=10 Housing unit serial no.|10 የቤት መለያ ተራ ቁጥር
+Name=L10_VS1
+Value=1:999;Valid
 
 [Item]
 Label=11 House number|11 የቤት ቁጥር
 Name=L11
-Start=23
+Start=33
 Len=3
+
+[ValueSet]
+Label=11 House number|11 የቤት ቁጥር
+Name=L11_VS1
+Value=1:999;Valid
 
 [Record]
 Label=Listing record
 Name=LISTING_REC
 RecordTypeValue='1'
-RecordLen=55
+RecordLen=65
 
 [Item]
-Label=12  Purpose of housing unit|12  የቤቱ አገልግሎት
+Label=12 Purpose of housing unit|12  የቤቱ አገልግሎት
 Name=L12
-Start=26
+Start=36
 Len=1
 
 [ValueSet]
-Label=12  Purpose of housing unit
+Label=12 Purpose of housing unit
 Name=L12_VS1
 Value=1;Residence only|ለመኖሪያ ብቻ
 Value=2;Residence and Enterprise|ለመኖሪያና ለድርጅት
@@ -124,26 +145,31 @@ Value=6;Unoccupied/Vacant|ያልተያዘ ወይንም ባዶ
 Value=7;Under Construction|በመሰራት ላይ ያለ
 
 [Item]
-Label=13 Serial No. of Residential|13 የቤተሰብ መኖሪያ ተራ ቁጥር
+Label=13 Serial no. of residence|13 የቤተሰብ መኖሪያ ተራ ቁጥር
 Name=L13
-Start=27
+Start=37
 Len=3
 
+[ValueSet]
+Label=13 Serial no. of residence|13 የቤተሰብ መኖሪያ ተራ ቁጥር
+Name=L13_VS1
+Value=1:999;Valid
+
 [Item]
-Label=14 Name of Head of the Household|14 የቤተሰብ ሀላፊ ሙሉ ስም
+Label=14 Name of head of the household|14 የቤተሰብ ሀላፊ ሙሉ ስም
 Name=L14
-Start=30
+Start=40
 Len=25
 DataType=Alpha
 
 [Item]
-Label=15 Household uses irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Label=15 Use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
 Name=L15
-Start=55
+Start=65
 Len=1
 
 [ValueSet]
-Label=15 Household uses irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
+Label=15 Use irrigation|15 ቤተሰቡ መስኖ ይጠቀማል
 Name=L15_VS1
 Value=1;Yes|አዎን
 Value=2;No|የለም
