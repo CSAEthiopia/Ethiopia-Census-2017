@@ -63,6 +63,7 @@ Name=L_ID101
 Position=511,53,540,73
 Item=L_ID101,LISTING_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
@@ -195,11 +196,12 @@ Name=L12
 Position=380,411,395,431
 Item=L12,LISTING_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=141,414,313,430
-Text=12  Purpose of housing unit
+Position=141,414,309,430
+Text=12 Purpose of housing unit
  
   
 [Field]
@@ -231,6 +233,7 @@ Name=L15
 Position=380,501,395,521
 Item=L15,LISTING_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
