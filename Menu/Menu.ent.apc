@@ -30,7 +30,17 @@ function launchListing()
 	filewrite(pffFile,"[Files]");
 	filewrite(pffFile,"Application=%s","../Listing/Listing.ent");
 	filewrite(pffFile,"InputData=../Data/%s",enumListingFileName());
-
+	filewrite(pffFile,"[Parameters]");
+	filewrite(pffFile,"region=%d",SA_ID101);
+	filewrite(pffFile,"zone=%d",SA_ID102);
+	filewrite(pffFile,"woreda=%d",SA_ID103);
+	filewrite(pffFile,"town=%d",SA_ID104);
+	filewrite(pffFile,"subcity=%d",SA_ID105);
+	filewrite(pffFile,"PSA=%d",SA_ID106);
+	filewrite(pffFile,"SA=%d",SA_ID107);
+	filewrite(pffFile,"kebele=%d",KEBELE_CODE);
+	filewrite(pffFile,"EA=%d",ENUMERATION_AREA_CODE);		
+	filewrite(pffFile,"Staff ID=%d",S_STAFF_ID);	
 	close(pffFile);
 
 	if execpff(filename(pffFile)) = 0 then
@@ -304,6 +314,12 @@ endif;
 			
 reenter MANAGE_ENUMERATORS;
 PROC M_SA_ID107
+//Check whether the EA code match with the EA file.
+if loadcase(EA_CODE_DICT,M_SA_ID101,M_SA_ID102,M_SA_ID103,M_SA_ID104,M_SA_ID105,M_SA_ID106,M_SA_ID107)=0 then
+	errmsg("Invalid Enumeration area code");
+    reenter M_SA_ID101;
+endif;
+
 //Writting supervisor on the staff file
 S_ROLE=2;
 S_STAFF_ID=tonumber(maketext("%02d%02d%02d%02d00",
