@@ -1434,6 +1434,25 @@ Name=FINAL_RESULT
 Start=83
 Len=1
 
+[ValueSet]
+Label=Final result
+Name=FINAL_RESULT_VS1
+Value=1;Completed
+Value=2;No household members at home
+Value=3;Entire household absent for extended period of time
+Value=4;Dwelling Vacant
+Value=5;Refusal
+Value=6;Partially  completed
+
+[ValueSet]
+Label=Final result
+Name=FINAL_RESULT_VS2
+Value=2;No household members at home
+Value=3;Entire household absent for extended period of time
+Value=4;Dwelling Vacant
+Value=5;Refusal
+Value=6;Continue  interview
+
 [Record]
 Label=Axullary
 Name=AXULLARY

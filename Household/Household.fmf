@@ -32,6 +32,7 @@ Item=START_HOUR
 Item=START_MINUTE
 Item=END_HOUR
 Item=END_MINUTE
+Item=FINAL_RESULT
   
   
 [Text]
@@ -358,6 +359,19 @@ Form=1
 [Text]
 Position=132,412,270,428
 Text=201 Type of residence
+ 
+  
+[Field]
+Name=FINAL_RESULT
+Position=603,430,618,450
+Item=FINAL_RESULT,HOUSEHOLD_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=161,448,232,464
+Text=Final result
  
   
 [Field]

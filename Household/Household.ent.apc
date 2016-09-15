@@ -34,6 +34,23 @@ if demode()= add then
 	END_HOUR = int(time /10000);
 	END_MINUTE =int(time /100) % 100;
 endif;
+
+FINAL_RESULT=1;
+PROC FINAL_RESULT
+// setting value sets to show continue interview option and removing option for completed
+onfocus 
+if visualvalue($) <> 1 then
+	setvalueset(FINAL_RESULT,FINAL_RESULT_VS2);
+else  
+	setvalueset(FINAL_RESULT,FINAL_RESULT_VS1);
+endif;
+// if the final result is bewwen 2 to 5  end the quesionnaire 
+postproc
+if $ in 2:5 then
+	endlevel;
+else
+ 	setvalueset(FINAL_RESULT,FINAL_RESULT_VS1);
+endif;
 PROC P301
 preproc
 //initialize the line number
