@@ -9,10 +9,12 @@ CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
 CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
 CAPIFont1Color=0
 CAPIFont2Color=16711680
+CaseTree=Never
 [External Dictionaries]
 File=.\Assignment.dcf
 File=.\Staff.dcf
 File=.\Supervision area.dcf
+File=.\EA code.dcf
 [AppCode]
 File=.\Menu.ent.apc
 [Message]
@@ -26,3 +28,4 @@ Dict-Type=.\Menu.dcf,Input,.\Menu.fmf
 Dict-Type=.\Assignment.dcf,External
 Dict-Type=.\Staff.dcf,External
 Dict-Type=.\Supervision area.dcf,External
+Dict-Type=.\EA code.dcf,External

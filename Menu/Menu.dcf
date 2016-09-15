@@ -24,7 +24,7 @@ Len=1
 Label=Menu record
 Name=MENU_REC
 RecordTypeValue='1'
-RecordLen=62
+RecordLen=79
 
 [Item]
 Label=Setup check
@@ -39,21 +39,27 @@ Start=4
 Len=10
 
 [Item]
+Label=Kebele
+Name=KEBELE_CODE
+Start=14
+Len=3
+
+[Item]
 Label=Enumeration area code
 Name=ENUMERATION_AREA_CODE
-Start=14
+Start=17
 Len=2
 
 [Item]
 Label=Supervison area code
 Name=SUPERVISON_AREA_CODE
-Start=16
+Start=19
 Len=2
 
 [Item]
 Label=Enumerator main menu
 Name=ENUMERATOR_MAIN_MENU
-Start=18
+Start=21
 Len=1
 
 [ValueSet]
@@ -68,7 +74,7 @@ Value=9;Exit
 [Item]
 Label=Supervisor main menu
 Name=SUPERVISOR_MAIN_MENU
-Start=19
+Start=22
 Len=1
 
 [ValueSet]
@@ -87,13 +93,13 @@ Value=9;Exit
 [Item]
 Label=Launch household questionnaire
 Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
-Start=20
+Start=23
 Len=3
 
 [Item]
 Label=View manuals
 Name=VIEW_MANUALS
-Start=23
+Start=26
 Len=1
 
 [ValueSet]
@@ -107,39 +113,45 @@ Value=9;Back to main menu
 [Item]
 Label=Summary reports
 Name=SUMMARY_REPORTS
-Start=24
+Start=27
 Len=1
 
 [Item]
 Label=Supervisor launch listing
 Name=SUPERVISOR_LAUNCH_LISTING
-Start=25
+Start=28
 Len=1
 
 [Item]
 Label=Supervisor launch household questionnaire
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Start=26
+Start=29
 Len=1
 
 [Item]
 Label=Manage enumerators
 Name=MANAGE_ENUMERATORS
-Start=27
+Start=30
 Len=10
 
 [Item]
 Label=Manage assignments
 Name=MANAGE_ASSIGNMENTS
-Start=37
-Len=1
+Start=40
+Len=5
 
 [Item]
 Label=Enumerator name
 Name=ENUMERATOR_NAME
-Start=38
+Start=45
 Len=25
 DataType=Alpha
+
+[Item]
+Label=Assign enumerators
+Name=ASSIGN_ENUMERATORS
+Start=70
+Len=10
 
 [Record]
 Label=Initial Setup record

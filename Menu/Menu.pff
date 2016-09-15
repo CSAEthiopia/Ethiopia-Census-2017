@@ -3,6 +3,7 @@ Version=CSPro 6.3
 AppType=Entry
 
 [DataEntryInit]
+StartMode=Add
 Interactive=Ask
 
 [Files]
@@ -10,6 +11,7 @@ Application=.\Menu.ent
 InputData=.\dummy.dat
 
 [ExternalFiles]
+EA_CODE_DICT=.\ea code.dat
 SUPERVISION_AREA_DICT=.\supervisionArea.dat
 ASSIGNMENT_DICT=.\assignment.dat
 STAFF_DICT=.\staff.dat

@@ -15,31 +15,30 @@ Name=ASSIGNMENT_QUEST
 [IdItems]
 
 [Item]
-Label=Staff ID
-Name=A_STAFF_ID
-Note=This is region, zone, woreda, supervision area, and two digitis for Enumerator. This ensures that IDs are unique when
-Note=combined in the global data file.
-Start=1
-Len=10
-ZeroFill=Yes
-
-[Record]
-Label=Assignment record
-Name=ASSIGNMENT_REC
-RecordTypeValue=''
-MaxRecords=10
-RecordLen=15
-
-[Item]
 Label=108 Kebele
 Name=A_ID108
-Start=11
+Start=1
 Len=3
 ZeroFill=Yes
 
 [Item]
 Label=109 Enumeration Area
 Name=A_ID109
-Start=14
+Start=4
 Len=2
+ZeroFill=Yes
+
+[Record]
+Label=Assignment record
+Name=ASSIGNMENT_REC
+RecordTypeValue=''
+RecordLen=15
+
+[Item]
+Label=Staff ID
+Name=A_STAFF_ID
+Note=This is region, zone, woreda, supervision area, and two digitis for Enumerator. This ensures that IDs are unique when
+Note=combined in the global data file.
+Start=6
+Len=10
 ZeroFill=Yes

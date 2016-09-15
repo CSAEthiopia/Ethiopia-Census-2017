@@ -67,21 +67,22 @@ postproc
 S_STAFF_ID=LOGIN;
 loadcase(STAFF_DICT,S_STAFF_ID);
 if S_ROLE=1 then //if enumerator
-	move to ENUMERATION_AREA_CODE;
+	move to KEBELE_CODE;
 elseif S_ROLE=2 then //if supervisor
 	move to SUPERVISON_AREA_CODE;
 endif;
 		
 PROC ENUMERATION_AREA_CODE
 //Verify whether the enumerator is assigned the EA chosen in the assignemt file.
-A_STAFF_ID=S_STAFF_ID;
+A_ID108 = KEBELE_CODE;
+A_ID109 = ENUMERATION_AREA_CODE;
 //load all assignments for the enumerator
-if loadcase(ASSIGNMENT_DICT,A_STAFF_ID)=0 then
-	errmsg("No Assignemnt made.");
+if loadcase(ASSIGNMENT_DICT,A_ID108,A_ID109)=0 then
+	errmsg("Enumeration area is not assigned.");
 	reenter LOGIN;
 else
 	//check if the EA is in the assignment
-	if seek(A_ID109=ENUMERATION_AREA_CODE)=0 then
+	if A_STAFF_ID <> LOGIN then
 		errmsg("Enumeration area is not assigned to you.");
 		reenter LOGIN;
 			
@@ -180,6 +181,71 @@ else
 endif;	
 			
 move to ENUMERATOR_NAME;
+PROC MANAGE_ASSIGNMENTS
+//Load the EA dictionery then assign daynamic value set for assignement field
+//if it find the label it gets the staff name else labeled as unassigned
+onfocus
+numeric i;
+
+// Load all EAs in sup area
+if loadcase(EA_CODE_DICT,SA_ID101,SA_ID102,SA_ID103,SA_ID104,SA_ID105,SA_ID106,SA_ID107)=0 then
+	// No EAs, problem with EA file
+   	errmsg("Please contact Headquarters");
+    reenter SUPERVISOR_MAIN_MENU;
+else
+	// Add entry in value set for each EA
+    do i = 1 while i <= count(EA_CODE_DICT.EA_CODE_REC) 
+    	// Code is kebele code combined with EA code
+		codes(i) = EA_ID108(i) * 100 + EA_ID109(i);
+		
+		// Check if EA assigned
+		if loadcase(ASSIGNMENT_DICT,EA_ID108(i),EA_ID109(i)) = 0 then
+			// unassigned 
+			labels(i)=maketext("%03d%02d Unassigned",EA_ID108(i),EA_ID109(i));
+		else
+			// Find enumerator name from assignment
+			loadcase(STAFF_DICT,A_STAFF_ID);
+			labels(i)=maketext("%03d%02d (%s)",EA_ID108(i),EA_ID109(i),S_NAME);
+	    endif;
+     enddo;
+     codes(i) = notappl;
+endif;
+setvalueset($,codes,labels);
+
+postproc
+//Set value of the next field to match the current assignemnt.
+A_ID108 = int(MANAGE_ASSIGNMENTS/100);
+A_ID109 = MANAGE_ASSIGNMENTS%100;
+if loadcase(ASSIGNMENT_DICT,A_ID108,A_ID109) = 1 then
+	ASSIGN_ENUMERATORS = A_STAFF_ID;
+else
+	ASSIGN_ENUMERATORS = notappl;
+endif;
+PROC ASSIGN_ENUMERATORS
+onfocus
+numeric i=1;
+locate(STAFF_DICT,>=,"");
+while loadcase(STAFF_DICT) do
+	if S_ROLE=1 then 
+		codes(i)=S_STAFF_ID;
+		labels(i)=S_NAME;
+		i=i+1;
+	endif;	
+enddo;
+codes(i)=-1;
+labels(i)="Back";	
+i=i+1;
+codes(i)=notappl;
+setvalueset($,codes,labels);
+postproc
+if ASSIGN_ENUMERATORS <> -1 then 
+	//Update assignment file
+	A_ID108 = int(MANAGE_ASSIGNMENTS/100);
+	A_ID109 = MANAGE_ASSIGNMENTS%100;
+	A_STAFF_ID = ASSIGN_ENUMERATORS;
+	writecase(ASSIGNMENT_DICT);
+endif;
+reenter MANAGE_ASSIGNMENTS;
 PROC ENUMERATOR_NAME
 if ENUMERATOR_NAME="" then
 	errmsg("Please enter enumerator name.");

@@ -13,7 +13,7 @@ File=.\Menu.dcf
 Name=FORM000
 Label=Menu questionnaire
 Level=1
-Size=563,562
+Size=562,585
   
 Item=LOGIN
 Item=ENUMERATION_AREA_CODE
@@ -29,6 +29,8 @@ Item=SETUP_CHECK
 Item=MANAGE_ENUMERATORS
 Item=MANAGE_ASSIGNMENTS
 Item=ENUMERATOR_NAME
+Item=KEBELE_CODE
+Item=ASSIGN_ENUMERATORS
   
 [EndForm]
   
@@ -83,157 +85,182 @@ DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,86,65,102
+Position=27,86,63,102
 Text=Login
  
   
 [Field]
+Name=KEBELE_CODE
+Position=327,114,370,134
+Item=KEBELE_CODE,MENU_DICT
+FieldLabelType=DictionaryLabel
+Form=1
+  
+[Text]
+Position=27,119,72,135
+Text=Kebele
+ 
+  
+[Field]
 Name=ENUMERATION_AREA_CODE
-Position=327,113,356,133
+Position=327,144,356,164
 Item=ENUMERATION_AREA_CODE,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,116,178,132
+Position=27,147,176,163
 Text=Enumeration area code
  
   
 [Field]
 Name=SUPERVISON_AREA_CODE
-Position=327,143,356,163
+Position=327,174,356,194
 Item=SUPERVISON_AREA_CODE,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,146,168,162
+Position=27,177,166,193
 Text=Supervison area code
  
   
 [Field]
 Name=ENUMERATOR_MAIN_MENU
-Position=327,173,342,193
+Position=327,204,342,224
 Item=ENUMERATOR_MAIN_MENU,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,176,179,192
+Position=27,207,177,223
 Text=Enumerator main menu
  
   
 [Field]
 Name=SUPERVISOR_MAIN_MENU
-Position=327,203,342,223
+Position=327,234,342,254
 Item=SUPERVISOR_MAIN_MENU,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,206,173,222
+Position=29,237,173,253
 Text=Supervisor main menu
  
   
 [Field]
 Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
-Position=327,233,370,253
+Position=327,264,370,284
 Item=LAUNCH_HOUSEHOLD_QUESTIONNAIRE,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,236,237,252
+Position=29,267,237,283
 Text=Launch household questionnaire
  
   
 [Field]
 Name=VIEW_MANUALS
-Position=327,263,342,283
+Position=327,294,342,314
 Item=VIEW_MANUALS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,266,119,282
+Position=29,297,119,313
 Text=View manuals
  
   
 [Field]
 Name=SUMMARY_REPORTS
-Position=327,293,342,313
+Position=327,324,342,344
 Item=SUMMARY_REPORTS,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,296,138,312
+Position=29,327,138,343
 Text=Summary reports
  
   
 [Field]
 Name=SUPERVISOR_LAUNCH_LISTING
-Position=327,323,342,343
+Position=327,354,342,374
 Item=SUPERVISOR_LAUNCH_LISTING,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,326,186,342
+Position=29,357,186,373
 Text=Supervisor launch listing
  
   
 [Field]
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Position=327,353,342,373
+Position=327,384,342,404
 Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES,MENU_DICT
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,356,305,372
+Position=29,387,305,403
 Text=Supervisor launch household questionnaire
  
   
 [Field]
 Name=MANAGE_ENUMERATORS
-Position=327,385,356,405
+Position=327,416,468,436
 Item=MANAGE_ENUMERATORS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,388,164,404
+Position=29,419,164,435
 Text=Manage enumerators
  
   
 [Field]
 Name=MANAGE_ASSIGNMENTS
-Position=327,424,342,444
+Position=327,455,398,475
 Item=MANAGE_ASSIGNMENTS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,426,162,442
+Position=29,457,162,473
 Text=Manage assignments
  
   
 [Field]
+Name=ASSIGN_ENUMERATORS
+Position=327,540,468,560
+Item=ASSIGN_ENUMERATORS,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,544,154,560
+Text=Assign enumerators
+ 
+  
+[Field]
 Name=ENUMERATOR_NAME
-Position=327,467,537,487
+Position=327,498,537,518
 Item=ENUMERATOR_NAME,MENU_DICT
 UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,470,143,486
+Position=29,501,143,517
 Text=Enumerator name
  
 [EndGroup]
