@@ -7,7 +7,7 @@ Interactive=Ask
 
 [Files]
 Application=.\Listing.ent
-InputData=.\Listing.dat
+InputData=.\listing.dat
 
 
 [Parameters]
