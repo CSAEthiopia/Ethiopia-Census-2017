@@ -2,7 +2,17 @@
 PROC GLOBAL
 
 numeric i;
-
+// the function used to display error message using code 1000-1999 in english langage,Amrharic language 2000-2999 
+//for other langages,English language
+function getErrorCode(errCode) 
+	if getlanguage()="ENG" then
+      getErrorCode = errCode;
+    elseif getlanguage()="AMH" then
+      getErrorCode = errCode+1000;
+    else 
+    	getErrorCode = errCode;
+     endif;
+end;
 PROC HOUSEHOLD_FF
 
 PROC P301
@@ -22,7 +32,7 @@ endif;
 PROC P306
 //The first person should be the head
 if curocc()=1 and $<>1 then 
-   errmsg("The first person has to be the head") select("Change person name",P302, "Change Relationship", $);
+   errmsg(getErrorCode(1000)) select("Change person name",P302, "Change Relationship", $);
 endif;
 PROC P611
 //if there are no more people end the roster
@@ -43,6 +53,11 @@ preproc
 if curocc()>totocc(HOUSEHOLD_ROSTER) then
 	endgroup;
 endif;
+PROC P316
+// if type of residence is home less or H201=8  accept the case after disiblity section
+if H201=8 then 
+   endlevel;
+endif;   
 PROC P317
 
 preproc
@@ -111,11 +126,27 @@ if $ in 3:12 then
  endif;
 PROC P601_MALE
 preproc
+i=curocc();
 if curocc()>totocc(HOUSEHOLD_ROSTER) then
-endgroup;
+	endgroup;
+elseif (P307(i)=2 and P308(i)<10) or P307(i)=1 then
+	skip to next;
+endif;
+PROC P601_TOTAL
+if $<> P601_MALE+P601_FEMALE then
+	errmsg(getErrorCode(1001))select("Check number of male alive ",P601_MALE, "Check number of female alive", P601_FEMALE);
+	
+
 endif;
 PROC P609
 
+PROC P610
+preproc 
+i=curocc();
+if P308(i)>49 then 
+	skip to next ;
+	
+endif
 PROC P701F
 //if the number of death of male is blank make it zero
 if special(P701M) then
@@ -125,11 +156,18 @@ endif;
 if special(P701F) then
 P701F=0;
 endif;
-// if the sum male number of female and male deathe equals to zero skip Death section 
-if P701M+P701F=0 then
- 
- skip to R801A;
- 
+
+
+PROC P701T
+// the sum of deaths in the houshold should be equal to male and female deaths in the houshold 
+if $<>P701M+P701F then
+ errmsg(getErrorCode(1002))select("Check number of male death ",P701M, "Check number of female death", P701F);
+	 
+ endif;
+ // if the sum male number of female and male deathe equals to zero skip Death section 
+
+ if $=0 then 
+ 	skip to R801A;
  endif;
 PROC P702
 preproc
@@ -137,6 +175,13 @@ preproc
 if curocc()>P701M+P701F then
 endgroup;
 endif;
+PROC P706
+// if the person is male or female age less than 12 or greater than 49 skip to next person
+preproc
+i=curocc();
+if P703(i)=1 or (P703(i)=2 and (P704(i)<12 or P704(i)>49)) then
+ 	skip to next;
+ 	endif; 
 PROC R802
 preproc
 if R801A+R801B=0 then
