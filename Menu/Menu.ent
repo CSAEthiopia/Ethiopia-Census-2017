@@ -23,6 +23,8 @@ File=.\Menu.ent.mgf
 File=.\Menu.ent.qsf
 [Forms]
 File=.\Menu.fmf
+[Resources]
+Folder=..\Resource
 [Dictionary Types]
 Dict-Type=.\Menu.dcf,Input,.\Menu.fmf
 Dict-Type=.\Assignment.dcf,External

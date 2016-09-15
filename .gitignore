@@ -2,3 +2,4 @@
 *.dat.*
 menu/listing.pff
 *.lst
+!Resource/*.dat

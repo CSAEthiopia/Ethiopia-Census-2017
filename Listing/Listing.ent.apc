@@ -3,6 +3,24 @@ PROC GLOBAL
 
 PROC LISTING_FF
 
+PROC L_ID100
+preproc
+if sysparm("Staff ID")<>"" then
+	$ = tonumber(sysparm("Staff ID"));
+	set attributes($) protect;
+endif;
+PROC L_ID101
+preproc
+if sysparm("region")<>"" then
+	$ = tonumber(sysparm("region"));
+	set attributes($) protect;
+endif;
+PROC L_ID102
+preproc
+if sysparm("zone")<>"" then
+	$ = tonumber(sysparm("zone"));
+	set attributes($) protect;
+endif;
 PROC L13
 
 
