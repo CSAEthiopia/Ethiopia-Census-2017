@@ -951,7 +951,7 @@ Name=P701F_VS1
 Value=0:10;Valid
 
 [Item]
-Label=701 Total number of death since november 2015 
+Label=701 Total number of death since november 2015
 Name=P701T
 Start=30
 Len=2
@@ -1033,7 +1033,7 @@ Value=2;No|የለም
 Label=Housing
 Name=HOUSING
 RecordTypeValue='H'
-RecordLen=82
+RecordLen=83
 
 [Item]
 Label=201 Type of residence
@@ -1272,7 +1272,7 @@ DataType=Alpha
 Label=14 Housing unit use
 Name=H14_VS1
 Value='A          ';Electricity /meter private
-Value=' B         ';Electricity /meter shared
+Value='B          ';Electricity /meter shared
 Value='C          ';Electricity from generator private
 Value='D          ';Electricity from generator shared
 Value='E          ';Gas/cylinder for cooking
@@ -1427,3 +1427,83 @@ Name=H21_VS1
 Value=1;Yes
 Value=2;No
 Value=3;No livestock
+
+[Item]
+Label=Final result
+Name=FINAL_RESULT
+Start=83
+Len=1
+
+[Record]
+Label=Axullary
+Name=AXULLARY
+RecordTypeValue='A'
+RecordLen=33
+
+[Item]
+Label=Start time
+Name=START_TIME
+Start=26
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Start hour
+Name=START_HOUR
+Start=26
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Start hour
+Name=START_HOUR_VS1
+Link=73000192
+Value=0:23;hours
+
+[Item]
+Label=Start minute
+Name=START_MINUTE
+Start=28
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=Start minute
+Name=START_MINUTE_VS1
+Link=72999928
+Value=0:59;minute
+
+[Item]
+Label=End time
+Name=END_TIME
+Start=30
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=End hour
+Name=END_HOUR
+Start=30
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=End hour
+Name=END_HOUR_VS1
+Link=73000192
+
+[Item]
+Label=End minute
+Name=END_MINUTE
+Start=32
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=End minute
+Name=END_MINUTE_VS1
+Link=72999928
