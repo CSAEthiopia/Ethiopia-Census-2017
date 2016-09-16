@@ -336,3 +336,9 @@ values(countryOriginValueSet) = notappl;
 setvalueset(R804,values,cname);}
 
 
+PROC H2
+// if the housing type is differnen from  collected for unit end of the case
+postproc
+if $=2 then
+	endlevel;
+endif
