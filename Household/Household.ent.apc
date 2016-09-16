@@ -38,6 +38,15 @@ if demode()= add then
 endif;
 
 FINAL_RESULT=1;
+PROC ID102
+// this code changes the value set base on the region code
+onfocus
+  if ID101 = 1 then
+    setvalueset(ID102, ID102_VSR1);
+  elseif ID101 = 2 then
+    setvalueset(ID102, ID102_VSR2);
+  endif;
+
 PROC FINAL_RESULT
 // setting value sets to show continue interview option and removing option for completed
 onfocus 
@@ -81,6 +90,14 @@ elseif $=5 then
 //if the person is visitor and living outside Ethiopia ask country code
   skip to P305;
 endif;
+PROC P304B
+// this code changes the value set base on the region code
+onfocus
+  if P304A = 1 then
+    setvalueset(P304B, P304B_VS1);
+  elseif P304A = 2 then
+    setvalueset(P304B, P304B_VS2);
+  endif;
 PROC P306
 onfocus 
 if curocc(HOUSEHOLD_ROSTER) <> 1 then
@@ -161,6 +178,22 @@ if $=99 then
   skip to next P317;
 endif;
  
+PROC P319Z
+// this code changes the value set base on the region code
+onfocus
+  if P319R = 1 then
+    setvalueset(P319Z, P319Z_VS1);
+  elseif P319R = 2 then
+    setvalueset(P319Z, P319Z_VS2);
+  endif;
+PROC P321Z
+// this code changes the value set base on the region code
+onfocus
+  if P321R = 1 then
+    setvalueset(P321Z, P321Z_VS1);
+  elseif P321R = 2 then
+    setvalueset(P321Z, P321Z_VS2);
+  endif;
 PROC P324
 
 preproc
@@ -281,7 +314,7 @@ if R801A+R801B=0 then
  
  endif;
 PROC R804
-{onfocus
+{onfocus// we need to discuss with subject matters abou thsi section in general
 // create value set for country of origin    
 numeric countryOriginValueSet=1;
 numeric countryResidence=seek(R802);

@@ -17,15 +17,137 @@ ENG=\pard Administration\cf1\f1\fs24\par
 ENG=}
 
 [QUESTION]
+Field=HOUSEHOLD_DICT.P302
+Occurrences=1:150
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Nyala;}{\f1\fnil\fprq2\fcharset0 Power Geez Unicode1;}{\f2\fnil\fcharset0 Arial;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\fi-360\li473\sa200\sl276\slmult1\f0\fs24\u4840?\u4708?\u4720?\u4656?\u4709?\f1  \f0\u4632?\u4848?\u4704?\u4763?\f1  \f0\u4768?\u4707?\u4619?\u4725?\u4755?\f1  \f0\u4840?\u4773?\u4757?\u4877?\u4854?\u4733?\f1  \f0\u4633?\u4617?\f1  \f0\u4661?\u4637?\f1\par
+AMH=\pard\sa200\sl276\slmult1\i\f0\u4773?\u4826?\u4613?\f1  \f0\u4708?\u4725?\f1  \f0\u4768?\u4709?\u4648?\u4813?\f1  \f0\u4840?\u4634?\u4758?\u4649?\u4755?\f1  \f0\u4637?\u4877?\u4707?\u4728?\u4813?\u4757?\f1  \f0\u4704?\u4768?\u4757?\u4853?\u4752?\u4725?\f1  \f0\u4768?\u4709?\u4661?\u4616?\u4813?\f1  \f0\u4840?\u4634?\u4632?\u4872?\u4705?\f1  \f0\u4768?\u4707?\u4619?\u4725?\u4757?\f1  \f0\u4776?\u4739?\u4619?\u4938?\u4813?\f1  \f0\u4864?\u4637?\u4648?\u4813?\f1  \f0\u4704?\u4633?\u4617?\f1  \f0\u4843?\u4661?\u4632?\u4661?\u4877?\u4705?\u4765?\u4961?\i0\u4961?\f1\fs16\par
+AMH=\pard\cf1\f2\fs24\par
+AMH=}
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\li113\sa200\sl276\slmult1\f0\fs24 Name of Usual No. of households and Visitors\par
+ENG=\pard\lang2057\i Please tell me the names of all persons living in this house who have\par
+ENG=common arrangements for cooking and dining starting with the head\par
+ENG=\pard\sa200\sl276\slmult1 of the household, then listed as follows\lang1033\par
+ENG=\pard\cf1\i0\f1\par
+ENG=}
+
+[QUESTION]
 Field=HOUSEHOLD_DICT.P303
 Occurrences=1:150
 ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 ENG={\colortbl ;\red0\green0\blue0;}
 ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the residence status of %getOccLabel%\par
 ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Nyala;}{\f1\fswiss\fcharset0 Nyala;}{\f2\fnil\fcharset0 Arial;}{\f3\fnil\fprq2\fcharset0 Power Geez Unicode1;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\fi-360\li473\ri113\sl276\slmult1\f0\fs24\u4840?\f1  \cf1\f2 %getOccLabel% \cf0\f0\u4840?\u4752?\u4811?\u4650?\u4752?\u4725?\f3  \f0\u4609?\u4756?\u4723?\f1  \cf1\f2\par
+AMH=\pard\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P304A
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\f0\fs24 If \cf1\f1 %getOccLabel% \cf0\f0 visitor and Ethiopian in 3, write usual place of residence ( region  and zone). Then skip to Q306.\cf1\f1\par
+ENG=\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Nyala;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fprq2\fcharset0 Power Geez Unicode1;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\li115\ri115\f0\fs24\u4840?\cf1\f1 %getOccLabel% \cf0\f0\u4704?\u4901?\u4843?\u4676?\f2  303 \f0\u4619?\u4845?\f2  \f0\u4632?\u4621?\u4657?\f2  \f0\u4782?\u4853?\f2  4 \f0\u4776?\u4614?\u4752?\f2   \f0\u4704?\u4632?\u4848?\u4704?\u4763?\u4752?\u4725?\f2  \f0\u4840?\u4634?\u4758?\u4653?\u4704?\u4725?\f2  \f0\u4781?\u4621?\u4621?\u4755?\f2  \f0\u4830?\u4757?\f2  \f0\u4782?\u4853?\f2  \f0\u4720?\u4638?\u4621?\u4726?\f2  \f0\u4808?\u4848?\f2  \f0\u4901?\u4843?\u4676?\f2  \f0\u4673?\u4901?\u4653?\f2  306 \f0\u4845?\u4723?\u4616?\u4941?\u4961?\u4961?\cf1\f1\par
+AMH=\pard\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P304B
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\f0\fs24 If \cf1\f1 %getOccLabel% a\cf0\f0  visitor and non-Ethiopian in 3 write usual country of residence.\cf1\f1\par
+ENG=\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fprq2\fcharset0 Power Geez Unicode1;}{\f2\fswiss\fcharset1 Nyala;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel% \cf0\f1 305 \f2\u4704?\u4901?\u4843?\u4676?\f1  3 \f2\u4619?\u4845?\f1  \f2\u4632?\u4621?\u4657?\f1  \f2\u4782?\u4853?\f1  5 \f2\u4776?\u4614?\u4752?\f1  \f2\u4704?\u4632?\u4848?\u4704?\u4763?\u4752?\u4725?\f1  \f2\u4840?\u4634?\u4758?\u4653?\u4704?\u4725?\f1  \f2\u4608?\u4872?\u4653?\f1  \f2\u4782?\u4853?\f1  \f2\u4845?\u4638?\u4619?\u4961?\u4961?\cf1\f0\par
+AMH=\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P305
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\li113\ri115\f0\fs16  \fs24 What is the Relation Ship of \cf1\f1 %getOccLabel%\cf0\f0 with  the Head of the  Household?\par
+ENG=\par
+ENG=\pard\cf1\f1\par
+ENG=\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss\fcharset1 Nyala;}{\f2\fnil\fprq2\fcharset0 Power Geez Unicode1;}{\f3\froman\fprq2\fcharset0 Cambria;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel% \cf0\f1\u4776?\u4708?\u4720?\u4656?\u4709?\f2  \f1\u4739?\u4619?\u4938?\u4813?\f2  \f1\u4875?\u4653?\f2  \f1\u4843?\u4619?\u4728?\u4813?\f2  \f1\u4829?\u4637?\u4853?\u4755?\f2  \f1\u4637?\u4853?\u4757?\f2  \f1\u4752?\u4813?\f3 ?\cf1\f0\par
+AMH=\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P306
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\froman\fprq2\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24  \cf0\f1 What is \cf1\f0 %getOccLabel%\cf0\f1 Sex?\cf1\f0\par
+ENG=\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset1 Nyala;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil\fprq2\fcharset0 Power Geez Unicode1;}{\f3\froman\fprq2\fcharset0 Cambria;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\f0\fs24\u4840?\cf1\f1 %getOccLabel% \cf0\f0\u4926?\u4723?\f2  \f0\u4637?\u4757?\u4853?\u4757?\f2  \f0\u4752?\u4813?\f3 ?\cf1\f1\par
+AMH=\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P307
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\froman\fprq2\fcharset0 Times New Roman;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\cf1\fs24  \cf0\f1 What is \cf1\f0 %getOccLabel%\cf0\f1  Age?\par
+ENG=\pard\lang2057\i\fs16 (\fs24 Record in completed years - if less than one year code 00, if more or equal to 97 code 97)\par
+ENG=\cf1\lang1033\i0\f0\par
+ENG=\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fswiss\fcharset1 Nyala;}{\f2\fnil\fprq2\fcharset0 Power Geez Unicode1;}{\f3\froman\fprq2\fcharset0 Cambria;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\cf1\fs24  \cf0\f1\u4840?\cf1\f0 %getOccLabel%\cf0\f1\u4853?\u4636?\f2  \f1\u4661?\u4757?\u4725?\f2  \f1\u4819?\u4632?\u4725?\f2  \f1\u4752?\u4813?\f3 ?\f2\par
+AMH=\pard\f1\u4843?\u4896?\u4755?\u4672?\u4673?\u4725?\f2  \f1\u4821?\u4853?\u4636?\f2  \f1\u4704?\u4633?\u4617?\f2  \f1\u4819?\u4632?\u4725?\f2  \f1\u4845?\u4632?\u4829?\u4872?\u4709?\u4961?\u4961?\f2  \f1\u4821?\u4853?\u4636?\u4843?\u4728?\u4813?\f2  \f1\u4776?\u4768?\u4757?\u4853?\f2  \f1\u4819?\u4632?\u4725?\f2  \f1\u4704?\u4723?\u4733?\f2  \f1\u4776?\u4614?\u4752?\f2  00 \f1\u4845?\u4638?\u4619?\u4961?\u4961?\f2  \f1\u4821?\u4853?\u4636?\f2  97 \f1\u4819?\u4632?\u4725?\u4755?\f2  \f1\u4704?\u4619?\u4845?\f2  \f1\u4776?\u4614?\u4752?\f2  97 \f1\u4845?\u4638?\u4619?\u4961?\u4961?\f2\par
+AMH=\cf1\f0\par
+AMH=\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P308
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel%\par
+ENG=\pard\par
+ENG=}
 AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
 AMH={\colortbl ;\red0\green0\blue0;}
-AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the residence status of %getOccLabel%\par
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel%\par
+AMH=\pard\par
+AMH=}
+
+[QUESTION]
+Field=HOUSEHOLD_DICT.P611
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel%\par
+ENG=\pard\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 %getOccLabel%\par
 AMH=\pard\par
 AMH=}
 

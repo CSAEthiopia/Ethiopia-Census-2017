@@ -31,6 +31,7 @@ ZeroFill=Yes
 [ValueSet]
 Label=101 Region|101 ክልል/ከ/አስተዳደር
 Name=ID101_VS1
+Link=78107424
 Value=1;Tigray
 Value=2;Afar
 Value=3;Amhara
@@ -49,6 +50,20 @@ Name=ID102
 Start=4
 Len=2
 ZeroFill=Yes
+
+[ValueSet]
+Label=102 Zone|102 ዞን
+Name=ID102_VSR1
+Link=80112152
+Value=1;Region1_zone1
+Value=2;Region1_zone2
+
+[ValueSet]
+Label=102 Zone|102 ዞን
+Name=ID102_VSR2
+Link=80112416
+Value=1;Region2_zone1
+Value=2;Region2_zone2
 
 [Item]
 Label=103 Woreda|103 ወረዳ
@@ -154,11 +169,26 @@ Name=P304A
 Start=59
 Len=2
 
+[ValueSet]
+Label=304A Reagion
+Name=P304A_VS1
+Link=78107424
+
 [Item]
 Label=304B Zone|304B ዞን
 Name=P304B
 Start=61
 Len=2
+
+[ValueSet]
+Label=304B Zone
+Name=P304B_VS1
+Link=80112152
+
+[ValueSet]
+Label=304B Zone
+Name=P304B_VS2
+Link=80112416
 
 [Item]
 Label=305 Usual country of residence|305 በመደበኛነት የሚኖርበት ሀገር
@@ -428,11 +458,26 @@ Name=P319R
 Start=95
 Len=2
 
+[ValueSet]
+Label=319  Birth_region
+Name=P319R_VS1
+Link=78107424
+
 [Item]
 Label=319 Birth_zone|319 የተወለደበት ዞን
 Name=P319Z
 Start=97
 Len=2
+
+[ValueSet]
+Label=319 Birth_zone
+Name=P319Z_VS1
+Link=80112152
+
+[ValueSet]
+Label=319 Birth_zone
+Name=P319Z_VS2
+Link=80112416
 
 [Item]
 Label=320 Residence in october/november 2015|320 ከህዳር 2008 በፊት ይኖርበት የነበረበት ሀገር
@@ -446,11 +491,26 @@ Name=P321R
 Start=102
 Len=2
 
+[ValueSet]
+Label=321 Residence region in /nov/dec 2016
+Name=P321R_VS1
+Link=78107424
+
 [Item]
 Label=321  Residence zone in /nov/dec 2016|321  ይኖሩበት የነበረው  ዞን
 Name=P321Z
 Start=104
 Len=2
+
+[ValueSet]
+Label=321  Residence zone in /nov/dec 2016
+Name=P321Z_VS1
+Link=80112152
+
+[ValueSet]
+Label=321  Residence zone in /nov/dec 2016
+Name=P321Z_VS2
+Link=80112416
 
 [Item]
 Label=322 Rural or urban|322 ከተማ  ወይስ ገጠር
