@@ -36,6 +36,132 @@ if demode()= add then
 endif;
 
 FINAL_RESULT=1;
+
+// End entry and return to menu
+// If we don't do this then we will start a new case in add mode
+// with the same case IDs and we will get a duplicate case error.
+stop(1);
+PROC ID101
+preproc
+if sysparm("region")<> "" then
+
+	$ = tonumber(sysparm("region"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID102
+preproc
+if sysparm("zone")<> "" then
+
+	$ = tonumber(sysparm("zone"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+
+PROC ID103
+preproc
+if sysparm("woreda")<> "" then
+
+	$ = tonumber(sysparm("woreda"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID104
+preproc
+if sysparm("town")<> "" then
+
+	$ = tonumber(sysparm("town"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID105
+preproc
+if sysparm("subcity")<> "" then
+
+	$ = tonumber(sysparm("subcity"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID106
+preproc
+if sysparm("PSA")<> "" then
+
+	$ = tonumber(sysparm("PSA"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID107
+preproc
+if sysparm("SA")<> "" then
+
+	$ = tonumber(sysparm("SA"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID108
+preproc
+if sysparm("kebele")<> "" then
+
+	$ = tonumber(sysparm("kebele"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID109
+preproc
+if sysparm("EA")<> "" then
+
+	$ = tonumber(sysparm("EA"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID202
+preproc
+if sysparm("Housing SN")<> "" then
+
+	$ = tonumber(sysparm("Housing SN"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC ID203
+preproc
+if sysparm("Household SN")<> "" then
+
+	$ = tonumber(sysparm("Household SN"));
+	
+	set attributes($) protect;
+	
+	
+endif;
+PROC H201
+preproc
+if sysparm("woreda")<> "" then
+
+	$ = tonumber(sysparm("woreda"));
+	
+	set attributes($) protect;
+	
+	
+endif;
 PROC FINAL_RESULT
 // setting value sets to show continue interview option and removing option for completed
 onfocus 

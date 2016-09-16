@@ -28,12 +28,6 @@ Start=4
 Len=2
 ZeroFill=Yes
 
-[Record]
-Label=Assignment record
-Name=ASSIGNMENT_REC
-RecordTypeValue=''
-RecordLen=15
-
 [Item]
 Label=Staff ID
 Name=A_STAFF_ID
@@ -42,3 +36,9 @@ Note=combined in the global data file.
 Start=6
 Len=10
 ZeroFill=Yes
+
+[Record]
+Label=Assignment record
+Name=ASSIGNMENT_REC
+RecordTypeValue=''
+RecordLen=15

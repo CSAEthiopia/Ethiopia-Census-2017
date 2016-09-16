@@ -24,7 +24,7 @@ Len=1
 Label=Menu record
 Name=MENU_REC
 RecordTypeValue='1'
-RecordLen=90
+RecordLen=116
 
 [Item]
 Label=Setup check
@@ -117,40 +117,48 @@ Start=30
 Len=1
 
 [Item]
-Label=Supervisor launch listing
+Label=Launch listing
 Name=SUPERVISOR_LAUNCH_LISTING
 Start=31
-Len=5
+Len=15
+DataType=Alpha
 
 [Item]
-Label=Supervisor launch household questionnaire
+Label=Launch household questionnaire
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Start=36
-Len=5
+Start=46
+Len=15
+DataType=Alpha
+
+[Item]
+Label=Select household 
+Name=SUPERVISOR_SELECT_HOUSEHOLD
+Start=61
+Len=6
 
 [Item]
 Label=Manage enumerators
 Name=MANAGE_ENUMERATORS
-Start=41
+Start=67
 Len=10
 
 [Item]
 Label=Manage assignments
 Name=MANAGE_ASSIGNMENTS
-Start=51
+Start=77
 Len=5
 
 [Item]
 Label=Enumerator name
 Name=ENUMERATOR_NAME
-Start=56
+Start=82
 Len=25
 DataType=Alpha
 
 [Item]
 Label=Assign enumerators
 Name=ASSIGN_ENUMERATORS
-Start=81
+Start=107
 Len=10
 
 [Record]
