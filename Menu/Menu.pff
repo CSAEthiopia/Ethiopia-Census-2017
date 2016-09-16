@@ -12,10 +12,11 @@ InputData=.\dummy.dat
 
 [ExternalFiles]
 EA_CODE_DICT=..\Resource\ea code.dat
-LISTING_DICT=.\nothing
 SUPERVISION_AREA_DICT=.\supervisionArea.dat
+LISTING_DICT=.\nothing
 ASSIGNMENT_DICT=.\assignment.dat
 STAFF_DICT=.\staff.dat
+HOUSEHOLD_DICT=.\nothng2
 
 [UserFiles]
 PFFFILE=

@@ -13,7 +13,7 @@ File=.\Menu.dcf
 Name=FORM000
 Label=Menu questionnaire
 Level=1
-Size=562,585
+Size=562,600
   
 Item=LOGIN
 Item=ENUMERATION_AREA_CODE
@@ -31,6 +31,7 @@ Item=MANAGE_ASSIGNMENTS
 Item=ENUMERATOR_NAME
 Item=KEBELE_CODE
 Item=ASSIGN_ENUMERATORS
+Item=SUPERVISOR_SELECT_HOUSEHOLD
   
 [EndForm]
   
@@ -198,72 +199,85 @@ DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,357,186,373
-Text=Supervisor launch listing
+Position=29,357,118,373
+Text=Launch listing
  
   
 [Field]
 Name=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
-Position=327,384,398,404
+Position=325,386,396,406
 Item=SUPERVISOR_LAUNCH_HOUSEHOLD_QUES,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,387,305,403
-Text=Supervisor launch household questionnaire
+Position=29,387,237,403
+Text=Launch household questionnaire
+ 
+  
+[Field]
+Name=SUPERVISOR_SELECT_HOUSEHOLD
+Position=325,415,410,435
+Item=SUPERVISOR_SELECT_HOUSEHOLD,MENU_DICT
+FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=29,418,143,434
+Text=Select household 
  
   
 [Field]
 Name=MANAGE_ENUMERATORS
-Position=327,416,468,436
+Position=327,444,468,464
 Item=MANAGE_ENUMERATORS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,419,164,435
+Position=29,447,164,463
 Text=Manage enumerators
  
   
 [Field]
 Name=MANAGE_ASSIGNMENTS
-Position=327,455,398,475
+Position=327,483,398,503
 Item=MANAGE_ASSIGNMENTS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,457,162,473
+Position=29,485,162,501
 Text=Manage assignments
  
   
 [Field]
 Name=ASSIGN_ENUMERATORS
-Position=327,540,468,560
+Position=327,555,468,575
 Item=ASSIGN_ENUMERATORS,MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=29,544,154,560
+Position=29,559,154,575
 Text=Assign enumerators
  
   
 [Field]
 Name=ENUMERATOR_NAME
-Position=327,498,537,518
+Position=327,513,537,533
 Item=ENUMERATOR_NAME,MENU_DICT
 UseUnicodeTextBox=Yes
 FieldLabelType=DictionaryLabel
 Form=1
   
 [Text]
-Position=29,501,143,517
+Position=29,516,143,532
 Text=Enumerator name
  
 [EndGroup]

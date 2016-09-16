@@ -16,6 +16,7 @@ File=.\Staff.dcf
 File=.\Supervision area.dcf
 File=.\EA code.dcf
 File=..\Listing\Listing.dcf
+File=..\Household\Household.dcf
 [AppCode]
 File=.\Menu.ent.apc
 [Message]
@@ -33,3 +34,4 @@ Dict-Type=.\Staff.dcf,External
 Dict-Type=.\Supervision area.dcf,External
 Dict-Type=.\EA code.dcf,External
 Dict-Type=..\Listing\Listing.dcf,External
+Dict-Type=..\Household\Household.dcf,External
