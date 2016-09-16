@@ -188,6 +188,21 @@ Value=10;Other relative|ሌላ ዘመድ
 Value=11;Non-Relative|ዝምድና የሌላቸው
 Value=12;Domestic employee|የቤት ሰራተኛ
 
+[ValueSet]
+Label=306  Relationship|306  306	.ከቤተሰብ ኃላፊው ጋር ያላቸው ዝምድና
+Name=P306_VS2
+Value=2;Spouse
+Value=3;Partner(cohabiting or living together with head)|እንደ ባልና ሚስት አብረው የሚኖሩ
+Value=4;Daughter of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ሴት ልጅ
+Value=5;Son of Head and/or Spouse|የኃላፊ እና/ወይም የባለቤት ወንድ ልጅ
+Value=6;Head/Spouse brother/Sister|የኃላፊ/የባለቤት እህት ወንድም
+Value=7;Parents of head/spouse|የኃላፊ/የባለቤት እናት/አባት
+Value=8;Niece/nephew|የኃላፊ/የባለቤት እህት/ወንድም ልጅ
+Value=9;Grandchild|የኃላፊ/የባለቤት የልጅ ልጅ
+Value=10;Other relative|ሌላ ዘመድ
+Value=11;Non-Relative|ዝምድና የሌላቸው
+Value=12;Domestic employee|የቤት ሰራተኛ
+
 [Item]
 Label=307 Sex|307 ጾታ
 Name=P307
@@ -879,7 +894,7 @@ Label=Remittance|በውጭ ሀገር ስለሚኖሩ ኢትዮጽያውያን
 Name=REMITTANCE
 RecordTypeValue='R'
 Required=No
-RecordLen=78
+RecordLen=86
 
 [Item]
 Label=801A Number of male|801A ስንት ወንድ
@@ -894,16 +909,24 @@ Start=28
 Len=2
 
 [Item]
+Label=801C Counrtr name
+Name=R801C
+Start=30
+Len=1
+DataType=Alpha
+Occurrences=8
+
+[Item]
 Label=802 Country of residence|802 በየትኛው ሀገር ይኖራሉ
 Name=R802
-Start=30
+Start=38
 Len=3
 Occurrences=8
 
 [Item]
 Label=803  Receive any money or goods
 Name=R803
-Start=54
+Start=62
 Len=1
 
 [ValueSet]
@@ -917,7 +940,7 @@ Value=4;No
 [Item]
 Label=804 Country of origin|804 ገንዘቡ ወይም እቃው የተላከው ከየትኛው ሀገር ነው
 Name=R804
-Start=55
+Start=63
 Len=3
 Occurrences=8
 

@@ -16,3 +16,16 @@ ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\f0\fs16 101.Region/
 ENG=\pard Administration\cf1\f1\fs24\par
 ENG=}
 
+[QUESTION]
+Field=HOUSEHOLD_DICT.P303
+Occurrences=1:150
+ENG={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+ENG={\colortbl ;\red0\green0\blue0;}
+ENG={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the residence status of %getOccLabel%\par
+ENG=}
+AMH={\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+AMH={\colortbl ;\red0\green0\blue0;}
+AMH={\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\fs24 What is the residence status of %getOccLabel%\par
+AMH=\pard\par
+AMH=}
+
