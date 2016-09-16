@@ -115,7 +115,7 @@ $ = 1; // must give a value since the field is protected
 
 postproc
 //This is for the first time setup.
-//To write Staff ID(region,zone,wored, supervisio area) by the supervisor
+//To write Staff ID(region,zone,woreda, supervision area) by the supervisor
 
 //if no staff case exisits or supervision area is not set then go to initial setup form
 if find(STAFF_DICT,>=,"") = 0 then
