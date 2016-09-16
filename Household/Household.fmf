@@ -53,6 +53,7 @@ Form=1
 [Form]
 Name=FORM001
 Label=Household
+QuestionTextHeight=61
 Level=1
 Size=1541,1529
   
@@ -144,7 +145,7 @@ Label=Fertility
 Level=1
 Size=1407,446
   
-Item=P601_MALE000
+Item=FERILITY_ROSTER
   
 [EndForm]
   
@@ -165,13 +166,14 @@ Item=P701T
 Name=FORM011
 Label=Remittance
 Level=1
-Size=738,417
+Size=976,417
   
 Item=R801A
 Item=R801B
 Item=REMITTANCE_A_ROSTER
 Item=R803
 Item=REMITTANCE_B_ROSTER
+Item=R801C000
   
 [EndForm]
   
@@ -235,6 +237,7 @@ Name=ID102
 Position=590,89,619,109
 Item=ID102,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
@@ -438,752 +441,752 @@ HeadingRowHeight=0
 FreeMovement=No
  
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=1
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=2
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=3
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=4
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=5
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=6
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=7
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=8
  
   
 [Text]
-Position=14,4,29,28
+Position=0,4,152,28
 Text=9
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=10
  
   
 [Text]
-Position=8,4,29,28
+Position=0,4,152,28
 Text=11
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=12
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=13
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=14
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=15
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=16
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=17
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=18
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=19
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=20
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=21
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=22
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=23
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=24
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=25
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=26
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=27
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=28
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=29
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=30
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=31
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=32
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=33
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=34
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=35
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=36
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=37
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=38
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=39
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=40
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=41
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=42
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=43
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=44
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=45
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=46
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=47
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=48
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=49
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=50
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=51
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=52
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=53
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=54
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=55
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=56
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=57
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=58
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=59
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=60
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=61
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=62
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=63
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=64
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=65
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=66
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=67
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=68
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=69
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=70
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=71
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=72
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=73
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=74
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=75
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=76
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=77
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=78
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=79
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=80
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=81
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=82
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=83
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=84
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=85
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=86
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=87
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=88
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=89
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=90
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=91
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=92
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=93
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=94
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=95
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=96
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=97
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=98
  
   
 [Text]
-Position=7,4,29,28
+Position=0,4,152,28
 Text=99
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=100
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=101
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=102
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=103
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=104
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=105
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=106
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=107
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=108
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=109
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=110
  
   
 [Text]
-Position=2,4,29,28
+Position=0,4,152,28
 Text=111
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=112
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=113
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=114
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=115
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=116
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=117
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=118
  
   
 [Text]
-Position=1,4,29,28
+Position=0,4,152,28
 Text=119
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=120
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=121
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=122
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=123
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=124
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=125
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=126
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=127
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=128
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=129
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=130
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=131
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=132
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=133
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=134
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=135
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=136
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=137
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=138
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=139
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=140
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=141
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=142
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=143
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=144
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=145
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=146
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=147
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=148
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=149
  
   
 [Text]
-Position=0,4,29,28
+Position=0,4,152,28
 Text=150
  
   
@@ -1263,8 +1266,10 @@ Name=P304A
 Position=58,0,87,20
 Item=P304A,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,90,16
 Text=304A Reagion
  
 [EndColumn]
@@ -1281,8 +1286,10 @@ Name=P304B
 Position=36,0,65,20
 Item=P304B,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,71,16
 Text=304B Zone
  
 [EndColumn]
@@ -1306,15 +1313,15 @@ Text=305 Usual country of residence
 [EndColumn]
   
 [Column]
-Width=116
+Width=130
   
 [HeaderText]
-Position=0,16,116,40
+Position=14,16,130,40
 Text=306  Relationship
  
 [Field]
 Name=P306
-Position=93,0,108,20
+Position=93,0,122,20
 Item=P306,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
@@ -3064,7 +3071,7 @@ Width=108
   
 [HeaderText]
 Position=0,0,108,40
-Text=315A   Disablity seeing
+Text=315A   Disablity seeing 
  
 [Field]
 Name=P315A
@@ -4040,8 +4047,10 @@ Name=P319R
 Position=78,0,107,20
 Item=P319R,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,112,16
 Text=319  Birth_region
  
 [EndColumn]
@@ -4058,8 +4067,10 @@ Name=P319Z
 Position=64,0,93,20
 Item=P319Z,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,99,16
 Text=319 Birth_zone
  
 [EndColumn]
@@ -4094,8 +4105,10 @@ Name=P321R
 Position=90,0,119,20
 Item=P321R,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,253,16
 Text=321 Residence region in /nov/dec 2016
  
 [EndColumn]
@@ -4112,8 +4125,10 @@ Name=P321Z
 Position=101,0,130,20
 Item=P321Z,HOUSEHOLD_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,248,16
 Text=321  Residence zone in /nov/dec 2016
  
 [EndColumn]
@@ -7571,8 +7586,8 @@ LogicControl=No
 Max=1
   
 [Grid]
-Name=P601_MALE000
-Label=601 Alive male children ever born
+Name=FERILITY_ROSTER
+Label=Ferility
 Form=10
 Required=No
 Type=Record
@@ -8825,7 +8840,7 @@ Width=136
   
 [HeaderText]
 Position=0,16,136,40
-Text=705  Cause of death
+Text=705  Cause of death 
  
 [Field]
 Name=P705
@@ -8892,6 +8907,86 @@ Form=12
 [Text]
 Position=426,42,574,58
 Text=801B Number of female
+ 
+  
+[Grid]
+Name=R801C000
+Label=801C Counrtr name
+Form=12
+Required=No
+Type=Item
+TypeName=R801C
+Max=8
+DisplaySize=807,42,951,290
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+FreeMovement=No
+ 
+[Text]
+Position=0,4,15,28
+Text=1
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=2
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=3
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=4
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=5
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=6
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=7
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=8
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=129
+  
+[HeaderText]
+Position=0,0,129,24
+Text=801C Counrtr name
+ 
+[Field]
+Name=R801C
+Position=106,0,121,20
+Item=R801C,HOUSEHOLD_DICT
+UseUnicodeTextBox=Yes
+FieldLabelType=DictionaryLabel
+  
+[Text]
+Text=801C Counrtr name
+ 
+[EndColumn]
+  
+[EndGrid]
  
   
 [Grid]

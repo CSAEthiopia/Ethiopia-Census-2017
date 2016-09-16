@@ -4,6 +4,8 @@ PROC GLOBAL
 numeric i;
 array string labels(30);
 array numeric codes(30);
+array numeric values(8);//this is aray declaration for remittance code
+array string  cname(8);//this is country name serial code
 // the function used to display error message using code 1000-1999 in english langage,Amrharic language 2000-2999 
 //for other langages,English language
 function getErrorCode(errCode) 
@@ -41,6 +43,7 @@ FINAL_RESULT=1;
 // If we don't do this then we will start a new case in add mode
 // with the same case IDs and we will get a duplicate case error.
 stop(1);
+
 PROC ID101
 preproc
 if sysparm("region")<> "" then
@@ -162,6 +165,7 @@ if sysparm("woreda")<> "" then
 	
 	
 endif;
+
 PROC FINAL_RESULT
 // setting value sets to show continue interview option and removing option for completed
 onfocus 
@@ -181,6 +185,20 @@ PROC P301
 preproc
 //initialize the line number
 $=curocc();
+PROC P302
+postproc
+// set occurance lables to show fill in the question text and lables in the tree
+i=curocc();
+string occurrenceLabel = strip($);
+setocclabel(HOUSEHOLD_ROSTER(i),occurrenceLabel);
+setocclabel(PERSON_DETAILS_ROSTER(i),occurrenceLabel);
+setocclabel(DISABLITY_ROSTER(i),occurrenceLabel);
+setocclabel(MIGRATION_ROSTER(i),occurrenceLabel);
+setocclabel(MARITAL_STATUS_ROSTER(i),occurrenceLabel);
+setocclabel(EDUCATION_ROSTER(i),occurrenceLabel);
+setocclabel(ICT_USE_ROSTER(i),occurrenceLabel);
+setocclabel(ECONOMIC_ROSTER(i),occurrenceLabel);
+setocclabel(FERILITY_ROSTER(i),occurrenceLabel);
 PROC P303
 //If the person is visitor and living in Ethiopian ask region and zone 
 
@@ -191,7 +209,23 @@ elseif $=5 then
 //if the person is visitor and living outside Ethiopia ask country code
   skip to P305;
 endif;
+PROC P304B
+// this code changes the value set base on the region code
+onfocus
+  if P304A = 1 then
+    setvalueset(P304B, P304B_VS1);
+  elseif P304A = 2 then
+    setvalueset(P304B, P304B_VS2);
+  endif;
 PROC P306
+onfocus 
+if curocc(HOUSEHOLD_ROSTER) <> 1 then
+	setvalueset(P306,P306_VS2);
+else  
+	setvalueset(P306,P306_VS1);
+endif;
+
+postproc 
 //The first person should be the head
 if curocc()=1 and $<>1 then 
    errmsg(getErrorCode(1000)) select("Change person name",P302, "Change Relationship", $);
@@ -263,6 +297,22 @@ if $=99 then
   skip to next P317;
 endif;
  
+PROC P319Z
+// this code changes the value set base on the region code
+onfocus
+  if P319R = 1 then
+    setvalueset(P319Z, P319Z_VS1);
+  elseif P319R = 2 then
+    setvalueset(P319Z, P319Z_VS2);
+  endif;
+PROC P321Z
+// this code changes the value set base on the region code
+onfocus
+  if P321R = 1 then
+    setvalueset(P321Z, P321Z_VS1);
+  elseif P321R = 2 then
+    setvalueset(P321Z, P321Z_VS2);
+  endif;
 PROC P324
 
 preproc
@@ -373,6 +423,8 @@ i=curocc();
 if P703(i)=1 or (P703(i)=2 and (P704(i)<12 or P704(i)>49)) then
  	skip to next;
  	endif; 
+PROC R801B
+
 PROC R802
 preproc
 if R801A+R801B=0 then
@@ -380,3 +432,26 @@ if R801A+R801B=0 then
  skip to H1;
  
  endif;
+PROC R804
+{onfocus// we need to discuss with subject matters abou thsi section in general
+// create value set for country of origin    
+numeric countryOriginValueSet=1;
+numeric countryResidence=seek(R802);
+//create value set for individual under 18
+//if  P308(curocc()) < 18 then
+	while countryResidence do
+	if curocc() <> R802(countryResidence) then
+		values(countryOriginValueSet)= R802(countryResidence);
+		cname(countryOriginValueSet) = R801C(countryResidence);
+		countryOriginValueSet= countryOriginValueSet+1;
+	endif;
+		 countryResidence =seek(R802,countryResidence+1);
+	enddo;
+//endif;
+values(countryOriginValueSet) = 999;
+cname(countryOriginValueSet) = "Not applicable" ;
+countryOriginValueSet= countryOriginValueSet+1;
+values(countryOriginValueSet) = notappl;
+setvalueset(R804,values,cname);}
+
+
