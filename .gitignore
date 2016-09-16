@@ -1,5 +1,6 @@
 *.dat
 *.dat.*
 menu/listing.pff
+menu/Household.pff
 *.lst
 !Resource/*.dat

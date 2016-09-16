@@ -156,6 +156,7 @@ Name=LAUNCH_HOUSEHOLD_QUESTIONNAIRE
 Position=327,264,370,284
 Item=LAUNCH_HOUSEHOLD_QUESTIONNAIRE,MENU_DICT
 FieldLabelType=DictionaryLabel
+DataCaptureType=RadioButton
 Form=1
   
 [Text]
