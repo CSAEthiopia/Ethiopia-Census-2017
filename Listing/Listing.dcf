@@ -19,13 +19,13 @@ Name=LISTING_QUEST
 [IdItems]
 
 [Item]
-Label=100 Id no. of enumerator
+Label=100 Id no. of enumerator|100 የቆጣሪ መለያ 
 Name=L_ID100
 Start=2
 Len=10
 
 [ValueSet]
-Label=100 Id no. of enumerator
+Label=100 Id no. of enumerator|100 የቆጣሪ መለያ 
 Name=L_ID100_VS1
 Value=1:9999999999;Valid
 
