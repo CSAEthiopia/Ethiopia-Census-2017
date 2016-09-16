@@ -21,7 +21,7 @@ function string enumHouseholdFileName()
 	enumHouseholdFileName = maketext("H%s_%010d.dat",getEnumEACode(),LOGIN);
 end;
  
-function launchListing()
+function launchListing(keb,enumArea)
 
 	setfile(pffFile,"./listing.pff",create);
 
@@ -42,8 +42,8 @@ function launchListing()
 	filewrite(pffFile,"subcity=%d",SA_ID105);
 	filewrite(pffFile,"PSA=%d",SA_ID106);
 	filewrite(pffFile,"SA=%d",SA_ID107);
-	filewrite(pffFile,"kebele=%d",KEBELE_CODE);
-	filewrite(pffFile,"EA=%d",ENUMERATION_AREA_CODE);		
+	filewrite(pffFile,"kebele=%d",keb);
+	filewrite(pffFile,"EA=%d",enumArea);		
 	filewrite(pffFile,"Staff ID=%d",S_STAFF_ID);	
 	close(pffFile);
 
@@ -83,6 +83,23 @@ setfile(pffFile,"./Household.pff",create);
 		errmsg("Fail to launch Household form");
     endif;		
    
+end;
+
+// Build dynamic value set from assignment dictionary
+// where labels show Kebele and EA codes and
+// values are kebele and EA concatenated.
+function makeAssignedEAValueSet()
+	numeric i=1;
+	locate(ASSIGNMENT_DICT,>=,"");
+	while loadcase(ASSIGNMENT_DICT) do
+		codes(i)=A_ID108 * 100 + A_ID109;
+		labels(i)=maketext("Kebele %03d EA %02d",A_ID108,A_ID109);
+		i=i+1;
+	enddo;
+	codes(i) = -1;
+	labels(i) = "Back to Main menu";
+	i = i+1;	
+	codes(i)=notappl;
 end;
 
 function syncSupervisor()
@@ -180,7 +197,7 @@ endif;
 PROC ENUMERATOR_MAIN_MENU
 
 if $ = 1 then
-	launchListing();
+	launchListing(KEBELE_CODE,ENUMERATION_AREA_CODE);
 elseif $ = 2 then
 	move to LAUNCH_HOUSEHOLD_QUESTIONNAIRE;
 elseif $ = 3 then
@@ -203,9 +220,9 @@ elseif $ = 2 then
 elseif $ = 3 then
 	summeryReport();
 elseif $ = 4 then
-	//Launch listing
+	move to SUPERVISOR_LAUNCH_LISTING;
 elseif $ = 5 then
-	//Launch HH questionaires
+	move to SUPERVISOR_LAUNCH_HOUSEHOLD_QUES;
 elseif $ = 6 then
 	move to VIEW_MANUALS;
 elseif $ = 7 then
@@ -262,6 +279,28 @@ elseif $ = 9 then
 endif;
 
 reenter;
+PROC SUPERVISOR_LAUNCH_LISTING
+onfocus
+makeAssignedEAValueSet();
+setvalueset($,codes,labels);
+
+postproc
+if $ = -1 then 
+	reenter SUPERVISOR_MAIN_MENU;
+endif;
+numeric keb = int($/100);
+numeric enumArea = $%100;
+launchListing(keb,enumArea);
+PROC SUPERVISOR_LAUNCH_HOUSEHOLD_QUES
+onfocus
+makeAssignedEAValueSet();
+setvalueset($,codes,labels);
+postproc
+if $ = -1 then 
+	reenter SUPERVISOR_MAIN_MENU;
+endif;
+
+//launchListing(keb,enumArea);
 PROC MANAGE_ENUMERATORS
 
 //Dyanmically creates valueset from the staff file.
@@ -317,7 +356,7 @@ else
 		else
 			// Find enumerator name from assignment
 			loadcase(STAFF_DICT,A_STAFF_ID);
-			labels(i)=maketext("%03d%02d (%s)",EA_ID108(i),EA_ID109(i),S_NAME);
+			labels(i)=maketext("%03d%02d (%s)",EA_ID108(i),EA_ID109(i),strip(S_NAME));
 	    endif;
      enddo;
      codes(i) = notappl;
@@ -344,6 +383,11 @@ while loadcase(STAFF_DICT) do
 		i=i+1;
 	endif;	
 enddo;
+if i < 2 then
+	errmsg("Please add enumerators before making assignment.");
+	reenter MANAGE_ASSIGNMENTS;
+endif;
+
 codes(i)=-1;
 labels(i)="Back";	
 i=i+1;
