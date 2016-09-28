@@ -65,7 +65,7 @@ function launchListing(keb,enumArea, staff)
 	filewrite(pffFile,"Staff ID=%d",S_STAFF_ID);	
 	close(pffFile);
 
-	if execpff(filename(pffFile)) = 0 then
+	if execpff(filename(pffFile),stop) = 0 then
 		errmsg("Fail to launch listing");
     endif;		
 end;
@@ -118,7 +118,7 @@ setfile(pffFile,"./Household.pff",create);
 	filewrite(pffFile,"Household SN=%d",hhsn);	
 	close(pffFile);
 
-	if execpff(filename(pffFile)) = 0 then
+	if execpff(filename(pffFile),stop) = 0 then
 		errmsg("Fail to launch Household form");
     endif;		
    
