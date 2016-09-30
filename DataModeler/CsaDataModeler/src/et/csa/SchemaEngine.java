@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Use this class to create the schema script
+ * Use this class to create the schema script for the database
  * 
  * @author Istat Cooperation Unit
  */
