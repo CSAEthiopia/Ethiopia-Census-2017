@@ -9,7 +9,7 @@ import et.csa.writer.InsertWriter;
 import java.util.List;
 
 /**
- * Use this class to create the inserts script
+ * Use this class to create the inserts script to the database
  * 
  * @author Istat Cooperation Unit
  */
